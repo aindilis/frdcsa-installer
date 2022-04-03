@@ -1,0 +1,157 @@
+                   Exhibit C: XML DTD Interface Specification
+
+   <!--
+
+   Filename: [SERVLET_CONTEXT]/dtd/java_to_prolog_ask.dtd
+
+   query from: Sigma to: Vampire
+
+   - query: string of the query such as (instance-of Bob ?X)
+
+   - time limit: in seconds
+
+   - depth limit: number of backchains to perform - if a then b, if b then c
+   etc
+
+   - bindings limit: number of variable binding sets ?X=Human, ?X=LivingThing
+   etc
+
+   - microtheory
+
+   - KB: since we can have multiple unrelated KBs loaded at any one time
+
+   - language: currently would just be SUO-KIF
+
+   -->
+
+   <!ELEMENT query (#PCDATA)>
+
+   <!ATTLIST query
+
+   timeLimit CDATA #IMPLIED
+
+   depthLimit CDATA #IMPLIED
+
+   bindingsLimit CDATA #IMPLIED
+
+   context CDATA #REQUIRED
+
+   kb CDATA #REQUIRED
+
+   language CDATA #REQUIRED>
+
+   <!--
+
+   Filename: [SERVLET_CONTEXT]/dtd/prolog_to_java_ask_response.dtd
+
+   query response from: Vampire to: Sigma
+
+   - yes/no flag: was this a yes/no query or did we expect bindings
+
+   - message text: HTML formatted messages
+
+   - number of bindings
+
+   - for each set of bindings
+
+   * number of variables
+
+   * for each variable
+
+   + variable
+
+   + value
+
+   * number of inference steps
+
+   * for each inference step: this is the proof of the particular binding set
+
+   + expression: should be HTML formatted with hyperlinks
+
+   -->
+
+   <!ELEMENT queryResponse (message | bindings)>
+
+   <!ATTLIST queryResponse
+
+   yesno (true | false) #REQUIRED
+
+   numBindings CDATA #REQUIRED>
+
+   <!ELEMENT message #PCDATA>
+
+   <!ELEMENT bindings (binding)*>
+
+   <!ELEMENT binding (variables, proof)>
+
+   <!ELEMENT variables (var)*>
+
+   <!ATTLIST variables numVars CDATA #REQUIRED>
+
+   <!ELEMENT var EMPTY>
+
+   <!ATTLIST var
+
+   varName CDATA #REQUIRED
+
+   value CDATA #REQUIRED>
+
+   <!ELEMENT proof (proofStep)*>
+
+   <!ATTLIST proof numSteps CDATA #REQUIRED>
+
+   <!ELEMENT proofStep (originalRule | unifiedRule)>
+
+   <!ATTLIST proofStep isRule (true | false) #REQUIRED>
+
+   <!ELEMENT originalRule #PCDATA>
+
+   <!ELEMENT unifiedRule #PCDATA>
+
+   <!--
+
+   Filename: [SERVLET_CONTEXT]/dtd/java_to_prolog_assertion.dtd
+
+   assertion from: Sigma to: Vampire
+
+   - assertion
+
+   - context
+
+   - KB
+
+   - author
+
+   - time/date
+
+   -->
+
+   <!ELEMENT assertion EMPTY>
+
+   <!ATTLIST assertion
+
+   context CDATA #REQUIRED
+
+   kb CDATA #REQUIRED
+
+   author CDATA #IMPLIED
+
+   time CDATA #IMPLIED
+
+   date CDATA #IMPLIED>
+
+   <!--
+
+   Filename: [SERVLET_CONTEXT]/dtd/prolog_to_java_assertion_response.dtd
+
+   assertion response from: Vampire to: Sigma
+
+   - accept/reject flag
+
+   - message text: HTML formatted text explaining any errors
+
+   -->
+
+   <!ELEMENT assertionResponse #PCDATA>
+
+   <!ATTLIST accepted (true | false) #REQUIRED>

@@ -1,0 +1,9 @@
+Package: termex
+Version: 1.49-1
+Architecture: i386
+Maintainer: Andrew J. Dougherty <andrewdo@frdcsa.org>
+Installed-Size: 536
+Section: unknown
+Priority: extra
+Description: Terminology extraction tool
+ Terminology extraction tool written in Perl.

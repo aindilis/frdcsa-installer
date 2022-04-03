@@ -1,0 +1,5 @@
+deb http://mirror.anl.gov/pub/ubuntu precise main restricted universe multiverse
+deb http://mirror.anl.gov/pub/ubuntu precise-updates main restricted universe multiverse
+deb-src http://mirror.anl.gov/pub/ubuntu precise-updates main restricted universe multiverse
+deb http://mirror.anl.gov/pub/ubuntu precise-backports main restricted universe multiverse
+deb http://mirror.anl.gov/pub/ubuntu precise-security main restricted universe multiverse

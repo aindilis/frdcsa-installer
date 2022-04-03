@@ -1,0 +1,237 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TermExtract::JapanesePlainTextEUC
+     -- 専門用語自動抽出モジュール（和文「カタカナ・漢字抽出方式」EUC版）</title>
+<link rev="made" href="mailto:" />
+</head>
+
+<body style="background-color: white">
+
+<p><a name="__index__"></a></p>
+<!-- INDEX BEGIN -->
+
+<ul>
+
+	<li><a href="#name">NAME</a></li>
+	<li><a href="#synopsis">SYNOPSIS</a></li>
+	<li><a href="#description">DESCRIPTION</a></li>
+	<ul>
+
+		<li><a href="#sample_script">Sample Script</a></li>
+		<li><a href="#get_imp_word">get_imp_word</a></li>
+	</ul>
+
+	<li><a href="#see_also">SEE ALSO</a></li>
+	<li><a href="#copyright">COPYRIGHT</a></li>
+</ul>
+<!-- INDEX END -->
+
+<hr />
+<p>
+</p>
+<h1><a name="name">NAME</a></h1>
+<pre>
+    TermExtract::JapanesePlainTextEUC
+     -- 専門用語自動抽出モジュール（和文「カタカナ・漢字抽出方式」EUC版）</pre>
+<p>
+</p>
+<hr />
+<h1><a name="synopsis">SYNOPSIS</a></h1>
+<pre>
+    use TermExtract::JapanesePlainTextEUC;</pre>
+<p>
+</p>
+<hr />
+<h1><a name="description">DESCRIPTION</a></h1>
+<pre>
+    日本語のテキストデータ（EUC)からそのまま専門用語を抽出するプログラム。</pre>
+<pre>
+    当モジュールの使用法については、親クラス（TermExtract::Calc_Imp)か、
+  以下のサンプルスクリプトを参照のこと。</pre>
+<p>
+</p>
+<h2><a name="sample_script">Sample Script</a></h2>
+<pre>
+ #!/usr/local/bin/perl -w
+ 
+ #
+ #  ex_JPTE.pl
+ #
+ #  標準出力に専門用語とその重要度を返すプログラム
+ #  和文「カタカナ・漢字抽出方式」EUC版
+ #
+ #   version 0.05
+ #
+ #
+ 
+ use TermExtract::JapanesePlainTextEUC;
+ #use strict;
+ my $data = new TermExtract::JapanesePlainTextEUC;
+ my $InputFile = &quot;JPTE_out.txt&quot;;    # 入力ファイル
+ 
+ # プロセスの異常終了時処理
+ # (ロックディレクトリを使用した場合のみ）
+ $SIG{INT} = $SIG{QUIT} = $SIG{TERM} = 'sigexit';
+ 
+ # 出力モードを指定
+ # 1 → 専門用語＋重要度、2 → 専門用語のみ
+ # 3 → カンマ区切り
+ my $output_mode = 1;
+ 
+ #
+ # 重要度計算で、連接語の&quot;延べ数&quot;、&quot;異なり数&quot;、&quot;パープレキシティ&quot;のい
+ # ずれをとるか選択。パープレキシティは「学習機能」を使えない
+ # また、&quot;連接語の情報を使わない&quot;選択もあり、この場合は用語出現回数
+ # (と設定されていればIDFの組み合わせ）で重要度計算を行う
+ # （デフォルトは&quot;延べ数&quot;をとる $obj-&gt;use_total)
+ #
+ #$data-&gt;use_total;      # 延べ数をとる
+ #$data-&gt;use_uniq;       # 異なり数をとる
+ #$data-&gt;use_Perplexity; # パープレキシティをとる(TermExtract 3.04 以上)
+ #$data-&gt;no_LR;          # 隣接情報を使わない (TermExtract 4.02 以上)
+ 
+ #
+ # 重要度計算で、連接情報に掛け合わせる用語出現頻度情報を選択する
+ # $data-&gt;no_LR; との組み合わせで用語出現頻度のみの重要度も算出可能
+ # （デフォルトは &quot;Frequency&quot; $data-&gt;use_frq)
+ # TFはある用語が他の用語の一部に使われていた場合にもカウント
+ # Frequency は用語が他の用語の一部に使われていた場合にカウントしない
+ #
+ #$data-&gt;use_TF;   # TF (Term Frequency) (TermExtract 4.02 以上)
+ #$data-&gt;use_frq;  # Frequencyによる用語頻度
+ #$data-&gt;no_frq;   # 頻度情報を使わない
+ 
+ #
+ # 重要度計算で、学習機能を使うかどうか選択
+ # （デフォルトは、使用しない $obj-&gt;no_stat)
+ #
+ #$data-&gt;use_stat; # 学習機能を使う
+ #$data-&gt;no_stat;  # 学習機能を使わない
+ 
+ #
+ # 重要度計算で、「ドキュメント中の用語の頻度」と「連接語の重要度」
+ # のどちらに比重をおくかを設定する。
+ # デフォルト値は１
+ # 値が大きいほど「ドキュメント中の用語の頻度」の比重が高まる
+ #
+ #$data-&gt;average_rate(0.5);
+ 
+ #
+ # 学習機能用DBにデータを蓄積するかどうか選択
+ # 重要度計算で、学習機能を使うときは、セットしておいたほうが
+ # 無難。処理対象に学習機能用DBに登録されていない語が含まれる
+ # と正しく動作しない。
+ # （デフォルトは、蓄積しない $obj-&gt;no_storage）
+ #
+ #$data-&gt;use_storage; # 蓄積する
+ #$data-&gt;no_storage;  # 蓄積しない
+ 
+ #
+ # 学習機能用DBに使用するDBMをSDBM_Fileに指定
+ # （デフォルトは、DB_FileのBTREEモード）
+ #
+ #$data-&gt;use_SDBM;
+ 
+ #
+ # 過去のドキュメントの累積統計を使う場合のデータベースの
+ # ファイル名をセット
+ # （デフォルトは &quot;stat.db&quot;と&quot;comb.db&quot;）
+ #
+ #$data-&gt;stat_db(&quot;statUC.db&quot;);
+ #$data-&gt;comb_db(&quot;combUC.db&quot;);
+ 
+ #
+ # データベースの排他ロックのための一時ディレクトリを指定
+ # ディレクトリ名が空文字列（デフォルト）の場合はロックしない
+ #
+ #$data-&gt;lock_dir(&quot;lock_dir&quot;);
+ 
+ #
+ # データを読み込み
+ # 専門用語リストを配列に返す
+ # （累積統計DB使用、ドキュメント中の頻度使用にセット）
+ #
+ #my @noun_list = $data-&gt;get_imp_word($str, 'var');     # 入力が変数
+ my @noun_list = $data-&gt;get_imp_word($InputFile); # 入力がファイル
+ 
+ #
+ # 前回読み込んだテキストファイルを元に
+ # モードを変えて、専門用語リストを配列に返す
+ #$data-&gt;use_stat-&gt;no_frq;
+ #my @noun_list2 = $data-&gt;get_imp_word();
+ # また、その結果を別のモードによる結果と掛け合わせる
+ #@noun_list = $data-&gt;result_filter (\@noun_list, \@noun_list2, 30, 1000);
+ 
+ #
+ #  専門用語リストと計算した重要度を標準出力に出す
+ #
+ foreach (@noun_list) {
+    # 日付・時刻は表示しない
+    next if $_-&gt;[0] =~ /^(昭和)*(平成)*(\d+年)*(\d+月)*(\d+日)*(午前)*(午後)*(\d+時)*(\d+分)*(\d+秒)*$/;
+ 
+    # 数値のみは表示しない
+    next if $_-&gt;[0] =~ /^\d+$/;
+ 
+    # 結果表示（$output_modeに応じて、出力様式を変更
+    printf &quot;%-60s %16.2f\n&quot;, $_-&gt;[0], $_-&gt;[1] if $output_mode == 1;
+    printf &quot;%s\n&quot;,           $_-&gt;[0]          if $output_mode == 2;
+    printf &quot;%s,&quot;,            $_-&gt;[0]          if $output_mode == 3;
+ }
+ 
+ 
+=head1 Methods</pre>
+<pre>
+    このモジュールでは、get_imp_word のみ実装し、それ以外のメソッドは親
+  モジュール TermExtract::Calc_Imp で実装されている。
+    get_imp_word はストップワードにより文章を複合語の単位までに分割して
+  いる。それ以外のメソッドについては、TermExtract::Calc_Imp のPODドキュ
+  メントを参照すること。</pre>
+<p>
+</p>
+<h2><a name="get_imp_word">get_imp_word</a></h2>
+<pre>
+    日本語の文章から次のルールにより複合語を抽出する。第１引数は、処理
+  対象のデータ、第２引数は第１引数の種別である。デフォルトでは、第１引
+  数は、日本語語のテキストファイルとなる。第２引数に文字列'var'がセット
+  されたときには、第一引数を日本語のテキストデータが入ったスカラー変数
+  と解釈する。</pre>
+<pre>
+    （１）連続した「漢字」、「カタカナ」、「英字及び１バイト記号」を抽
+　　　　出する。
+     (２）改行があった場合は、そこで複合語の区切りとする
+    （３）「漢字」は１文字単位、「カタカナ」及び「英字及び１バイト記号
+　　　　」、は語単位でまとまりを作る。
+    （４）上記３）が２単位以上連続している場合に専門用語とする。
+    （５）重要度の計算は、上記３）の単位で行う</pre>
+<p>
+</p>
+<hr />
+<h1><a name="see_also">SEE ALSO</a></h1>
+<pre>
+    TermExtract::Calc_Imp
+    TermExtract::Chasen
+    TermExtract::MeCab
+    TermExtract::BrillsTagger
+    TermExtract::EnglishPlainText
+    TermExtract::ChainesPlainTextUC
+    TermExtract::ChainesPlainTextGB
+    TermExtract::ICTCLAS
+    TermExtract::JapanesePlainTextSJIS</pre>
+<p>
+</p>
+<hr />
+<h1><a name="copyright">COPYRIGHT</a></h1>
+<pre>
+    このプログラムは、東京大学 前田朗 (maeda@lib.u-tokyo.ac.jp)が作成し
+  たものである。この専門用語抽出のアイデアは東京大学 中川裕志教授の中文
+  ストップワード方式による専門用語重要度計算の理論と、「正規表現とテキス
+  ト・マイニング」(佐良木昌編、新田義彦著 明石書店 2003.10）に記載されて
+  いたカタカナ・漢字抽出によるキーワード切り出しのアイデアを元にしている。</pre>
+<pre>
+    なお、本プログラムの使用において生じたいかなる結果に関しても当方では
+  一切責任を負わない。</pre>
+
+</body>
+
+</html>

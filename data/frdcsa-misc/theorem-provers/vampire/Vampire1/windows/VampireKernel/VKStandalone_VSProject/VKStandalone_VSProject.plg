@@ -1,0 +1,40 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: VKStandalone_VSProject - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "c:\windows\TEMP\RSPC145.TMP" with contents
+[
+/nologo /ML /W3 /GX /O2 /Ob2 /I "..\..\BlodKorv" /I "..\..\Gematogen" /I ".." /I "..\PR_PARSER" /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /D "NO_DEBUG" /Fp"Release/VKStandalone_VSProject.pch" /YX /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\TMP\Dracula\VampireKernel\Pr_parser\pr_parser.cpp"
+"C:\TMP\Dracula\VampireKernel\Standalone.cpp"
+]
+Creating command line "cl.exe @c:\windows\TEMP\RSPC145.TMP" 
+Creating temporary file "c:\windows\TEMP\RSPC146.TMP" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib ../VKLibrary_VSProject/Release/vkernel.lib ws2_32.lib /nologo /subsystem:console /incremental:no /pdb:"Release/vkernel.pdb" /machine:I386 /out:"Release/vkernel.exe" 
+.\Release\CommandLine.obj
+.\Release\FormatText.obj
+.\Release\Input.obj
+.\Release\Parser.obj
+.\Release\pr_parser.obj
+.\Release\Standalone.obj
+\TMP\Dracula\VampireKernel\VKLibrary_VSProject\Release\vkernel.lib
+]
+Creating command line "link.exe @c:\windows\TEMP\RSPC146.TMP"
+<h3>Output Window</h3>
+Compiling...
+pr_parser.cpp
+Standalone.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+vkernel.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

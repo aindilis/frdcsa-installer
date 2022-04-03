@@ -1,0 +1,18 @@
+symbol_weight(divide,-1,[2,1]).
+symbol_weight(multiply,-1,[2,1]).
+
+input_clause(ax,axiom,
+ [
+   ++equal(divide(X0,divide(divide(X1,divide(X1,multiply(X2,X0))),multiply(X2,X3))),X3)
+ ]).
+
+input_clause(ax,axiom,
+ [
+   ++equal(divide(X0,divide(multiply(X1,X0),divide(X2,divide(X2,multiply(X1,X3))))),X3)
+ ]).
+
+
+input_clause(ax,axiom,
+ [
+   ++equal(multiply(X0,divide(multiply(X1,X2),multiply(X1,X0))),X2)
+ ]).

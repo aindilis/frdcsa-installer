@@ -1,0 +1,254 @@
+% * 23598. ~attribute(X0,X1) | ~instance(X1,PsychologicalDysfunction) \/ instance(X0,SentientAgent) /9/9/6/2/ 0pe [pp 19461]
+% * 23598. ~attribute(X0,X1) | ~instance(X1,PsychologicalDysfunction) \/ instance(X0,SentientAgent) /9/9/6/2/ 0pe [pp 19461]
+% * 23599. documentation(PsychologicalDysfunction,"A clinically significant 
+dysfunction whose major manifestation is behavioral or psychological.  
+These dysfunctions may have identified or presumed biological etiologies 
+or manifestations.") /3/3/0/2/ 0pe [pp 19462]
+% * 23600. subclass(PsychologicalDysfunction,DiseaseOrSyndrome) /3/3/0/2/ 0pe [pp 19463]
+% * 23601. subclass(PsychologicalDysfunction,PsychologicalAttribute) /3/3/0/2/ 0pe [pp 19464]
+% * 23602. documentation(Docile,"The &%Attribute of having a docile disposition.") /3/3/0/2/ 0pe [pp 19465]
+% * 23603. instance(Docile,TraitAttribute) /3/3/0/2/ 0pe [pp 19466]
+% * 23604. documentation(Aggressive,"The &%Attribute of having an aggressive 
+disposition.") /3/3/0/2/ 0pe [pp 19467]
+% * 23605. contraryAttribute(Aggressive,Docile) /3/3/0/2/ 0pe [pp 19468]
+% * 23606. instance(Aggressive,TraitAttribute) /3/3/0/2/ 0pe [pp 19469]
+% * 23607. documentation(TraitAttribute,"&%Attributes that indicate the the 
+behavior/personality traits of an &%Organism.") /3/3/0/2/ 0pe [pp 19470]
+% * 23608. subclass(TraitAttribute,PsychologicalAttribute) /3/3/0/2/ 0pe [pp 19471]
+% * 23609. documentation(Awake,"This &%Attribute applies to &%Organisms that are 
+neither &%Unconscious nor &%Asleep.") /3/3/0/2/ 0pe [pp 19472]
+% * 23610. subclass(Awake,ConsciousnessAttribute) /3/3/0/2/ 0pe [pp 19473]
+% * 23611. documentation(Unconscious,"This &%Attribute applies to &%Organisms that 
+are unconscious because of a non-natural process, e.g. a blow to the head, 
+a drug, etc.  Note that the &%Attribute &%Asleep is used to describe the 
+&%ConsciousnessAttribute of an &%Organism that is asleep.") /3/3/0/2/ 0pe [pp 19474]
+% * 23612. contraryAttribute(Unconscious,Awake) /3/3/0/2/ 0pe [pp 19475]
+% * 23613. subclass(Unconscious,ConsciousnessAttribute) /3/3/0/2/ 0pe [pp 19476]
+% * 23614. documentation(Asleep,"This &%Attribute applies to &%Organisms that are 
+sleeping.") /3/3/0/2/ 0pe [pp 19477]
+% * 23615. contraryAttribute(Asleep,Awake) /3/3/0/2/ 0pe [pp 19478]
+% * 23616. contraryAttribute(Asleep,Unconscious) /3/3/0/2/ 0pe [pp 19479]
+% * 23617. subclass(Asleep,ConsciousnessAttribute) /3/3/0/2/ 0pe [pp 19480]
+% * 23618. documentation(ConsciousnessAttribute,"&%Attributes that indicate whether 
+an &%Organism is conscious or the qualitative degree of consciousness of 
+an &%Organism.") /3/3/0/2/ 0pe [pp 19481]
+% * 23619. subclass(ConsciousnessAttribute,StateOfMind) /3/3/0/2/ 0pe [pp 19482]
+% * 23620. documentation(EmotionalState,"The &%Class of &%Attributes that denote emotional 
+states of &%Organisms (and perhaps other &%Agents).  .") /3/3/0/2/ 0pe [pp 19483]
+% * 23621. subclass(EmotionalState,StateOfMind) /3/3/0/2/ 0pe [pp 19484]
+% * 23622. documentation(StateOfMind,"The class &%StateOfMind is distinguished from 
+its complement &%TraitAttribute by the fact that instances of the former are 
+transient while instances of the latter are persistent features of a creature's behavioral/psychological make-up.") /3/3/0/2/ 0pe [pp 19485]
+% * 23623. subclass(StateOfMind,PsychologicalAttribute) /3/3/0/2/ 0pe [pp 19486]
+% * 23624. ~holdsDuring(X0,attribute(X1,X2)) | holdsDuring(X0,attribute(X1,Living)) \/ ~instance(X2,PsychologicalAttribute) /13/13/8/2/ 0pe [pp ns 19487]
+% * 23625. documentation(PsychologicalAttribute,"&%Attributes that characterize the mental 
+or behavioral life of an &%Organism (and perhaps other &%SentientAgents).") /3/3/0/2/ 0pe [pp 19488]
+% * 23626. partition(PsychologicalAttribute,StateOfMind,TraitAttribute) /4/4/0/2/ 0pe [pp 19489]
+% * 23627. subclass(PsychologicalAttribute,BiologicalAttribute) /3/3/0/2/ 0pe [pp 19490]
+% * 23628. documentation(DiseaseOrSyndrome,"A &%BiologicalAttribute which qualifies 
+something that alters or interferes with a normal process, state or activity 
+of an &%Organism.  It is usually characterized by the abnormal functioning of 
+one or more of the host's systems, parts, or &%Organs.") /3/3/0/2/ 0pe [pp 19491]
+% * 23629. subclass(DiseaseOrSyndrome,BiologicalAttribute) /3/3/0/2/ 0pe [pp 19492]
+% * 23630. documentation(Fetal,"A &%Vertebrate in the later stage of development before 
+its birth has this &%Attribute, which indicates that the main features of the 
+&%FullyFormed animal are recognizable.") /3/3/0/2/ 0pe [pp 19493]
+% * 23631. contraryAttribute(Fetal,Embryonic) /3/3/0/2/ 0pe [pp 19494]
+% * 23632. subAttribute(Fetal,NonFullyFormed) /3/3/0/2/ 0pe [pp 19495]
+% * 23633. instance(Fetal,DevelopmentalAttribute) /3/3/0/2/ 0pe [pp 19496]
+% * 23634. documentation(Embryonic,"The stage of an &%Organism or an 
+&%AnatomicalStructure that exists only before the &%Organism is fully 
+formed.  &%Mammals, for example, have this &%Attribute only prior to 
+their birth.") /3/3/0/2/ 0pe [pp 19497]
+% * 23635. successorAttribute(Embryonic,Fetal) /3/3/0/2/ 0pe [pp 19498]
+% * 23636. subAttribute(Embryonic,NonFullyFormed) /3/3/0/2/ 0pe [pp 19499]
+% * 23637. instance(Embryonic,DevelopmentalAttribute) /3/3/0/2/ 0pe [pp 19500]
+% * 23638. documentation(Larval,"Form of most &%Invertebrates, &%Amphibians, and 
+&%Fish immediately after they hatch.  This form is fundamentally unlike 
+the adult form, and metamorphosis is required to reach the latter form.") /3/3/0/2/ 0pe [pp 19501]
+% * 23639. subAttribute(Larval,NonFullyFormed) /3/3/0/2/ 0pe [pp 19502]
+% * 23640. instance(Larval,DevelopmentalAttribute) /3/3/0/2/ 0pe [pp 19503]
+% * 23641. documentation(NonFullyFormed,"The stage of an &%Animal before it is 
+&%FullyFormed.") /3/3/0/2/ 0pe [pp 19504]
+% * 23642. successorAttribute(NonFullyFormed,FullyFormed) /3/3/0/2/ 0pe [pp 19505]
+% * 23643. contraryAttribute(NonFullyFormed,FullyFormed) /3/3/0/2/ 0pe [pp 19506]
+% * 23644. instance(NonFullyFormed,DevelopmentalAttribute) /3/3/0/2/ 0pe [pp 19507]
+% * 23645. holdsDuring(BeginFn(WhenFn(X0)),attribute(X0,NonFullyFormed)) | ~attribute(X0,FullyFormed) /10/10/3/2/ 0pe [pp 19508]
+% GEN 8281 ~attribute X1 FullyFormed  % holdsDuring BeginFn WhenFn X1 attribute X1 Living  % ~instance NonFullyFormed PsychologicalAttribute [br 23624 23645 ]
+% 27725. holdsDuring(BeginFn(WhenFn(X0)),attribute(X0,Living)) | ~attribute(X0,FullyFormed) \/ ~instance(NonFullyFormed,PsychologicalAttribute) /13/13/6/3/ 0pe [br 23624,23645]
+% * 23646. experiencer(sk308(X0),X0) | ~attribute(X0,FullyFormed) /7/7/3/2/ 0pe [pp 19509]
+% * 23647. instance(sk308(X0),Growth) | ~attribute(X0,FullyFormed) /7/7/3/2/ 0pe [pp 19510]
+% * 23648. documentation(FullyFormed,"The stage of an &%Organism or an 
+&%AnatomicalStructure when it has reached the end of its growth 
+phase.") /3/3/0/2/ 0pe [pp 19511]
+% * 23649. instance(FullyFormed,DevelopmentalAttribute) /3/3/0/2/ 0pe [pp 19512]
+% * 23650. documentation(DevelopmentalAttribute,"&%Attributes that indicate the 
+stage of development of an &%Organism.") /3/3/0/2/ 0pe [pp 19513]
+% * 23651. subclass(DevelopmentalAttribute,BiologicalAttribute) /3/3/0/2/ 0pe [pp 19514]
+% * 23652. documentation(Male,"An &%Attribute indicating that an &%Organism is 
+male in nature.") /3/3/0/2/ 0pe [pp 19515]
+% * 23653. contraryAttribute(Male,Female) /3/3/0/2/ 0pe [pp 19516]
+% * 23654. instance(Male,SexAttribute) /3/3/0/2/ 0pe [pp 19517]
+% * 23655. documentation(Female,"An &%Attribute indicating that an &%Organism is 
+female in nature.") /3/3/0/2/ 0pe [pp 19518]
+% * 23656. instance(Female,SexAttribute) /3/3/0/2/ 0pe [pp 19519]
+% * 23657. documentation(SexAttribute,"&%Attributes that indicate the sex of an 
+&%Organism.") /3/3/0/2/ 0pe [pp 19520]
+% * 23658. subclass(SexAttribute,BiologicalAttribute) /3/3/0/2/ 0pe [pp 19521]
+% * 23659. documentation(Dead,"This &%Attribute applies to &%Organisms that are 
+not alive.") /3/3/0/2/ 0pe [pp 19522]
+% * 23660. contraryAttribute(Dead,Living) /3/3/0/2/ 0pe [pp 19523]
+% * 23661. instance(Dead,AnimacyAttribute) /3/3/0/2/ 0pe [pp 19524]
+% * 23662. holdsDuring(WhenFn(X0),attribute(X1,Living)) | ~instance(X1,Organism) \/ ~agent(X0,X1) /12/12/6/2/ 0pe [pp 19525]
+% GEN 8282 ~instance X1 Organism  % ~agent X2 X1  % holdsDuring WhenFn X2 attribute X1 Living  % ~instance Living PsychologicalAttribute [br 23624 23662 ]
+% * 23663. documentation(Living,"This &%Attribute applies to &%Organisms that are 
+alive.") /3/3/0/2/ 0pe [pp 19526]
+% * 23664. instance(Living,AnimacyAttribute) /3/3/0/2/ 0pe [pp 19527]
+% * 23665. documentation(AnimacyAttribute,"&%Attributes that indicate whether an 
+&%Organism is alive or not.") /3/3/0/2/ 0pe [pp 19528]
+% * 23666. subclass(AnimacyAttribute,BiologicalAttribute) /3/3/0/2/ 0pe [pp 19529]
+% * 23667. ~attribute(X0,X1) | ~instance(X1,BiologicalAttribute) \/ instance(X0,Organism) /9/9/6/2/ 0pe [pp 19530]
+% * 23668. documentation(BiologicalAttribute,"&%Attributes that apply specifically 
+to instances of &%Organism or &%parts of an &%Organism.") /3/3/0/2/ 0pe [pp 19531]
+% * 23669. subclass(BiologicalAttribute,InternalAttribute) /3/3/0/2/ 0pe [pp 19532]
+% * 23670. documentation(Unbreakable,"An &%Attribute which indicates that the 
+associated &%Object cannot be broken under ordinary circumstances.") /3/3/0/2/ 0pe [pp 19533]
+% * 23671. contraryAttribute(Unbreakable,Fragile) /3/3/0/2/ 0pe [pp 19534]
+% * 23672. instance(Unbreakable,BreakabilityAttribute) /3/3/0/2/ 0pe [pp 19535]
+% * 23673. documentation(Fragile,"An &%Attribute which indicates that the 
+associated &%Object is very breakable.") /3/3/0/2/ 0pe [pp 19536]
+% * 23674. instance(Fragile,BreakabilityAttribute) /3/3/0/2/ 0pe [pp 19537]
+% * 23675. documentation(BreakabilityAttribute,"A &%subclass of &%Attributes for 
+characterizing the breakability of &%CorpuscularObjects.") /3/3/0/2/ 0pe [pp 19538]
+% * 23676. subclass(BreakabilityAttribute,InternalAttribute) /3/3/0/2/ 0pe [pp 19539]
+% * 23677. attribute(sk307(X0,X1),Liquid) | ~attribute(X1,Wet) \/ ~part(X0,X1) /11/11/6/2/ 0pe [pp 19540]
+% GEN 8283 ~attribute X3 Wet  % ~part X2 X3  % ~instance Liquid BiologicalAttribute  % instance sk307 X2 X3 Organism [br 23667 23677 ]
+% 27726. instance(sk307(X0,X1),Organism) | ~attribute(X1,Wet) \/ ~part(X0,X1) \/ ~instance(Liquid,BiologicalAttribute) /14/14/9/3/ 0pe [br 23667,23677]
+% GEN 8284 ~attribute X3 Wet  % ~part X2 X3  % ~instance Liquid PsychologicalDysfunction  % instance sk307 X2 X3 SentientAgent [br 23598 23677 ]
+% 27727. instance(sk307(X0,X1),SentientAgent) | ~attribute(X1,Wet) \/ ~part(X0,X1) \/ ~instance(Liquid,PsychologicalDysfunction) /14/14/9/3/ 0pe [br 23598,23677]
+% * 23678. part(sk307(X0,X1),X0) | ~attribute(X1,Wet) \/ ~part(X0,X1) /11/11/6/2/ 0pe [pp 19541]
+% * 23679. documentation(Wet,"An &%Attribute which indicates that the 
+associated &%Object is fully saturated with a &%Liquid, i.e. 
+every part of the &%Object has a subpart which is a &%Liquid.") /3/3/0/2/ 0pe [pp 19542]
+% * 23680. subAttribute(Wet,Damp) /3/3/0/2/ 0pe [pp 19543]
+% * 23681. instance(Wet,SaturationAttribute) /3/3/0/2/ 0pe [pp 19544]
+% * 23682. documentation(Damp,"An &%Attribute which indicates that the associated 
+&%Object contains some &%Liquid.") /3/3/0/2/ 0pe [pp 19545]
+% * 23683. instance(Damp,SaturationAttribute) /3/3/0/2/ 0pe [pp 19546]
+% * 23684. ~attribute(X0,Dry) | ~attribute(X1,Liquid) \/ ~part(X1,X0) /9/9/6/2/ 0pe [pp ns 19547]
+% * 23685. documentation(Dry,"An &%Attribute which indicates that the associated 
+&%Object contains no &%Liquid.") /3/3/0/2/ 0pe [pp 19548]
+% * 23686. contraryAttribute(Dry,Wet) /3/3/0/2/ 0pe [pp 19549]
+% * 23687. contraryAttribute(Dry,Damp) /3/3/0/2/ 0pe [pp 19550]
+% * 23688. instance(Dry,SaturationAttribute) /3/3/0/2/ 0pe [pp 19551]
+% * 23689. documentation(SaturationAttribute,"A &%Class of &%Attributes that specify 
+whether there is any &%Liquid in a particular &%Object.") /3/3/0/2/ 0pe [pp 19552]
+% * 23690. subclass(SaturationAttribute,InternalAttribute) /3/3/0/2/ 0pe [pp 19553]
+% * 23691. documentation(SoundAttribute,"Any &%Attribute that characterizes the 
+sound made by an &%Object.") /3/3/0/2/ 0pe [pp 19554]
+% * 23692. subclass(SoundAttribute,PerceptualAttribute) /3/3/0/2/ 0pe [pp 19555]
+% * 23693. documentation(Rough,"An &%Object with this &%Attribute has a rough 
+surface.") /3/3/0/2/ 0pe [pp 19556]
+% * 23694. contraryAttribute(Smooth,Rough) /3/3/0/2/ 0pe [pp 19557]
+% * 23695. instance(Rough,TextureAttribute) /3/3/0/2/ 0pe [pp 19558]
+% * 23696. documentation(Smooth,"An &%Object with this &%Attribute has a smooth 
+surface.") /3/3/0/2/ 0pe [pp 19559]
+% * 23697. instance(Smooth,TextureAttribute) /3/3/0/2/ 0pe [pp 19560]
+% * 23698. ~surface(X0,X1) | ~attribute(X1,X2) \/ attribute(X0,X2) \/ ~instance(X2,TextureAttribute) /12/12/9/2/ 0pe [pp ns 19561]
+% * 23699. documentation(TextureAttribute,"Any &%Attribute that characterizes the 
+texture of an &%Object.") /3/3/0/2/ 0pe [pp 19562]
+% * 23700. subclass(TextureAttribute,PerceptualAttribute) /3/3/0/2/ 0pe [pp 19563]
+% * 23701. documentation(Rigid,"The shape of an &%Object with this &%Attribute 
+cannot be easily altered.") /3/3/0/2/ 0pe [pp 19564]
+% * 23702. contraryAttribute(Rigid,Pliable) /3/3/0/2/ 0pe [pp 19565]
+% * 23703. instance(Rigid,ShapeAttribute) /3/3/0/2/ 0pe [pp 19566]
+% * 23704. documentation(Pliable,"The shape of an &%Object with this &%Attribute 
+can be altered.") /3/3/0/2/ 0pe [pp 19567]
+% * 23705. instance(Pliable,ShapeAttribute) /3/3/0/2/ 0pe [pp 19568]
+% * 23706. documentation(ShapeAttribute,"Any &%Attribute that relates to the 
+shape of an &%Object.") /3/3/0/2/ 0pe [pp 19569]
+% * 23707. subclass(ShapeAttribute,InternalAttribute) /3/3/0/2/ 0pe [pp 19570]
+% * 23708. sk305(X0)!==sk306(X0) | ~attribute(X0,Polychromatic) /8/8/3/2/ 0pe [pp 19571]
+% * 23709. instance(sk306(X0),ColorAttribute) | ~attribute(X0,Polychromatic) /7/7/3/2/ 0pe [pp 19572]
+% * 23710. instance(sk305(X0),ColorAttribute) | ~attribute(X0,Polychromatic) /7/7/3/2/ 0pe [pp 19573]
+% * 23711. attribute(sk304(X0),sk306(X0)) | ~attribute(X0,Polychromatic) /8/8/3/2/ 0pe [pp 19574]
+% GEN 8285 ~attribute X2 Polychromatic  % ~instance sk306 X2 BiologicalAttribute  % instance sk304 X2 Organism [br 23667 23711 ]
+% 27728. instance(sk304(X0),Organism) | ~attribute(X0,Polychromatic) \/ ~instance(sk306(X0),BiologicalAttribute) /11/11/7/3/ 0pe [br 23667,23711]
+% GEN 8286 ~attribute X2 Polychromatic  % ~instance sk306 X2 PsychologicalDysfunction  % instance sk304 X2 SentientAgent [br 23598 23711 ]
+% 27729. instance(sk304(X0),SentientAgent) | ~attribute(X0,Polychromatic) \/ ~instance(sk306(X0),PsychologicalDysfunction) /11/11/7/3/ 0pe [br 23598,23711]
+% * 23712. attribute(sk303(X0),sk305(X0)) | ~attribute(X0,Polychromatic) /8/8/3/2/ 0pe [pp 19575]
+% GEN 8287 ~attribute X2 Polychromatic  % ~instance sk305 X2 BiologicalAttribute  % instance sk303 X2 Organism [br 23667 23712 ]
+% 27730. instance(sk303(X0),Organism) | ~attribute(X0,Polychromatic) \/ ~instance(sk305(X0),BiologicalAttribute) /11/11/7/3/ 0pe [br 23667,23712]
+% GEN 8288 ~attribute X2 Polychromatic  % ~instance sk305 X2 PsychologicalDysfunction  % instance sk303 X2 SentientAgent [br 23598 23712 ]
+% 27731. instance(sk303(X0),SentientAgent) | ~attribute(X0,Polychromatic) \/ ~instance(sk305(X0),PsychologicalDysfunction) /11/11/7/3/ 0pe [br 23598,23712]
+% * 23713. superficialPart(sk304(X0),X0) | ~attribute(X0,Polychromatic) /7/7/3/2/ 0pe [pp 19576]
+% * 23714. superficialPart(sk303(X0),X0) | ~attribute(X0,Polychromatic) /7/7/3/2/ 0pe [pp 19577]
+% * 23715. documentation(Polychromatic,"An &%Object with this &%Attribute has 
+different colors on different parts of its surface.") /3/3/0/2/ 0pe [pp 19578]
+% * 23716. contraryAttribute(Polychromatic,Monochromatic) /3/3/0/2/ 0pe [pp 19579]
+% * 23717. instance(Polychromatic,ColorAttribute) /3/3/0/2/ 0pe [pp 19580]
+% * 23718. ~superficialPart(X0,X1) | ~superficialPart(X2,X1) \/ ~attribute(X1,Monochromatic) \/ ~attribute(X2,X3) \/ attribute(X0,X3) \/ ~instance(X3,PrimaryColor) /18/18/15/2/ 0pe [pp ns 19581]
+% GEN 8289 ~superficialPart X4 X5  % ~attribute X5 Monochromatic  % ~attribute X4 X6  % attribute sk304 X5 X6  % ~instance X6 PrimaryColor  % ~attribute X5 Polychromatic [br 23713 23718 ]
+% 27732. ~superficialPart(X0,X1) | ~attribute(X1,Monochromatic) \/ ~attribute(X1,Polychromatic) \/ ~attribute(X0,X2) \/ attribute(sk304(X1),X2) \/ ~instance(X2,PrimaryColor) /19/19/16/3/ 0pe [br ns 23713,23718]
+% GEN 8290 ~superficialPart X4 X5  % ~attribute X5 Monochromatic  % ~attribute X4 X6  % attribute sk303 X5 X6  % ~instance X6 PrimaryColor  % ~attribute X5 Polychromatic [br 23714 23718 ]
+% 27733. ~superficialPart(X0,X1) | ~attribute(X1,Monochromatic) \/ ~attribute(X1,Polychromatic) \/ ~attribute(X0,X2) \/ attribute(sk303(X1),X2) \/ ~instance(X2,PrimaryColor) /19/19/16/3/ 0pe [br ns 23714,23718]
+% * 23719. documentation(Monochromatic,"An &%Object with this &%Attribute has 
+the same color on every part of its surface.") /3/3/0/2/ 0pe [pp 19582]
+% * 23720. instance(Monochromatic,ColorAttribute) /3/3/0/2/ 0pe [pp 19583]
+% * 23721. documentation(Yellow,"The &%Attribute of being yellow in color.") /3/3/0/2/ 0pe [pp 19584]
+% * 23722. instance(Yellow,PrimaryColor) /3/3/0/2/ 0pe [pp 19585]
+% * 23723. documentation(Blue,"The &%Attribute of being blue in color.") /3/3/0/2/ 0pe [pp 19586]
+% * 23724. contraryAttribute(Blue,Yellow) /3/3/0/2/ 0pe [pp 19587]
+% * 23725. instance(Blue,PrimaryColor) /3/3/0/2/ 0pe [pp 19588]
+% * 23726. documentation(Red,"The &%Attribute of redness.") /3/3/0/2/ 0pe [pp 19589]
+% * 23727. contraryAttribute(Red,Yellow) /3/3/0/2/ 0pe [pp 19590]
+% * 23728. contraryAttribute(Red,Blue) /3/3/0/2/ 0pe [pp 19591]
+% * 23729. instance(Red,PrimaryColor) /3/3/0/2/ 0pe [pp 19592]
+% * 23730. documentation(PrimaryColor,"Colors which can be blended to form any 
+color and which cannot be derived from any other colors.") /3/3/0/2/ 0pe [pp 19593]
+% * 23731. subclass(PrimaryColor,ColorAttribute) /3/3/0/2/ 0pe [pp 19594]
+% * 23732. documentation(ColorAttribute,"The &%Class of &%VisualAttributes 
+relating to the color of &%Objects.") /3/3/0/2/ 0pe [pp 19595]
+% * 23733. subclass(ColorAttribute,VisualAttribute) /3/3/0/2/ 0pe [pp 19596]
+% * 23734. documentation(Unilluminated,"The &%Attribute of &%Regions that are 
+unilluminated, i.e in which no shapes are visually discernable.") /3/3/0/2/ 0pe [pp 19597]
+% * 23735. contraryAttribute(Unilluminated,Illuminated) /3/3/0/2/ 0pe [pp 19598]
+% * 23736. instance(Unilluminated,VisualAttribute) /3/3/0/2/ 0pe [pp 19599]
+% * 23737. documentation(Illuminated,"The &%Attribute of &%Regions that are 
+illuminated to some degree, i.e. in which some shapes are visually 
+discernable.") /3/3/0/2/ 0pe [pp 19600]
+% * 23738. instance(Illuminated,VisualAttribute) /3/3/0/2/ 0pe [pp 19601]
+% * 23739. documentation(VisualAttribute,"The &%Class of visually discernible 
+properties.") /3/3/0/2/ 0pe [pp 19602]
+% * 23740. subclass(VisualAttribute,PerceptualAttribute) /3/3/0/2/ 0pe [pp 19603]
+% * 23741. documentation(OlfactoryAttribute,"The &%Class of properties that are 
+detectable by smell.") /3/3/0/2/ 0pe [pp 19604]
+% * 23742. subclass(OlfactoryAttribute,PerceptualAttribute) /3/3/0/2/ 0pe [pp 19605]
+% * 23743. documentation(Bitter,"The &%Attribute of &%Objects that are 
+bitter-tasting.") /3/3/0/2/ 0pe [pp 19606]
+% * 23744. instance(Bitter,TasteAttribute) /3/3/0/2/ 0pe [pp 19607]
+% * 23745. documentation(Sweet,"The &%Attribute of &%Objects that are 
+sweet-tasting.") /3/3/0/2/ 0pe [pp 19608]
+% * 23746. contraryAttribute(Sweet,Bitter) /3/3/0/2/ 0pe [pp 19609]
+% * 23747. instance(Sweet,TasteAttribute) /3/3/0/2/ 0pe [pp 19610]
+% * 23748. attribute(X0,sk302(X0)) | ~instance(X0,Food) /7/7/3/2/ 0pe [pp 19611]
+% GEN 8291 ~instance X5 Food  % ~instance sk302 X5 BiologicalAttribute  % instance X5 Organism [br 23667 23748 ]
+% 27734. ~instance(sk302(X0),BiologicalAttribute) | ~instance(X0,Food) \/ instance(X0,Organism) /10/10/6/3/ 0pe [br 23667,23748]
+% GEN 8292 ~instance X5 Food  % ~instance sk302 X5 PsychologicalDysfunction  % instance X5 SentientAgent [br 23598 23748 ]
+% 27735. ~instance(sk302(X0),PsychologicalDysfunction) | ~instance(X0,Food) \/ instance(X0,SentientAgent) /10/10/6/3/ 0pe [br 23598,23748]
+% * 23749. instance(sk302(X0),TasteAttribute) | ~instance(X0,Food) /7/7/3/2/ 0pe [pp 19612]
+% * 23750. documentation(TasteAttribute,"The &%Class of &%Attributes relating to 
+the taste of &%Objects.") /3/3/0/2/ 0pe [pp 19613]
+% * 23751. subclass(TasteAttribute,PerceptualAttribute) /3/3/0/2/ 0pe [pp 19614]
+% * 23752. attribute(X0,sk301(X0,X1)) | ~patient(X1,X0) \/ ~instance(X1,Perception) /11/11/6/2/ 0pe [pp 19615]
+% GEN 8293 ~patient X3 X5  % ~instance X3 Perception  % ~instance sk301 X5 X3 BiologicalAttribute  % instance X5 Organism [br 23667 23752 ]
+% 27736. ~instance(sk301(X0,X1),BiologicalAttribute) | ~patient(X1,X0) \/ ~instance(X1,Perception) \/ instance(X0,Organism) /14/14/9/3/ 0pe [br 23667,23752]
+% GEN 8294 ~patient X3 X5  % ~instance X3 Perception  % ~instance sk301 X5 X3 PsychologicalDysfunction  % instance X5 SentientAgent [br 23598 23752 ]
+% 27737. ~instance(sk301(X0,X1),PsychologicalDysfunction) | ~patient(X1,X0) \/ ~instance(X1,Perception) \/ instance(X0,SentientAgent) /14/14/9/3/ 0pe [br 23598,23752]
+% * 23753. instance(sk301(X0,X1),PerceptualAttribute) | ~patient(X1,X0) \/ ~instance(X1,Perception) /11/11/6/2/ 0pe [pp 19616]
+% * 23754. documentation(PerceptualAttribute,"Any &%Attribute whose presence is detected 
+by an act of &%Perception.") /3/3/0/2/ 0pe [pp 19617]
+% * 23755. subclass(PerceptualAttribute,InternalAttribute) /3/3/0/2/ 0pe [pp 19618]
+% * 23756. ~holdsDuring(X0,attribute(X1,X2)) | X3=X2 \/ ~part(X1,X4) \/ ~holdsDuring(X0,attribute(X4,X3)) \/ ~instance(X3,PhysicalState) \/ ~instance(X2,PhysicalState) /22/22/17/2/ 1pe [pp ns 19619]
+% GEN 8295 (X6 )=(NonFullyFormed ) % ~part X5 X7  % ~holdsDuring BeginFn WhenFn X5 attribute X7 X6  % ~instance X6 PhysicalState  % ~instance NonFullyFormed PhysicalState  % ~attribute X5 FullyFormed [br 23645 23756 ]
+% 27738. ~holdsDuring(BeginFn(WhenFn(X0)),attribute(X1,X2)) | X2=NonFullyFormed \/ ~attribute(X0,FullyFormed) \/ ~part(X0,X1) \/ ~instance(NonFullyFormed,PhysicalState) \/ ~instance(X2,PhysicalState) /22/22/15/3/ 1pe [br 23645,23756]

@@ -1,0 +1,149 @@
+# $Id: Makefile.kif,v 1.1.1.1 2002/08/16 18:22:52 jchen Exp $
+
+.PHONY: all clean antlr just_main tidy
+
+CLASSPATH=./antlr-2.7.1
+CURRENT_PATH=$(PWD)
+ANTLR_SRC=$(PWD)/$(CLASSPATH)/lib/cpp
+ANTLR_LIB=$(PWD)/$(CLASSPATH)/local
+
+INCLUDE_DIR=$(ANTLR_LIB)/include/
+LIB_DIR=$(ANTLR_LIB)/lib/
+
+
+CC=gcc
+CXX=g++
+CFLAGS+=-I$(INCLUDE_DIR) -Wall -g -O2
+CXXFLAGS+=-I$(INCLUDE_DIR) -L$(LIB_DIR) -Wall -g
+
+
+all: just_main
+
+# KIF must be before XML
+SRCS = KIFLexer.cpp KIFParser.cpp XMLLexer.cpp XMLParser.cpp # main.cpp
+
+# KIF must be before XML
+HDRS = KIFLexer.hpp KIFParser.hpp XMLLexer.hpp XMLParser.hpp 
+
+OBJS = $(patsubst %.cpp,%.o, $(SRCS))
+
+KIFLexer.hpp KIFLexer.cpp KIFParser.hpp KIFParser.cpp: KIF.g 
+	export CLASSPATH=$(CLASSPATH);java antlr.Tool KIF.g
+
+XMLLexer.hpp XMLLexer.cpp XMLParser.hpp XMLParser.cpp: XML.g 
+	export CLASSPATH=$(CLASSPATH);java antlr.Tool XML.g
+
+main: antlr depend $(OBJS)
+#	$(LINK.C) -o main $(OBJS) -lantlr
+
+just_main: depend $(OBJS)
+#	$(LINK.C) -o main $(OBJS) -lantlr
+
+antlr:
+	cd $(ANTLR_SRC);./configure --prefix=$(ANTLR_LIB);cd $(CURRENT_PATH)
+	make -C $(ANTLR_SRC)
+	make -C $(ANTLR_SRC) install
+
+
+depend:
+	@makedepend -- $(CXXFLAGS) -- -Y $(SRCS) > /dev/null 2>&1
+
+tidy:
+	rm -f *.o *.a *~ *.bak core main result
+	rm -f KIFLexer.cpp KIFLexer.hpp KIFParser.cpp KIFParser.hpp KIFLexerTokenTypes.hpp KIFLexerTokenTypes.txt
+	rm -f XMLLexer.cpp XMLLexer.hpp XMLParser.cpp XMLParser.hpp XMLLexerTokenTypes.hpp XMLLexerTokenTypes.txt
+
+clean:  tidy
+	make -C $(ANTLR_SRC) clean
+	make -C $(ANTLR_SRC) distclean
+	rm -rf antlr-2.7.1/local/lib
+	rm -rf antlr-2.7.1/local/include
+
+# DO NOT DELETE
+
+KIFLexer.o: KIFLexer.hpp
+KIFLexer.o: /home/voronkov/Vampire/KIF/./antlr-2.7.1/local/include/antlr/config.hpp
+KIFLexer.o: /home/voronkov/Vampire/KIF/./antlr-2.7.1/local/include/antlr/CommonToken.hpp
+KIFLexer.o: /home/voronkov/Vampire/KIF/./antlr-2.7.1/local/include/antlr/Token.hpp
+KIFLexer.o: /home/voronkov/Vampire/KIF/./antlr-2.7.1/local/include/antlr/RefCount.hpp
+KIFLexer.o: /home/voronkov/Vampire/KIF/./antlr-2.7.1/local/include/antlr/InputBuffer.hpp
+KIFLexer.o: /home/voronkov/Vampire/KIF/./antlr-2.7.1/local/include/antlr/CircularQueue.hpp
+KIFLexer.o: /home/voronkov/Vampire/KIF/./antlr-2.7.1/local/include/antlr/BitSet.hpp
+KIFLexer.o: KIFLexerTokenTypes.hpp
+KIFLexer.o: /home/voronkov/Vampire/KIF/./antlr-2.7.1/local/include/antlr/CharScanner.hpp
+KIFLexer.o: /home/voronkov/Vampire/KIF/./antlr-2.7.1/local/include/antlr/TokenStream.hpp
+KIFLexer.o: /home/voronkov/Vampire/KIF/./antlr-2.7.1/local/include/antlr/RecognitionException.hpp
+KIFLexer.o: /home/voronkov/Vampire/KIF/./antlr-2.7.1/local/include/antlr/ANTLRException.hpp
+KIFLexer.o: /home/voronkov/Vampire/KIF/./antlr-2.7.1/local/include/antlr/LexerSharedInputState.hpp
+KIFLexer.o: /home/voronkov/Vampire/KIF/./antlr-2.7.1/local/include/antlr/CharBuffer.hpp
+KIFLexer.o: /home/voronkov/Vampire/KIF/./antlr-2.7.1/local/include/antlr/TokenStreamException.hpp
+KIFLexer.o: /home/voronkov/Vampire/KIF/./antlr-2.7.1/local/include/antlr/TokenStreamIOException.hpp
+KIFLexer.o: /home/voronkov/Vampire/KIF/./antlr-2.7.1/local/include/antlr/TokenStreamRecognitionException.hpp
+KIFLexer.o: /home/voronkov/Vampire/KIF/./antlr-2.7.1/local/include/antlr/CharStreamException.hpp
+KIFLexer.o: /home/voronkov/Vampire/KIF/./antlr-2.7.1/local/include/antlr/CharStreamIOException.hpp
+KIFLexer.o: /home/voronkov/Vampire/KIF/./antlr-2.7.1/local/include/antlr/NoViableAltForCharException.hpp
+KIFParser.o: KIFParser.hpp
+KIFParser.o: /home/voronkov/Vampire/KIF/./antlr-2.7.1/local/include/antlr/config.hpp
+KIFParser.o: /home/voronkov/Vampire/KIF/./antlr-2.7.1/local/include/antlr/TokenStream.hpp
+KIFParser.o: /home/voronkov/Vampire/KIF/./antlr-2.7.1/local/include/antlr/Token.hpp
+KIFParser.o: /home/voronkov/Vampire/KIF/./antlr-2.7.1/local/include/antlr/RefCount.hpp
+KIFParser.o: /home/voronkov/Vampire/KIF/./antlr-2.7.1/local/include/antlr/TokenBuffer.hpp
+KIFParser.o: /home/voronkov/Vampire/KIF/./antlr-2.7.1/local/include/antlr/CircularQueue.hpp
+KIFParser.o: KIFLexerTokenTypes.hpp
+KIFParser.o: /home/voronkov/Vampire/KIF/./antlr-2.7.1/local/include/antlr/LLkParser.hpp
+KIFParser.o: /home/voronkov/Vampire/KIF/./antlr-2.7.1/local/include/antlr/Parser.hpp
+KIFParser.o: /home/voronkov/Vampire/KIF/./antlr-2.7.1/local/include/antlr/BitSet.hpp
+KIFParser.o: /home/voronkov/Vampire/KIF/./antlr-2.7.1/local/include/antlr/RecognitionException.hpp
+KIFParser.o: /home/voronkov/Vampire/KIF/./antlr-2.7.1/local/include/antlr/ANTLRException.hpp
+KIFParser.o: /home/voronkov/Vampire/KIF/./antlr-2.7.1/local/include/antlr/ASTFactory.hpp
+KIFParser.o: /home/voronkov/Vampire/KIF/./antlr-2.7.1/local/include/antlr/AST.hpp
+KIFParser.o: /home/voronkov/Vampire/KIF/./antlr-2.7.1/local/include/antlr/ASTRefCount.hpp
+KIFParser.o: /home/voronkov/Vampire/KIF/./antlr-2.7.1/local/include/antlr/ASTArray.hpp
+KIFParser.o: /home/voronkov/Vampire/KIF/./antlr-2.7.1/local/include/antlr/ASTPair.hpp
+KIFParser.o: /home/voronkov/Vampire/KIF/./antlr-2.7.1/local/include/antlr/ParserSharedInputState.hpp
+KIFParser.o: /home/voronkov/Vampire/KIF/./antlr-2.7.1/local/include/antlr/NoViableAltException.hpp
+KIFParser.o: /home/voronkov/Vampire/KIF/./antlr-2.7.1/local/include/antlr/SemanticException.hpp
+XMLLexer.o: XMLLexer.hpp
+XMLLexer.o: /home/voronkov/Vampire/KIF/./antlr-2.7.1/local/include/antlr/config.hpp
+XMLLexer.o: /home/voronkov/Vampire/KIF/./antlr-2.7.1/local/include/antlr/CommonToken.hpp
+XMLLexer.o: /home/voronkov/Vampire/KIF/./antlr-2.7.1/local/include/antlr/Token.hpp
+XMLLexer.o: /home/voronkov/Vampire/KIF/./antlr-2.7.1/local/include/antlr/RefCount.hpp
+XMLLexer.o: /home/voronkov/Vampire/KIF/./antlr-2.7.1/local/include/antlr/InputBuffer.hpp
+XMLLexer.o: /home/voronkov/Vampire/KIF/./antlr-2.7.1/local/include/antlr/CircularQueue.hpp
+XMLLexer.o: /home/voronkov/Vampire/KIF/./antlr-2.7.1/local/include/antlr/BitSet.hpp
+XMLLexer.o: XMLLexerTokenTypes.hpp
+XMLLexer.o: /home/voronkov/Vampire/KIF/./antlr-2.7.1/local/include/antlr/CharScanner.hpp
+XMLLexer.o: /home/voronkov/Vampire/KIF/./antlr-2.7.1/local/include/antlr/TokenStream.hpp
+XMLLexer.o: /home/voronkov/Vampire/KIF/./antlr-2.7.1/local/include/antlr/RecognitionException.hpp
+XMLLexer.o: /home/voronkov/Vampire/KIF/./antlr-2.7.1/local/include/antlr/ANTLRException.hpp
+XMLLexer.o: /home/voronkov/Vampire/KIF/./antlr-2.7.1/local/include/antlr/LexerSharedInputState.hpp
+XMLLexer.o: /home/voronkov/Vampire/KIF/./antlr-2.7.1/local/include/antlr/CharBuffer.hpp
+XMLLexer.o: /home/voronkov/Vampire/KIF/./antlr-2.7.1/local/include/antlr/TokenStreamException.hpp
+XMLLexer.o: /home/voronkov/Vampire/KIF/./antlr-2.7.1/local/include/antlr/TokenStreamIOException.hpp
+XMLLexer.o: /home/voronkov/Vampire/KIF/./antlr-2.7.1/local/include/antlr/TokenStreamRecognitionException.hpp
+XMLLexer.o: /home/voronkov/Vampire/KIF/./antlr-2.7.1/local/include/antlr/CharStreamException.hpp
+XMLLexer.o: /home/voronkov/Vampire/KIF/./antlr-2.7.1/local/include/antlr/CharStreamIOException.hpp
+XMLLexer.o: /home/voronkov/Vampire/KIF/./antlr-2.7.1/local/include/antlr/NoViableAltForCharException.hpp
+XMLParser.o: XMLParser.hpp
+XMLParser.o: /home/voronkov/Vampire/KIF/./antlr-2.7.1/local/include/antlr/config.hpp
+XMLParser.o: /home/voronkov/Vampire/KIF/./antlr-2.7.1/local/include/antlr/TokenStream.hpp
+XMLParser.o: /home/voronkov/Vampire/KIF/./antlr-2.7.1/local/include/antlr/Token.hpp
+XMLParser.o: /home/voronkov/Vampire/KIF/./antlr-2.7.1/local/include/antlr/RefCount.hpp
+XMLParser.o: /home/voronkov/Vampire/KIF/./antlr-2.7.1/local/include/antlr/TokenBuffer.hpp
+XMLParser.o: /home/voronkov/Vampire/KIF/./antlr-2.7.1/local/include/antlr/CircularQueue.hpp
+XMLParser.o: XMLLexerTokenTypes.hpp
+XMLParser.o: /home/voronkov/Vampire/KIF/./antlr-2.7.1/local/include/antlr/LLkParser.hpp
+XMLParser.o: /home/voronkov/Vampire/KIF/./antlr-2.7.1/local/include/antlr/Parser.hpp
+XMLParser.o: /home/voronkov/Vampire/KIF/./antlr-2.7.1/local/include/antlr/BitSet.hpp
+XMLParser.o: /home/voronkov/Vampire/KIF/./antlr-2.7.1/local/include/antlr/RecognitionException.hpp
+XMLParser.o: /home/voronkov/Vampire/KIF/./antlr-2.7.1/local/include/antlr/ANTLRException.hpp
+XMLParser.o: /home/voronkov/Vampire/KIF/./antlr-2.7.1/local/include/antlr/ASTFactory.hpp
+XMLParser.o: /home/voronkov/Vampire/KIF/./antlr-2.7.1/local/include/antlr/AST.hpp
+XMLParser.o: /home/voronkov/Vampire/KIF/./antlr-2.7.1/local/include/antlr/ASTRefCount.hpp
+XMLParser.o: /home/voronkov/Vampire/KIF/./antlr-2.7.1/local/include/antlr/ASTArray.hpp
+XMLParser.o: /home/voronkov/Vampire/KIF/./antlr-2.7.1/local/include/antlr/ASTPair.hpp
+XMLParser.o: /home/voronkov/Vampire/KIF/./antlr-2.7.1/local/include/antlr/ParserSharedInputState.hpp
+XMLParser.o: /home/voronkov/Vampire/KIF/./antlr-2.7.1/local/include/antlr/NoViableAltException.hpp
+XMLParser.o: /home/voronkov/Vampire/KIF/./antlr-2.7.1/local/include/antlr/SemanticException.hpp
+XMLParser.o: KIFParser.hpp KIFLexerTokenTypes.hpp
+XMLParser.o: /home/voronkov/Vampire/KIF/./antlr-2.7.1/local/include/antlr/TokenStreamSelector.hpp

@@ -1,0 +1,85 @@
+   Exhibit A: Statement of Work
+
+   Tasks
+
+    1. Customer grants Contractor permission to mention the Customer as a
+       customer on the Contractor web page and to ask for such permission
+       from the users of Customer products (however, the users will not be
+       obliged to give permission).
+
+    2. Contractor will create a socket interface for Vampire that supports
+       the XML spec provided as Exhibit C. Contractor should note that the
+       contents of some of the markup is SUO-KIF.
+
+    3. Contractor will implement or integrate a parser to allow SUO-KIF
+       statements to be used by Vampire. Customer will supply to Contractor
+       an existing Java parser for SUO-KIF for evaluation. Contractor will
+       conform to the XML spec (item #2) in returning a message signaling
+       syntax errors, if encountered, but will not further specify the syntax
+       error. Statements with syntax errors will be ignored.
+
+    4. Contractor will conform to the XML spec (item #2) in part by making
+       Vampire return bindings for variables (element “var” in the XML spec),
+       along with proofs showing how those values are supported by logical
+       statements supplied to Vampire.
+
+    5. Contractor will implement built-in functions for arithmetic.
+       Contractor will do very simple evaluation of terms and literals. For
+       example, Contractor will be able to reduce 3 > 5 to false but unable
+       to check that 3 > c and c > 5 is inconsistent, unless we get the
+       transitivity axiom from SUO or the input ontology. It should be noted
+       however that the Customer's SUO ontology will in fact provide that
+       transitivity axiom.
+
+    6. Contractor will implement a “reactive mode” for Vampire. This will
+       allow a user to assert a set of statements, ask a query, assert
+       additional statements and be able to ask additional queries without
+       having to reload the first set of statements.
+
+    7. Contractor will ensure good performance of a set of test questions, a
+       table of contents for which is listed as Exhibit D. Good performance
+       shall be considered less the one second response time, when the test
+       question contents are loaded along with the contents of version 1.27
+       of the Suggested Upper Merged Ontology. Up to 10 questions may have up
+       to a ten second response time and still meet this requirement. Each
+       test includes some "meta-predicates" that inform test suite. (note
+       "...") is just the name of the test. (query (...)) is the contents of
+       the query to test. (answer ...) is the set of expected correct
+       answers. (end_of_file) is an end of file marker. All the rest are
+       expressions in a version of KIF (see
+       [1]http://suo.ieee.org/suo-kif.html )
+
+   Schedule
+
+   The Contractor estimates the following task durations:
+
+   parser: 2 days
+
+   output: 3 days
+
+   reactive mode: 2 days
+
+   arithmetic - 3-4 weeks
+
+   answer variables: 1 week
+
+   Payment and additional terms
+
+    1. Customer will provide a 10% bonus if source code meeting the entire
+       statement of work is delivered within six weeks from the date the
+       contract is signed.
+
+    2. The total payment for this work shall be 4000 (four thousand) British
+       pounds with an exchange rate to US dollars fixed as of the date of
+       signing of this contract.
+
+    3. All source code for the project shall be delivered under the Lesser
+       GNU Public License (a copy of which is included as Exhibit B).
+
+    4. The statement of work shall not be complete until the Customer has
+       verified that the Statement of Work has been met.
+
+References
+
+   Visible links
+   1. http://suo.ieee.org/suo-kif.html

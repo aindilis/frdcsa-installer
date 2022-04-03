@@ -1,0 +1,507 @@
+                               Table of Contents
+
+                         Consulting Services Agreement
+
+   AGREEMENT
+
+   THIS AGREEMENT (“Agreement”) is made by and between TEKNOWLEDGE
+   CORPORATION (“Customer”), a Delaware corporation with its principal place
+   of business at 1810 Embarcadero Road, Palo Alto, CA 94303, and Manchester
+
+   Informatics Ltd (“Contractor”), with its principal place of business at 
+   [1][Author ID1: at Tue Feb 12 11:23:00 2002 ]Manchester Incubator
+   Building, Grafton Street, Manchester M13 9XX UK[2][Author ID1: at Tue Feb
+   12 11:24:00 2002 ].
+
+    1. 
+
+
+
+    2. TERMS AND PERFORMANCE
+
+         1. Services and Payment.
+
+   This is an agreement for Contractor to provide development and/or
+   integration services (“Services”) for Customer for compensation in
+   accordance with the Statement of Work, attached hereto as Exhibit A.
+   Contractor will bill customer [3][Author ID1: at Tue Feb 12 11:23:00 2002
+   ]Customer [4][Author ID1: at Tue Feb 12 11:23:00 2002 ]after completion of
+   tasks specified in the Statement of Work. Customer agrees that payments
+   are due within thirty (30) days of receipt[5][Author ID1: at Tue Feb 12
+   11:30:00 2002 ]date of invoice[6][Author ID1: at Tue Feb 12 11:30:00 2002
+   ]. Customer shall pay Customer [7][Author ID1: at Tue Feb 12 11:22:00 2002
+   ]Contractor [8][Author ID1: at Tue Feb 12 11:22:00 2002 ]interest on late
+   payments at the rate of 18% per ann[9][Author ID2: at Tue Feb 12 14:43:00
+   2002 ]um. If any payment is not made as required, Customer may give notice
+   of failure to pay. The failure to pay, if not cured within thirty (30)
+   days after notice, shall entitle Contractor to terminate this Agreement in
+   accordance with the provisions on Termination.
+
+     2. Changes in Statement of Work.
+
+   Either Contractor or Customer may propose changes or additions to the
+   Exhibit A, Statement of Work. Contractor and Customer must agree, in
+   writing, to the changes prior to any such modifications, and to the
+   effect, if any, on payments due under this Agreement. Customer may not
+   require work or features not set forth in the Statement of Work unless
+   agreed to in writing. Contractor will not be compensated, other than as
+   stated in the Agreement, unless such additional payments are agreed to in
+   advance in writing.
+
+     3. Delivery and Acceptance of Services.
+
+   Contractor shall deliver and perform various Services at the times and in
+   the manner specified in the Statement of Work. Acceptance of Services is
+   defined in the Statement of Work.
+
+     4. Subcontractors.
+
+   Contractor may retain third parties to provide Services. All such third
+   parties shall execute, before providing such services, an agreement, which
+   shall include a promise to maintain confidentiality as required by this
+   Agreement and which includes an assignment to Contractor of all rights in
+   such work so that such rights may be licensed to Customer as required by
+   this Agreement.
+
+     5. Term and Termination.
+
+   The term of this Agreement shall commence on the Effective Date, and shall
+   continue until all requirements of this Agreement are met, unless sooner
+   terminated in accordance with the provisions set forth in this Agreement.
+   Either party may terminate this Agreement:
+
+   i. In accordance with provisions stated in this Agreement that provide for
+      termination,
+
+   ii. In the event that the other party ceases business operations or is in
+       any bankruptcy or state insolvency or receivership proceeding not
+       dismissed in thirty (30) days or assigns its assets for the benefit of
+       creditors, or
+
+   iii. In the event of any material breach by the other party which is not
+        cured within thirty (30) days after notice.
+
+   Upon any termination of this Agreement by any party, all provisions of the
+   section of this Agreement entitled Confidentiality shall remain in effect.
+
+     1. Maintenance and Support,
+
+   After Customer's acceptance of the Services provided pursuant to the
+   Statement of Work, Contractor shall provide up to[10][Author ID3: at Mon
+   Mar 4 08:40:00 2002 ] [] [11][Author ID3: at Mon Mar 4 08:40:00 2002 ]of
+   [12][Author ID3: at Mon Mar 4 08:40:00 2002 ]free [13][Author ID1: at Tue
+   Feb 12 11:32:00 2002 ]  [14][Author ID1: at Tue Feb 12 11:32:00 2002
+   ][15][Author ID3: at Mon Mar 4 08:40:00 2002 ].[16][Author ID3: at Mon Mar
+   4 08:40:00 2002 ]t[17][Author ID3: at Mon Mar 4 08:40:00 2002
+   ]T[18][Author ID3: at Mon Mar 4 08:40:00 2002 ]elephone, fax and email
+   support for any software developed under this Agreement  [19][Author ID1:
+   at Tue Feb 12 11:33:00 2002 ]upon fair and reasonable terms to be agreed
+   between Customer and Contractor[20][Author ID1: at Tue Feb 12 11:33:00
+   2002 ][21][Author ID3: at Mon Mar 4 08:40:00 2002 ]. Contractor will
+   provide such other Maintenance and Support in the manner specified in the
+   Statement of Work. If no Maintenance and Support are provided in the
+   Statement of Work, then s[22][Author ID3: at Mon Mar 4 08:40:00 2002 ].
+   S[23][Author ID3: at Mon Mar 4 08:40:00 2002 ]upport shall be on a time
+   and materials basis after the Acceptance of the Application Software.
+
+    3. CONFIDENTIALITY AND INTELLECTUAL PROPERTY
+
+         1. Confidentiality.
+
+   Each party acknowledges that it will receive Proprietary Information, as
+   defined hereunder, of the other party relating to technical, marketing,
+   product, and/or business affairs. Each party agrees that all Proprietary
+   Information of the other party shall be held in strict confidence and
+   shall not be disclosed or used without express written consent of the
+   other party, except as may be required by law.
+
+     2. Confidential Information.
+
+   Confidential Information shall mean information or materials delivered by
+   either party (“Disseminating Party”) to the other party (“Receiving
+   Party”) The Receiving Party shall not disclose, disseminate, transfer or
+   otherwise make available any Confidential Information, other than to its
+   employees and consultants with a need to know and shall not copy or use
+   Confidential Information except in accordance with this Agreement.
+   Confidential Information shall include all customer information, data,
+   contract lists, sources of resources, techniques, processes, formulae,
+   work in progress, financial information, and agreements provided by either
+   party to the other party. Confidential Information shall not include
+   information or material of any nature (a) which was lawfully in the
+   possession of either party, (b) which was, or at any time becomes,
+   available in the public domain other than through a violation of this
+   Agreement, (c) which is furnished to either party by a third party having
+   a right to do so, (d) which is acquired by a party without access to the
+   other party's Confidential Information, (e) is contained in a printed
+   publication prior to the date of this Agreement, or (f) is independently
+   developed by the Receiving Party without reference to the Information
+   disclosed by the Disseminating Party.
+
+   Unless otherwise instructed by the Disseminating Party and confirmed in
+   writing, within fifteen (15) days following the termination of this
+   agreement pursuant to the completion of Services under the Statement of
+   Work, or in accordance with the Termination provision hereinabove, the
+   Receiving Party shall deliver to the Disseminating Party the original and
+   all copies of written Confidential Information supplied by the
+   Disseminating Party.
+
+     3. Proprietary Information.
+
+   Customer Proprietary Information shall mean all: (i) Confidential
+   Information defined above; and (ii) all rights in any patents, copyrights,
+   or trademarks protecting any and all information, data, programs,
+   materials, or other information of Contractor provided to Customer for
+   purposes of providing the Services herein specified. Customer Proprietary
+   Information shall be the sole and exclusive property of Customer, free
+   from any claim on the part of Contractor. Except as granted by this
+   Agreement, Contractor shall have no interest in, and no right to use,
+   Customer Proprietary Information.
+
+   Customer hereby grants to Contractor the right to use Customer Proprietary
+   Information solely for the performance of Services hereunder and subject
+   to the confidentiality obligations of Contractor. Contractor agrees that
+   it shall not make copies of or use the Customer Proprietary Information
+   except for purposes permitted by this Agreement. Upon completion of
+   performance of Services under the Statement of Work, Contractor's right to
+   use Customer Proprietary Information terminates except for purposes of
+   testing and the provision of Maintenance.
+
+   Contractor's Proprietary Information shall mean all: (i) Confidential
+   Information defined above; and (ii) all rights in any patents, copyrights,
+   or trademarks protecting any and all information, data, programs,
+   materials, or other information of Contractor provided to Customer in
+   connection with the performance of the Services. Contractor Proprietary
+   Information shall be the sole and exclusive property of Contractor, free
+   from any claim on the part of Customer, and Customer shall have no right
+   interest in and no right to use Contractor Proprietary Information except
+   as provided by this Agreement and other written agreements between
+   Customer and Contractor, if any. Customer shall not disclose any
+   Contractor Proprietary Information other than to its employees and
+   consultants with a need to know, and shall not copy or use Contractor
+   Proprietary Information except for the purposes contemplated by this
+   Agreement, or subsequently agreed to in writing.
+
+     4. License of Intellectual Property.
+
+   Contractor shall not unreasonably refuse to [24][Author ID1: at Tue Feb 12
+   11:36:00 2002 ][25][Author ID3: at Mon Mar 4 08:41:00 2002
+   ]grant[26][Author ID3: at Mon Mar 4 08:41:00 2002 ]s[27][Author ID1: at
+   Tue Feb 12 11:36:00 2002 ] to Customer a [28][Author ID3: at Mon Mar 4
+   08:41:00 2002 ]perpetual, [29][Author ID1: at Tue Feb 12 11:37:00 2002
+   ]non-exclusive, [30][Author ID3: at Mon Mar 4 08:41:00 2002 ]world-wide,
+   royalty-free [31][Author ID1: at Tue Feb 12 11:37:00 2002 ]license
+   [32][Author ID3: at Mon Mar 4 08:41:00 2002 ]upon fair and reasonable
+   commercial terms to be negotiated between Contractor and Customer
+   [33][Author ID1: at Tue Feb 12 11:37:00 2002 ][34][Author ID3: at Mon Mar
+   4 08:41:00 2002 ]to use any software and/or other materials (all of which
+   may be Contractor Proprietary Information, as defined herein), including
+   source code, which may be delivered by Contractor to Customer in
+   connection with the Statement of Work.[35][Author ID3: at Mon Mar 4
+   08:41:00 2002 ] shall deliver all code, including source code, for all
+   software developed in accordance with the statement of work, under the
+   [36][Author ID3: at Mon Mar 4 08:41:00 2002 ]perpetual, non-exclusive,
+   world wide and royalty free [37][Author ID3: at Mon Mar 4 12:36:00 2002
+   ]Lesser GNU [38][Author ID3: at Mon Mar 4 08:41:00 2002 ]General
+   [39][Author ID3: at Mon Mar 4 12:37:00 2002 ]Public License[40][Author
+   ID3: at Mon Mar 4 08:41:00 2002 ] (a copy of which is included as Exhibit
+   B)[41][Author ID3: at Mon Mar 4 08:43:00 2002 ].[42][Author ID3: at Mon
+   Mar 4 08:41:00 2002 ]
+
+   To the extent licenses granted hereunder conflict with separate agreements
+   which grant licenses of Contractor Proprietary Information, such separate
+   agreements shall govern.
+
+     5. Copyright and Patent Protection.
+
+   Customer expressly agrees to include and perpetuate all appropriate
+   copyright and trade secret notices on all copies of Contractor Proprietary
+   Information.
+
+   Customer and Contractor agree to assist the other party to obtain, for the
+   other party's benefit, patent, trade secret and copyright protection for
+   the [[43][Author ID1: at Tue Feb 12 11:39:00 2002 ][44][Author ID3: at Mon
+   Mar 4 08:41:00 2002 ]Deliverables NOT DEFINED][45][Author ID1: at Tue Feb
+   12 11:39:00 2002 ][46][Author ID3: at Mon Mar 4 08:41:00 2002 ]; provided,
+   however, such assistance does not conflict with either party's rights and
+   provided the party seeking any such protection has all necessary documents
+   prepared at its expense and will prosecute and maintain any such rights at
+   its expense.
+
+    4. GENERAL PROVISIONS
+
+         1. Disclaimer of Warranties.
+
+   Contractor and Customer agree that due to the nature of complex computer
+   software which may be delivered in connection with the Statement of Work,
+   Contractor cannot warrant that such software will be completely free of
+   all defects and errors. Accordingly, any such software is transferred and
+   delivered to Customer “AS IS.” ALL WARRANTIES EXPRESS OR IMPLIED,
+   INCLUDING IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
+   PURPOSE AND NON-INFRINGEMENT, ARE DISCLAIMED.
+
+   CONTRACTOR'S LIABILITY TO THE CUSTOMER FOR ANY AND ALL CLAIMS IN ANY WAY
+   RELATED TO THE PROGRAM OR THIS AGREEMENT SHALL NOT EXCEED THE TOTAL OF
+   PAYMENTS MADE TO CONTRACTOR. EXCLUDING, HOWEVER, ANY BREACH BY CONTRACTOR
+   OF ITS DUTY TO PERSERVE CUSTOMER'S CONFIDENTIAL AND PROPRIETARY
+   INFORMATION UNDER THIS AGREEMENT WHICH SHALL NOT BE LIMITED IN ANY FORM OR
+   FASHION BY THE TERMS OF THIS AGREEMENT.
+
+     2. Jurisdiction & Venue Clause
+
+   This Agreement shall be governed reciprocally [47][Author ID3: at Mon Mar
+   4 11:56:00 2002 ]by the laws of England [48][Author ID1: at Tue Feb 12
+   11:42:00 2002 ]and California, US [49][Author ID3: at Mon Mar 4 11:57:00
+   2002 ]and the parties hereby submit to the non-exclusive jurisdiction of
+   th[50][Author ID1: at Tue Feb 12 11:42:00 2002 ]e English[51][Author ID1:
+   at Tue Feb 12 11:42:00 2002 ][52][Author ID3: at Mon Mar 4 11:57:00 2002
+   ]ose[53][Author ID3: at Mon Mar 4 11:57:00 2002 ] Courts[54][Author ID1:
+   at Tue Feb 12 11:42:00 2002 ]. If either party is aggreived, each agrees
+   to find remedy in the jurisdiction of the other party.[55][Author ID3: at
+   Mon Mar 4 11:57:00 2002 ].[56][Author ID1: at Tue Feb 12 11:42:00 2002
+   ]and interpreted in accordance with the laws of the State of California.
+   Any action or proceeding brought to enforce the terms of this Agreement or
+   to adjudicate any dispute arising hereunder shall be brought in the
+   California Superior Court in and for the County of Santa Clara. Each of
+   the parties hereby submits itself to the exclusive jurisdiction and venue
+   of such court for purposes of any such action and agrees that service of
+   process may be effected by delivery of the summons and complaint to the
+   addresses specified in the notices section above[57][Author ID1: at Tue
+   Feb 12 11:41:00 2002 ]  [58][Author ID1: at Tue Feb 12 11:42:00 2002
+   ].[59][Author ID1: at Tue Feb 12 11:42:00 2002 ]
+
+     3. Jury Trial Waiver[60][Author ID0: at Thu Nov 30 00:00:00 1899 ]
+
+   CUSTOMER AND CONTRACTOR CORPORATION ACKNOWLEDGE THAT THE RIGHT TO TRIAL BY
+   JURY IS A CONSTITUTIONAL ONE, BUT THAT IT MAY BE WAIVED. EACH PARTY, AFTER
+   CONSULTING (OR AFTER HAVING THE OPPORTUNITY TO CONSULT) WITH COUNSEL OF
+   THEIR CHOICE, KNOWINGLY AND VOLUNTARILY, AND FOR THEIR MUTUAL BENEFIT,
+   WAIVES ANY RIGHT TO TRIAL BY JURY IN THE EVENT OF LITIGATION REGARDING THE
+   PERFORMANCE OR ENFORCEMENT OF, OR IN ANY WAY RELATED TO, THIS AGREEMENT.
+   [61][Author ID1: at Tue Feb 12 11:43:00 2002 ]
+
+     4. Assignments.
+
+   This Agreement may not be assigned by either party in whole or in part
+   without the written consent of the other party which shall not be
+   unreasonably withheld, except pursuant to a transfer of all or
+   substantially all of Customer's business and assets, whether by merger of
+   sale of assets, sale or stock or otherwise. Except as provided above with
+   respect to the assignment of this Agreement to Customer, the assignment of
+   this Agreement by either party shall not discharge said party from its
+   obligations, but shall make said party's assignee an additional obligor
+   under this Agreement. Any assignment by either party will be invalid
+   unless the assignee agrees in a writing to be bound by and to perform all
+   obligations and terms of this Agreement, and a copy of such assignment is
+   delivered to the other party hereto.
+
+     5. Independent Contractors:
+
+   The Parties to this Agreement are independent contractors and neither
+   Party is an agent, representative, or partner of the other Party. Neither
+   Party shall have any right, power or authority to enter into any agreement
+   of or on behalf of, or incur any obligation or liability of, or to
+   otherwise bind, the other Party. This Agreement shall not be interpreted
+   or construed to create an association, agency, joint venture or
+   partnership between the parties or to impose any liability attributable to
+   such a relationship upon either Party.
+
+     6. Miscellaneous.
+
+   Any breach of the provisions pertaining to Proprietary Information
+   hereinabove will cause irreparable harm to Contractor for which damages
+   would not be an adequate remedy, and, therefore, Contractor will be
+   entitled to injunctive relief with respect thereto in addition to any
+   other remedies. [62][Author ID1: at Tue Feb 12 11:45:00 2002 ]The failure
+   of either party to enforce its rights under this Agreement at any time for
+   any period shall not be construed as a waiver of such rights. No changes
+   or modifications or waivers to this Agreement will be effective unless in
+   writing and signed by an authorised signatory of [63][Author ID1: at Tue
+   Feb 12 11:45:00 2002 ]both parties. In the event that any provision of
+   this Agreement shall be determined to be illegal or unenforceable, that
+   provision will be limited or eliminated to the minimum extent necessary so
+   that this Agreement shall otherwise remain in full force and effect and
+   enforceable. This Agreement shall be governed by and construed in
+   accordance with the laws of the State of California without regard to the
+   conflicts of laws provisions thereof. In any action or proceeding to
+   enforce rights under this Agreement, the prevailing party will be entitled
+   to recover costs and attorneys fees. [64][Author ID1: at Tue Feb 12
+   11:46:00 2002 ]Headings herein are for convenience of reference only and
+   shall in no way affect interpretation of the Agreement.
+
+     7. Taxes.
+
+   All taxes and charges of any kind, imposed by the Federal, State or local
+   governments with respect to the services or items covered by this
+   Agreement, or the sale or use thereof, or measured by the gross receipts
+   applicable to this Agreement, shall be paid by Customer, except that
+   Customer shall not be responsible for income taxes payable by Contractor.
+   If taxes are paid by Contractor, they shall be reimbursed by Customer.
+
+     8. Entire Agreement.
+
+   This Agreement, including the documents and other writings referred to
+   herein or delivered pursuant hereto, contains the entire agreement and
+   understanding of the parties with respect to its subject matter. This
+   Agreement supersedes all prior arrangements and understandings between the
+   parties, both written or oral with repsect to its subject matter.
+
+      1. 
+
+
+
+
+
+     9. Notices.
+
+   All notices or other communications hereunder shall be in writing and
+   shall be deemed given if delivered personally, mailed by prepaid
+   registered or certified mail (return receipt requested), or sent by
+   telecopy with reciept confirmed by recipient, addresed as follows:
+
+   +------------------------------------------------------------+
+   |       Customer Contact       ||    Teknowledge Contact     |
+   |------------------------------++----------------------------|
+   |------------------------------++----------------------------|
+   |Graham Riley[65][Author ID4:  ||Benedict O'Mahoney          |
+   |at Wed Feb 13 13:10:00 2002 ] ||                            |
+   |------------------------------++----------------------------|
+   |Customer Name                 ||Teknowledge Name            |
+   |------------------------------++----------------------------|
+   |+44 161 275 5724[66][Author   ||                            |
+   |ID4: at Wed Feb 13 13:10:00   ||(650) 424-0500              |
+   |2002 ]                        ||                            |
+   |------------------------------++----------------------------|
+   |Phone number                  ||Phone number                |
+   |------------------------------++----------------------------|
+   |+44 161 275 6204[67][Author   ||                            |
+   |ID4: at Wed Feb 13 13:11:00   ||(650) 493-2645              |
+   |2002 ]                        ||                            |
+   |------------------------------++----------------------------|
+   |Fax number                    ||Fax number                  |
+   |------------------------------++----------------------------|
+   |Kilburn Building, Oxford      ||                            |
+   |Road[68][Author ID4: at Wed   ||1810 Embarcadero Road       |
+   |Feb 13 13:11:00 2002 ]        ||                            |
+   |------------------------------++----------------------------|
+   |Address 1                     ||Address 1                   |
+   |------------------------------++----------------------------|
+   |Manchester, M13 9PL,          ||                            |
+   |U.K.[69][Author ID4: at Wed   ||Palo Alto, CA 94303         |
+   |Feb 13 13:11:00 2002 ]        ||                            |
+   |------------------------------++----------------------------|
+   |Address 2                     ||Address 2                   |
+   |------------------------------++----------------------------|
+   |md@maninv.co.uk[70][Author    ||                            |
+   |ID4: at Wed Feb 13 13:12:00   ||[71]bomahone@teknowledge.com|
+   |2002 ]                        ||                            |
+   |------------------------------++----------------------------|
+   |E-mail address                ||E-mail address              |
+   +------------------------------------------------------------+
+
+   IN WITNESS WHEREOF, the parties have caused this Agreement to be executed
+   by their duly authorized representatives and shall be effective as of
+   ________________.
+
+   CUSTOMER TEKNOWLEDGE CORPORATION
+
+   By:  By:
+
+   Name:  Name:
+
+   Title:  Title:
+
+   Date:  Date:
+
+                            TEKNOWLEDGE CORPORATION
+
+   [72][Author ID5: at Wed May 3 18:03:00 2000 ]
+
+   7
+
+   2 01/26/2000
+
+   15
+
+   Teknowledge Corporation
+
+   Consulting Services Agreement
+
+   Page 2
+
+                                       1
+
+References
+
+   Visible links
+   1. file:///tmp/wv-YTGM5f#author1
+   2. file:///tmp/wv-YTGM5f#author1
+   3. file:///tmp/wv-YTGM5f#author1
+   4. file:///tmp/wv-YTGM5f#author1
+   5. file:///tmp/wv-YTGM5f#author1
+   6. file:///tmp/wv-YTGM5f#author1
+   7. file:///tmp/wv-YTGM5f#author1
+   8. file:///tmp/wv-YTGM5f#author1
+   9. file:///tmp/wv-YTGM5f#author2
+  10. file:///tmp/wv-YTGM5f#author3
+  11. file:///tmp/wv-YTGM5f#author3
+  12. file:///tmp/wv-YTGM5f#author3
+  13. file:///tmp/wv-YTGM5f#author1
+  14. file:///tmp/wv-YTGM5f#author1
+  15. file:///tmp/wv-YTGM5f#author3
+  16. file:///tmp/wv-YTGM5f#author3
+  17. file:///tmp/wv-YTGM5f#author3
+  18. file:///tmp/wv-YTGM5f#author3
+  19. file:///tmp/wv-YTGM5f#author1
+  20. file:///tmp/wv-YTGM5f#author1
+  21. file:///tmp/wv-YTGM5f#author3
+  22. file:///tmp/wv-YTGM5f#author3
+  23. file:///tmp/wv-YTGM5f#author3
+  24. file:///tmp/wv-YTGM5f#author1
+  25. file:///tmp/wv-YTGM5f#author3
+  26. file:///tmp/wv-YTGM5f#author3
+  27. file:///tmp/wv-YTGM5f#author1
+  28. file:///tmp/wv-YTGM5f#author3
+  29. file:///tmp/wv-YTGM5f#author1
+  30. file:///tmp/wv-YTGM5f#author3
+  31. file:///tmp/wv-YTGM5f#author1
+  32. file:///tmp/wv-YTGM5f#author3
+  33. file:///tmp/wv-YTGM5f#author1
+  34. file:///tmp/wv-YTGM5f#author3
+  35. file:///tmp/wv-YTGM5f#author3
+  36. file:///tmp/wv-YTGM5f#author3
+  37. file:///tmp/wv-YTGM5f#author3
+  38. file:///tmp/wv-YTGM5f#author3
+  39. file:///tmp/wv-YTGM5f#author3
+  40. file:///tmp/wv-YTGM5f#author3
+  41. file:///tmp/wv-YTGM5f#author3
+  42. file:///tmp/wv-YTGM5f#author3
+  43. file:///tmp/wv-YTGM5f#author1
+  44. file:///tmp/wv-YTGM5f#author3
+  45. file:///tmp/wv-YTGM5f#author1
+  46. file:///tmp/wv-YTGM5f#author3
+  47. file:///tmp/wv-YTGM5f#author3
+  48. file:///tmp/wv-YTGM5f#author1
+  49. file:///tmp/wv-YTGM5f#author3
+  50. file:///tmp/wv-YTGM5f#author1
+  51. file:///tmp/wv-YTGM5f#author1
+  52. file:///tmp/wv-YTGM5f#author3
+  53. file:///tmp/wv-YTGM5f#author3
+  54. file:///tmp/wv-YTGM5f#author1
+  55. file:///tmp/wv-YTGM5f#author3
+  56. file:///tmp/wv-YTGM5f#author1
+  57. file:///tmp/wv-YTGM5f#author1
+  58. file:///tmp/wv-YTGM5f#author1
+  59. file:///tmp/wv-YTGM5f#author1
+  60. file:///tmp/wv-YTGM5f#author0
+  61. file:///tmp/wv-YTGM5f#author1
+  62. file:///tmp/wv-YTGM5f#author1
+  63. file:///tmp/wv-YTGM5f#author1
+  64. file:///tmp/wv-YTGM5f#author1
+  65. file:///tmp/wv-YTGM5f#author4
+  66. file:///tmp/wv-YTGM5f#author4
+  67. file:///tmp/wv-YTGM5f#author4
+  68. file:///tmp/wv-YTGM5f#author4
+  69. file:///tmp/wv-YTGM5f#author4
+  70. file:///tmp/wv-YTGM5f#author4
+  71. mailto:bomahone@teknowledge.com
+  72. file:///tmp/wv-YTGM5f#author5

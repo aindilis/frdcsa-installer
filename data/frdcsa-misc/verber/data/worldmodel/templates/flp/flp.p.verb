@@ -1,0 +1,57 @@
+(define (problem flp1)
+
+ (:domain flp)
+
+ (:includes)
+
+ (:timing
+  (start-date TZID=America/Chicago:20190314T090000)
+  (units 0000-00-00_01:00:00)
+  )
+
+ (:objects
+  person1 person2 - person
+  townhome - residence
+  person1sHypotheticalCar person2sCar - vehicle
+  bluetoothKeyboard - tool
+  auroraIllinois chicagoIllinois - physicalLocation
+  driving walking -  modeOfTransportation
+  )
+
+ (:init
+  (travel-path driving chicagoIllinois auroraIllinois)
+  (= (travel-distance driving chicagoIllinois auroraIllinois) 70)
+  (= (travel-duration driving chicagoIllinois auroraIllinois) 1)
+
+  (travel-path driving auroraIllinois townhome)
+  (= (travel-distance driving auroraIllinois townhome) 5)
+  (= (travel-duration driving auroraIllinois townhome) 0.15)
+
+  (location person1 townhome)
+  (location bluetoothKeyboard townhome)
+  (location person2 chicagoIllinois)
+  (location person2sCar chicagoIllinois)
+  (location person1sHypotheticalCar auroraIllinois)
+
+  (autonomous person2)
+  (autonomous person1)
+
+  (mobile person2sCar)
+  (mobile person1sHypotheticalCar)
+  (mobile bluetoothKeyboard)
+  )
+
+ (:goal 
+  (and
+   ;; (location person2 auroraIllinois)
+   (directly-holding person2 bluetoothKeyboard)
+   ;; (directly-holding person1 bluetoothKeyboard)
+   ;; (contains person1sHypotheticalCar bluetoothKeyboard)
+   ;; (contains person2sCar bluetoothKeyboard)
+   ;; (location person2sCar auroraIllinois)
+   )
+  )
+
+ (:metric minimize (total-time)) 
+
+ )

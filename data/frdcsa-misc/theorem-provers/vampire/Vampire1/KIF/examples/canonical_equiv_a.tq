@@ -1,0 +1,4 @@
+(note  "Canonical Test:  All x [  A(x) <=> B(x) ]")
+
+(forall (?X) (equiv (Pred1 ?X) (Pred2 ?X)))
+

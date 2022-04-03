@@ -1,0 +1,3 @@
+symbol_weight(divide,0).
+symbol_weight(multiply,0).
+symbol_weight(inverse,0).

@@ -1,0 +1,894 @@
+%--------------------------------------------------------------------------
+% File     : NLP251-1 : TPTP v2.4.1. Released v2.4.0.
+% Domain   : Natural Language Processing
+% Problem  : Vincent believes that every man smokes, problem 32
+% Version  : [Bos00b] axioms.
+% English  : Eliminating non-informative interpretations in the statement
+%            "Vincent believes that every man smokes. Jules is a man. 
+%            Vincent believes that jules smokes."
+
+% Refs     : [Bos00a] Bos (2000), DORIS: Discourse Oriented Representation a
+%            [Bos00b] Bos (2000), Applied Theorem Proving - Natural Language
+% Source   : [TPTP]
+% Names    : 
+
+% Status   : unsatisfiable
+% Rating   : 0.40 v2.4.0
+% Syntax   : Number of clauses    :  174 (   0 non-Horn;  19 unit; 170 RR)
+%            Number of literals   :  526 (  85 equality)
+%            Maximal clause size  :   41 (   3 average)
+%            Number of predicates :   37 (   0 propositional; 1-4 arity)
+%            Number of functors   :   10 (   8 constant; 0-1 arity)
+%            Number of variables  :  477 (   8 singleton)
+%            Maximal term depth   :    2 (   1 average)
+
+% Comments : Created from NLP251+1.p using FLOTTER
+%--------------------------------------------------------------------------
+%----Include Reflexivity, symmetry and transitivity, of equality
+include('Axioms/EQU001-0.ax').
+%--------------------------------------------------------------------------
+input_clause(abstraction_substitution_1,axiom,
+    [--equal(A,B),
+     --abstraction(A,C),
+     ++abstraction(B,C)]).
+
+input_clause(abstraction_substitution_2,axiom,
+    [--equal(A,B),
+     --abstraction(C,A),
+     ++abstraction(C,B)]).
+
+input_clause(accessible_world_substitution_1,axiom,
+    [--equal(A,B),
+     --accessible_world(A,C),
+     ++accessible_world(B,C)]).
+
+input_clause(accessible_world_substitution_2,axiom,
+    [--equal(A,B),
+     --accessible_world(C,A),
+     ++accessible_world(C,B)]).
+
+input_clause(actual_world_substitution_1,axiom,
+    [--equal(A,B),
+     --actual_world(A),
+     ++actual_world(B)]).
+
+input_clause(agent_substitution_1,axiom,
+    [--equal(A,B),
+     --agent(A,C,D),
+     ++agent(B,C,D)]).
+
+input_clause(agent_substitution_2,axiom,
+    [--equal(A,B),
+     --agent(C,A,D),
+     ++agent(C,B,D)]).
+
+input_clause(agent_substitution_3,axiom,
+    [--equal(A,B),
+     --agent(C,D,A),
+     ++agent(C,D,B)]).
+
+input_clause(animate_substitution_1,axiom,
+    [--equal(A,B),
+     --animate(A,C),
+     ++animate(B,C)]).
+
+input_clause(animate_substitution_2,axiom,
+    [--equal(A,B),
+     --animate(C,A),
+     ++animate(C,B)]).
+
+input_clause(be_substitution_1,axiom,
+    [--equal(A,B),
+     --be(A,C,D,E),
+     ++be(B,C,D,E)]).
+
+input_clause(be_substitution_2,axiom,
+    [--equal(A,B),
+     --be(C,A,D,E),
+     ++be(C,B,D,E)]).
+
+input_clause(be_substitution_3,axiom,
+    [--equal(A,B),
+     --be(C,D,A,E),
+     ++be(C,D,B,E)]).
+
+input_clause(be_substitution_4,axiom,
+    [--equal(A,B),
+     --be(C,D,E,A),
+     ++be(C,D,E,B)]).
+
+input_clause(entity_substitution_1,axiom,
+    [--equal(A,B),
+     --entity(A,C),
+     ++entity(B,C)]).
+
+input_clause(entity_substitution_2,axiom,
+    [--equal(A,B),
+     --entity(C,A),
+     ++entity(C,B)]).
+
+input_clause(event_substitution_1,axiom,
+    [--equal(A,B),
+     --event(A,C),
+     ++event(B,C)]).
+
+input_clause(event_substitution_2,axiom,
+    [--equal(A,B),
+     --event(C,A),
+     ++event(C,B)]).
+
+input_clause(eventuality_substitution_1,axiom,
+    [--equal(A,B),
+     --eventuality(A,C),
+     ++eventuality(B,C)]).
+
+input_clause(eventuality_substitution_2,axiom,
+    [--equal(A,B),
+     --eventuality(C,A),
+     ++eventuality(C,B)]).
+
+input_clause(existent_substitution_1,axiom,
+    [--equal(A,B),
+     --existent(A,C),
+     ++existent(B,C)]).
+
+input_clause(existent_substitution_2,axiom,
+    [--equal(A,B),
+     --existent(C,A),
+     ++existent(C,B)]).
+
+input_clause(forename_substitution_1,axiom,
+    [--equal(A,B),
+     --forename(A,C),
+     ++forename(B,C)]).
+
+input_clause(forename_substitution_2,axiom,
+    [--equal(A,B),
+     --forename(C,A),
+     ++forename(C,B)]).
+
+input_clause(general_substitution_1,axiom,
+    [--equal(A,B),
+     --general(A,C),
+     ++general(B,C)]).
+
+input_clause(general_substitution_2,axiom,
+    [--equal(A,B),
+     --general(C,A),
+     ++general(C,B)]).
+
+input_clause(human_substitution_1,axiom,
+    [--equal(A,B),
+     --human(A,C),
+     ++human(B,C)]).
+
+input_clause(human_substitution_2,axiom,
+    [--equal(A,B),
+     --human(C,A),
+     ++human(C,B)]).
+
+input_clause(human_person_substitution_1,axiom,
+    [--equal(A,B),
+     --human_person(A,C),
+     ++human_person(B,C)]).
+
+input_clause(human_person_substitution_2,axiom,
+    [--equal(A,B),
+     --human_person(C,A),
+     ++human_person(C,B)]).
+
+input_clause(impartial_substitution_1,axiom,
+    [--equal(A,B),
+     --impartial(A,C),
+     ++impartial(B,C)]).
+
+input_clause(impartial_substitution_2,axiom,
+    [--equal(A,B),
+     --impartial(C,A),
+     ++impartial(C,B)]).
+
+input_clause(jules_forename_substitution_1,axiom,
+    [--equal(A,B),
+     --jules_forename(A,C),
+     ++jules_forename(B,C)]).
+
+input_clause(jules_forename_substitution_2,axiom,
+    [--equal(A,B),
+     --jules_forename(C,A),
+     ++jules_forename(C,B)]).
+
+input_clause(living_substitution_1,axiom,
+    [--equal(A,B),
+     --living(A,C),
+     ++living(B,C)]).
+
+input_clause(living_substitution_2,axiom,
+    [--equal(A,B),
+     --living(C,A),
+     ++living(C,B)]).
+
+input_clause(male_substitution_1,axiom,
+    [--equal(A,B),
+     --male(A,C),
+     ++male(B,C)]).
+
+input_clause(male_substitution_2,axiom,
+    [--equal(A,B),
+     --male(C,A),
+     ++male(C,B)]).
+
+input_clause(man_substitution_1,axiom,
+    [--equal(A,B),
+     --man(A,C),
+     ++man(B,C)]).
+
+input_clause(man_substitution_2,axiom,
+    [--equal(A,B),
+     --man(C,A),
+     ++man(C,B)]).
+
+input_clause(nonexistent_substitution_1,axiom,
+    [--equal(A,B),
+     --nonexistent(A,C),
+     ++nonexistent(B,C)]).
+
+input_clause(nonexistent_substitution_2,axiom,
+    [--equal(A,B),
+     --nonexistent(C,A),
+     ++nonexistent(C,B)]).
+
+input_clause(nonhuman_substitution_1,axiom,
+    [--equal(A,B),
+     --nonhuman(A,C),
+     ++nonhuman(B,C)]).
+
+input_clause(nonhuman_substitution_2,axiom,
+    [--equal(A,B),
+     --nonhuman(C,A),
+     ++nonhuman(C,B)]).
+
+input_clause(of_substitution_1,axiom,
+    [--equal(A,B),
+     --of(A,C,D),
+     ++of(B,C,D)]).
+
+input_clause(of_substitution_2,axiom,
+    [--equal(A,B),
+     --of(C,A,D),
+     ++of(C,B,D)]).
+
+input_clause(of_substitution_3,axiom,
+    [--equal(A,B),
+     --of(C,D,A),
+     ++of(C,D,B)]).
+
+input_clause(organism_substitution_1,axiom,
+    [--equal(A,B),
+     --organism(A,C),
+     ++organism(B,C)]).
+
+input_clause(organism_substitution_2,axiom,
+    [--equal(A,B),
+     --organism(C,A),
+     ++organism(C,B)]).
+
+input_clause(present_substitution_1,axiom,
+    [--equal(A,B),
+     --present(A,C),
+     ++present(B,C)]).
+
+input_clause(present_substitution_2,axiom,
+    [--equal(A,B),
+     --present(C,A),
+     ++present(C,B)]).
+
+input_clause(proposition_substitution_1,axiom,
+    [--equal(A,B),
+     --proposition(A,C),
+     ++proposition(B,C)]).
+
+input_clause(proposition_substitution_2,axiom,
+    [--equal(A,B),
+     --proposition(C,A),
+     ++proposition(C,B)]).
+
+input_clause(relation_substitution_1,axiom,
+    [--equal(A,B),
+     --relation(A,C),
+     ++relation(B,C)]).
+
+input_clause(relation_substitution_2,axiom,
+    [--equal(A,B),
+     --relation(C,A),
+     ++relation(C,B)]).
+
+input_clause(relname_substitution_1,axiom,
+    [--equal(A,B),
+     --relname(A,C),
+     ++relname(B,C)]).
+
+input_clause(relname_substitution_2,axiom,
+    [--equal(A,B),
+     --relname(C,A),
+     ++relname(C,B)]).
+
+input_clause(singleton_substitution_1,axiom,
+    [--equal(A,B),
+     --singleton(A,C),
+     ++singleton(B,C)]).
+
+input_clause(singleton_substitution_2,axiom,
+    [--equal(A,B),
+     --singleton(C,A),
+     ++singleton(C,B)]).
+
+input_clause(smoke_substitution_1,axiom,
+    [--equal(A,B),
+     --smoke(A,C),
+     ++smoke(B,C)]).
+
+input_clause(smoke_substitution_2,axiom,
+    [--equal(A,B),
+     --smoke(C,A),
+     ++smoke(C,B)]).
+
+input_clause(specific_substitution_1,axiom,
+    [--equal(A,B),
+     --specific(A,C),
+     ++specific(B,C)]).
+
+input_clause(specific_substitution_2,axiom,
+    [--equal(A,B),
+     --specific(C,A),
+     ++specific(C,B)]).
+
+input_clause(state_substitution_1,axiom,
+    [--equal(A,B),
+     --state(A,C),
+     ++state(B,C)]).
+
+input_clause(state_substitution_2,axiom,
+    [--equal(A,B),
+     --state(C,A),
+     ++state(C,B)]).
+
+input_clause(theme_substitution_1,axiom,
+    [--equal(A,B),
+     --theme(A,C,D),
+     ++theme(B,C,D)]).
+
+input_clause(theme_substitution_2,axiom,
+    [--equal(A,B),
+     --theme(C,A,D),
+     ++theme(C,B,D)]).
+
+input_clause(theme_substitution_3,axiom,
+    [--equal(A,B),
+     --theme(C,D,A),
+     ++theme(C,D,B)]).
+
+input_clause(thing_substitution_1,axiom,
+    [--equal(A,B),
+     --thing(A,C),
+     ++thing(B,C)]).
+
+input_clause(thing_substitution_2,axiom,
+    [--equal(A,B),
+     --thing(C,A),
+     ++thing(C,B)]).
+
+input_clause(think_believe_consider_substitution_1,axiom,
+    [--equal(A,B),
+     --think_believe_consider(A,C),
+     ++think_believe_consider(B,C)]).
+
+input_clause(think_believe_consider_substitution_2,axiom,
+    [--equal(A,B),
+     --think_believe_consider(C,A),
+     ++think_believe_consider(C,B)]).
+
+input_clause(unisex_substitution_1,axiom,
+    [--equal(A,B),
+     --unisex(A,C),
+     ++unisex(B,C)]).
+
+input_clause(unisex_substitution_2,axiom,
+    [--equal(A,B),
+     --unisex(C,A),
+     ++unisex(C,B)]).
+
+input_clause(vincent_forename_substitution_1,axiom,
+    [--equal(A,B),
+     --vincent_forename(A,C),
+     ++vincent_forename(B,C)]).
+
+input_clause(vincent_forename_substitution_2,axiom,
+    [--equal(A,B),
+     --vincent_forename(C,A),
+     ++vincent_forename(C,B)]).
+
+input_clause(clause1,axiom,
+    [--smoke(U,V),
+     ++event(U,V)]).
+
+input_clause(clause2,axiom,
+    [--event(U,V),
+     ++eventuality(U,V)]).
+
+input_clause(clause3,axiom,
+    [--eventuality(U,V),
+     ++thing(U,V)]).
+
+input_clause(clause4,axiom,
+    [--thing(U,V),
+     ++singleton(U,V)]).
+
+input_clause(clause5,axiom,
+    [--eventuality(U,V),
+     ++specific(U,V)]).
+
+input_clause(clause6,axiom,
+    [--eventuality(U,V),
+     ++nonexistent(U,V)]).
+
+input_clause(clause7,axiom,
+    [--eventuality(U,V),
+     ++unisex(U,V)]).
+
+input_clause(clause8,axiom,
+    [--proposition(U,V),
+     ++relation(U,V)]).
+
+input_clause(clause9,axiom,
+    [--relation(U,V),
+     ++abstraction(U,V)]).
+
+input_clause(clause10,axiom,
+    [--abstraction(U,V),
+     ++thing(U,V)]).
+
+input_clause(clause11,axiom,
+    [--abstraction(U,V),
+     ++nonhuman(U,V)]).
+
+input_clause(clause12,axiom,
+    [--abstraction(U,V),
+     ++general(U,V)]).
+
+input_clause(clause13,axiom,
+    [--abstraction(U,V),
+     ++unisex(U,V)]).
+
+input_clause(clause14,axiom,
+    [--state(U,V),
+     ++eventuality(U,V)]).
+
+input_clause(clause15,axiom,
+    [--state(U,V),
+     ++event(U,V)]).
+
+input_clause(clause16,axiom,
+    [--man(U,V),
+     ++human_person(U,V)]).
+
+input_clause(clause17,axiom,
+    [--human_person(U,V),
+     ++organism(U,V)]).
+
+input_clause(clause18,axiom,
+    [--organism(U,V),
+     ++entity(U,V)]).
+
+input_clause(clause19,axiom,
+    [--entity(U,V),
+     ++thing(U,V)]).
+
+input_clause(clause20,axiom,
+    [--entity(U,V),
+     ++specific(U,V)]).
+
+input_clause(clause21,axiom,
+    [--entity(U,V),
+     ++existent(U,V)]).
+
+input_clause(clause22,axiom,
+    [--organism(U,V),
+     ++impartial(U,V)]).
+
+input_clause(clause23,axiom,
+    [--organism(U,V),
+     ++living(U,V)]).
+
+input_clause(clause24,axiom,
+    [--human_person(U,V),
+     ++human(U,V)]).
+
+input_clause(clause25,axiom,
+    [--human_person(U,V),
+     ++animate(U,V)]).
+
+input_clause(clause26,axiom,
+    [--man(U,V),
+     ++male(U,V)]).
+
+input_clause(clause27,axiom,
+    [--forename(U,V),
+     ++relname(U,V)]).
+
+input_clause(clause28,axiom,
+    [--relname(U,V),
+     ++relation(U,V)]).
+
+input_clause(clause29,axiom,
+    [--vincent_forename(U,V),
+     ++forename(U,V)]).
+
+input_clause(clause30,axiom,
+    [--jules_forename(U,V),
+     ++forename(U,V)]).
+
+input_clause(clause31,axiom,
+    [--male(U,V),
+     --unisex(U,V)]).
+
+input_clause(clause32,axiom,
+    [--general(U,V),
+     --specific(U,V)]).
+
+input_clause(clause33,axiom,
+    [--human(U,V),
+     --nonhuman(U,V)]).
+
+input_clause(clause34,axiom,
+    [--nonexistent(U,V),
+     --existent(U,V)]).
+
+input_clause(clause35,axiom,
+    [--be(U,V,W,X),
+     ++equal(W,X)]).
+
+input_clause(clause36,axiom,
+    [--accessible_world(U,V),
+     --smoke(U,W),
+     ++smoke(V,W)]).
+
+input_clause(clause37,axiom,
+    [--accessible_world(U,V),
+     --event(U,W),
+     ++event(V,W)]).
+
+input_clause(clause38,axiom,
+    [--accessible_world(U,V),
+     --eventuality(U,W),
+     ++eventuality(V,W)]).
+
+input_clause(clause39,axiom,
+    [--accessible_world(U,V),
+     --thing(U,W),
+     ++thing(V,W)]).
+
+input_clause(clause40,axiom,
+    [--accessible_world(U,V),
+     --singleton(U,W),
+     ++singleton(V,W)]).
+
+input_clause(clause41,axiom,
+    [--accessible_world(U,V),
+     --specific(U,W),
+     ++specific(V,W)]).
+
+input_clause(clause42,axiom,
+    [--accessible_world(U,V),
+     --nonexistent(U,W),
+     ++nonexistent(V,W)]).
+
+input_clause(clause43,axiom,
+    [--accessible_world(U,V),
+     --unisex(U,W),
+     ++unisex(V,W)]).
+
+input_clause(clause44,axiom,
+    [--accessible_world(U,V),
+     --present(U,W),
+     ++present(V,W)]).
+
+input_clause(clause45,axiom,
+    [--accessible_world(U,V),
+     --think_believe_consider(U,W),
+     ++think_believe_consider(V,W)]).
+
+input_clause(clause46,axiom,
+    [--accessible_world(U,V),
+     --proposition(U,W),
+     ++proposition(V,W)]).
+
+input_clause(clause47,axiom,
+    [--accessible_world(U,V),
+     --relation(U,W),
+     ++relation(V,W)]).
+
+input_clause(clause48,axiom,
+    [--accessible_world(U,V),
+     --abstraction(U,W),
+     ++abstraction(V,W)]).
+
+input_clause(clause49,axiom,
+    [--accessible_world(U,V),
+     --nonhuman(U,W),
+     ++nonhuman(V,W)]).
+
+input_clause(clause50,axiom,
+    [--accessible_world(U,V),
+     --general(U,W),
+     ++general(V,W)]).
+
+input_clause(clause51,axiom,
+    [--accessible_world(U,V),
+     --state(U,W),
+     ++state(V,W)]).
+
+input_clause(clause52,axiom,
+    [--accessible_world(U,V),
+     --man(U,W),
+     ++man(V,W)]).
+
+input_clause(clause53,axiom,
+    [--accessible_world(U,V),
+     --human_person(U,W),
+     ++human_person(V,W)]).
+
+input_clause(clause54,axiom,
+    [--accessible_world(U,V),
+     --organism(U,W),
+     ++organism(V,W)]).
+
+input_clause(clause55,axiom,
+    [--accessible_world(U,V),
+     --entity(U,W),
+     ++entity(V,W)]).
+
+input_clause(clause56,axiom,
+    [--accessible_world(U,V),
+     --existent(U,W),
+     ++existent(V,W)]).
+
+input_clause(clause57,axiom,
+    [--accessible_world(U,V),
+     --impartial(U,W),
+     ++impartial(V,W)]).
+
+input_clause(clause58,axiom,
+    [--accessible_world(U,V),
+     --living(U,W),
+     ++living(V,W)]).
+
+input_clause(clause59,axiom,
+    [--accessible_world(U,V),
+     --human(U,W),
+     ++human(V,W)]).
+
+input_clause(clause60,axiom,
+    [--accessible_world(U,V),
+     --animate(U,W),
+     ++animate(V,W)]).
+
+input_clause(clause61,axiom,
+    [--accessible_world(U,V),
+     --male(U,W),
+     ++male(V,W)]).
+
+input_clause(clause62,axiom,
+    [--accessible_world(U,V),
+     --forename(U,W),
+     ++forename(V,W)]).
+
+input_clause(clause63,axiom,
+    [--accessible_world(U,V),
+     --relname(U,W),
+     ++relname(V,W)]).
+
+input_clause(clause64,axiom,
+    [--accessible_world(U,V),
+     --vincent_forename(U,W),
+     ++vincent_forename(V,W)]).
+
+input_clause(clause65,axiom,
+    [--accessible_world(U,V),
+     --jules_forename(U,W),
+     ++jules_forename(V,W)]).
+
+input_clause(clause66,axiom,
+    [--accessible_world(U,V),
+     --agent(U,W,X),
+     ++agent(V,W,X)]).
+
+input_clause(clause67,axiom,
+    [--accessible_world(U,V),
+     --theme(U,W,X),
+     ++theme(V,W,X)]).
+
+input_clause(clause68,axiom,
+    [--accessible_world(U,V),
+     --of(U,W,X),
+     ++of(V,W,X)]).
+
+input_clause(clause69,axiom,
+    [--accessible_world(U,V),
+     --be(U,W,X,Y),
+     ++be(V,W,X,Y)]).
+
+input_clause(clause70,axiom,
+    [--forename(U,V),
+     --of(U,W,X),
+     --forename(U,W),
+     --of(U,V,X),
+     --entity(U,X),
+     ++equal(W,V)]).
+
+input_clause(clause71,axiom,
+    [--proposition(U,V),
+     --proposition(U,W),
+     --theme(U,X,V),
+     --think_believe_consider(U,X),
+     --think_believe_consider(U,Y),
+     --theme(U,Y,W),
+     --agent(U,Y,Z),
+     --agent(U,X,Z),
+     ++equal(V,W)]).
+
+input_clause(clause72,conjecture,
+    [++actual_world(skc8)]).
+
+input_clause(clause73,conjecture,
+    [++man(skc8,skc15)]).
+
+input_clause(clause74,conjecture,
+    [++forename(skc8,skc14)]).
+
+input_clause(clause75,conjecture,
+    [++vincent_forename(skc8,skc14)]).
+
+input_clause(clause76,conjecture,
+    [++event(skc8,skc13)]).
+
+input_clause(clause77,conjecture,
+    [++present(skc8,skc13)]).
+
+input_clause(clause78,conjecture,
+    [++think_believe_consider(skc8,skc13)]).
+
+input_clause(clause79,conjecture,
+    [++jules_forename(skc8,skc11)]).
+
+input_clause(clause80,conjecture,
+    [++forename(skc8,skc11)]).
+
+input_clause(clause81,conjecture,
+    [++man(skc8,skc10)]).
+
+input_clause(clause82,conjecture,
+    [++state(skc8,skc9)]).
+
+input_clause(clause83,conjecture,
+    [++accessible_world(skc8,skc12)]).
+
+input_clause(clause84,conjecture,
+    [++proposition(skc8,skc12)]).
+
+input_clause(clause85,conjecture,
+    [++of(skc8,skc14,skc15)]).
+
+input_clause(clause86,conjecture,
+    [++agent(skc8,skc13,skc15)]).
+
+input_clause(clause87,conjecture,
+    [++theme(skc8,skc13,skc12)]).
+
+input_clause(clause88,conjecture,
+    [++of(skc8,skc11,skc10)]).
+
+input_clause(clause89,conjecture,
+    [++be(skc8,skc9,skc10,skc10)]).
+
+input_clause(clause90,conjecture,
+    [--man(skc12,U),
+     ++smoke(skc12,skf2(V))]).
+
+input_clause(clause91,conjecture,
+    [--man(skc12,U),
+     ++present(skc12,skf2(V))]).
+
+input_clause(clause92,conjecture,
+    [--man(skc12,U),
+     ++event(skc12,skf2(V))]).
+
+input_clause(clause93,conjecture,
+    [--man(skc12,U),
+     ++agent(skc12,skf2(U),U)]).
+
+input_clause(clause94,conjecture,
+    [--proposition(U,V),
+     --accessible_world(U,V),
+     --think_believe_consider(U,W),
+     --present(U,W),
+     --event(U,W),
+     --theme(U,W,V),
+     --vincent_forename(U,X),
+     --forename(U,X),
+     --agent(U,W,Y),
+     --man(U,Y),
+     --of(U,X,Y),
+     --state(U,Z),
+     --man(U,X1),
+     --be(U,Z,X1,X1),
+     --forename(U,X2),
+     --jules_forename(U,X2),
+     --of(U,X2,X1),
+     --accessible_world(U,X3),
+     --proposition(U,X3),
+     --jules_forename(U,X4),
+     --forename(U,X4),
+     --smoke(X3,X5),
+     --present(X3,X5),
+     --agent(X3,X5,X6),
+     --event(X3,X5),
+     --man(U,X6),
+     --of(U,X4,X6),
+     --vincent_forename(U,X7),
+     --forename(U,X7),
+     --agent(U,X8,X9),
+     --man(U,X9),
+     --of(U,X7,X9),
+     --theme(U,X8,X3),
+     --event(U,X8),
+     --present(U,X8),
+     --think_believe_consider(U,X8),
+     --actual_world(U),
+     ++man(V,skf4(V))]).
+
+answer(clause95_answer).
+
+input_clause(clause95,conjecture,
+    [++clause95_answer(U,V,W),
+     --proposition(U,V),
+     --accessible_world(U,V),
+     --smoke(V,W),
+     --present(V,W),
+     --agent(V,W,skf4(V)),
+     --event(V,W),
+     --think_believe_consider(U,X),
+     --present(U,X),
+     --event(U,X),
+     --theme(U,X,V),
+     --vincent_forename(U,Y),
+     --forename(U,Y),
+     --agent(U,X,Z),
+     --man(U,Z),
+     --of(U,Y,Z),
+     --state(U,X1),
+     --man(U,X2),
+     --be(U,X1,X2,X2),
+     --forename(U,X3),
+     --jules_forename(U,X3),
+     --of(U,X3,X2),
+     --accessible_world(U,X4),
+     --proposition(U,X4),
+     --jules_forename(U,X5),
+     --forename(U,X5),
+     --smoke(X4,X6),
+     --present(X4,X6),
+     --agent(X4,X6,X7),
+     --event(X4,X6),
+     --man(U,X7),
+     --of(U,X5,X7),
+     --vincent_forename(U,X8),
+     --forename(U,X8),
+     --agent(U,X9,X10),
+     --man(U,X10),
+     --of(U,X8,X10),
+     --theme(U,X9,X4),
+     --event(U,X9),
+     --present(U,X9),
+     --think_believe_consider(U,X9),
+     --actual_world(U)]).
+%--------------------------------------------------------------------------

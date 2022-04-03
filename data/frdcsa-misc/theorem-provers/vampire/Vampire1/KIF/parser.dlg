@@ -1,0 +1,167 @@
+<<
+/* parser.dlg -- DLG Description of scanner
+ *
+ * Generated from: parser.g
+ *
+ * Terence Parr, Will Cohen, and Hank Dietz: 1989-1998
+ * Purdue University Electrical Engineering
+ * With AHPCRC, University of Minnesota
+ * ANTLR Version 1.33MR18
+ */
+
+#define ANTLR_VERSION	13318
+#include "tokens.h"
+#include "AToken.h"
+
+// any definitions that one needs in the
+//  generated files
+
+#include "term.h"
+#include "literal.h"
+#include "clause.h"
+#include "formula.h"
+#include "int_name_table.h"
+#include "unit.h"
+#include "signature.h"
+#include "problem.h"
+>>
+
+<<%%parserclass TPTPParser>>
+
+
+%%START
+
+@
+	<<
+		return (ANTLRTokenType)1;
+	>>
+
+[\ \t\r]
+	<<
+		
+		skip ();
+		return (ANTLRTokenType)2;
+	>>
+
+% ~[\n]* [\n]
+	<<
+		
+		skip ();
+		newline ();
+		return (ANTLRTokenType)3;
+	>>
+
+[\n]
+	<<
+		
+		skip();
+		newline ();
+		return (ANTLRTokenType)4;
+	>>
+
+\(
+	<<
+		return T_LPAR;
+	>>
+
+\)
+	<<
+		return T_RPAR;
+	>>
+
+\[
+	<<
+		return T_LBRA;
+	>>
+
+\]
+	<<
+		return T_RBRA;
+	>>
+
+\,
+	<<
+		return T_COMMA;
+	>>
+
+\:
+	<<
+		return T_COLON;
+	>>
+
+\.
+	<<
+		return T_DOT;
+	>>
+
+input_formula
+	<<
+		return T_INFORM;
+	>>
+
+input_clause
+	<<
+		return T_INCLAUSE;
+	>>
+
+\&
+	<<
+		return T_AND;
+	>>
+
+\~
+	<<
+		return T_NOT;
+	>>
+
+\|
+	<<
+		return T_OR;
+	>>
+
+\<\=\>
+	<<
+		return T_IFF;
+	>>
+
+\=\>
+	<<
+		return T_IMP;
+	>>
+
+\<\~\>
+	<<
+		return T_XOR;
+	>>
+
+\!
+	<<
+		return T_FORALL;
+	>>
+
+\?
+	<<
+		return T_EXISTS;
+	>>
+
+\+\+
+	<<
+		return T_PP;
+	>>
+
+\-\-
+	<<
+		return T_MM;
+	>>
+
+[a-z][A-Za-z_0-9]* | [0-9]+
+	<<
+		return T_NAME;
+	>>
+
+[A-Z_][A-Za-z_0-9]*
+	<<
+		return T_VAR;
+	>>
+
+%%

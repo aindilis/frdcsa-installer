@@ -1,0 +1,5 @@
+(note  "Canonical Test:  Exists x [ A(x) ^ B(x) ]")
+
+(exists (?X) (and (Pred1 ?X) (Pred2 ?X)))
+
+

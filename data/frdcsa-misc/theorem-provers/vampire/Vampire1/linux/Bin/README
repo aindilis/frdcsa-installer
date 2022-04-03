@@ -1,0 +1,201 @@
+-------------------------------------------------------------------------
+
+1. General. 
+
+(a) An example file 'test' contains a sequence of queries from a client to a 
+server.
+
+(b) An example client can be called as client.pl. It reads from stdin and 
+connects to the server. For example to emulate the client typing the
+content of the file 'test' use
+
+  client.pl < test
+
+(c) the server is implemented in server.pl. It can work with multiple 
+clients.
+
+(d) Currently both the server and the client use prt 242424. You can change 
+it (and other settings) by editing several constants on the top of the file.
+
+(e) to create the executable of the kif-vampire itself use the sequence
+of commands
+
+  make clean
+  make depend
+  make kif
+
+It will create an executable called kif.
+
+It uses Java and g++. Note: the system was debugged under g++ 2.95.3.
+We know that it does not compile under (buggy) 2.96. We did not try to run
+or port it to 3.01.
+
+(f) Note that kif-vampire does not work with row variables. To check 
+compliance of your current version of merger simply run kif on it, e.g.
+
+  kif Merge.txt
+
+It will report on the line numbers it cannot parse.
+
+Call me if you have any problems.
+
+-------------------------------------------------------------------------
+
+2. XML DTD specification
+
+I had to change the XML DTD from Exhibit C for good reasons. 
+There are some problem(s) with the original DTD specification:
+
+(1) It assumed that all proofs are obtained at once. For example, the
+number of proofs (numBindings) was an attribute of queryResponse. This
+means that Vampire would not output any proof to the end of the time limit
+because the number of proofs is only known at the end. The current specification may output proofs one by one while Vampire is searching for more
+proofs.
+
+(2) It assumed that the input is a collection of rules while it is a 
+collection of first-order formulas. Moreover, it assumed that the 
+inference engine is rule-based while it is not (and cannot be when the
+"real" equality reasoning is involved).
+
+(3) It assumed definite bindings only while Vampire can now also generate
+disjunctive bindings.
+
+(4) As far as I understood by looking at the Tomcat window designed by
+you, the work of user with the system will proceed as follows:
+
+  (a) The user may input assertions (formulas to be added to the KB 
+just for the time of the session).
+  (b) the user inputs queries which should be answered
+
+while the original specification was not very clear about the assertions. 
+
+In addition, I volunteered to change slightly the terminology of
+the original DTD. For example, "binding" usually means an association 
+between a variable and its denotation while it was used to denote a set 
+of bindings + a proof.
+
+I don't have an XML documentation here so I could have made small errors 
+in the DTD. If you find any error or have questions feel free to contact 
+me ASAP.
+
+I forgot the exact syntax of "at most one" in XML DTD's. I write "?" 
+to denote this, e.g. (bindingSet, proof)? means either (bindingSet,proof) 
+or nothing. I believe that the all other parts of the specification 
+are correct.
+
+<!--
+assertion from: Sigma to: Vampire
+- assertion: formula such as (forall ?x (likes ?x ?x))
+- feel free to add attributes but the current version of Vampire will
+- ignore them
+- 
+-->
+
+<!ELEMENT assertion (#PCDATA)>
+
+<!--
+assertion response from: Sigma to: Vampire
+- can be of two forms:
+-   (1) Syntax error detected
+-   (2) Formula has been added to the session database
+-->
+
+<!ELEMENT assertion (#PCDATA)>
+
+<!--
+query from: Sigma to: Vampire
+- query: formula such as (instance-of Bob ?X)
+- 
+- attributes understood by Vampire are:
+-   time limit: in seconds
+-   bindings limit: number of variable binding sets ?X=Human, ?X=LivingThing etc
+- all other attributes will currently be ignored by Vampire
+- if no time limit or binding limit is given, Vampire will use the default values,
+- currently set as 5 and 5
+-
+- there is no yes-no flag: if the query contains free variables then Vampire will
+- search for bindings, otherwise it will only give a yes-no answer
+-->
+
+<!ELEMENT query (#PCDATA)>
+<!ATTLIST query
+  timeLimit CDATA #IMPLIED
+  depthLimit CDATA #IMPLIED
+  bindingsLimit CDATA #IMPLIED
+  context CDATA #REQUIRED
+  kb CDATA #REQUIRED
+  language CDATA #REQUIRED>
+
+<!--
+Query response from: Vampire to: Sigma
+- a query response consists of one or more answers and a summary
+-   * an answer consists of a result (yes/no). If the result is
+-     'yes', then it is also followed by 
+-     + a binding of variables to values (only if the query 
+-       contained free variables
+-     + a proof
+-   * a summary now only gives a number of proofs found
+-->
+
+<!ELEMENT queryResponse ((answer)*, summary)>
+
+<!ELEMENT answer ((bindingSet)?, proof)?)>
+<!ATTLIST answer
+  result (yes | no)  #REQUIRED
+  number CDATA #IMPLIED>
+
+<!ELEMENT summary EMPTY>
+<!ATTLIST summary
+  proofs CDATA #REQUIRED>
+
+<!--
+Binding set can have one of three folowing types:
+- inconsistent, meaning that the current KB is inconsistent
+    so that ANY query is a logical consequence of the KB
+- definite, e.g. ?X=john
+- disjunctive, e.g. ?X=john or ?X=(fatherOf john)
+-   a disjunctive binding is represented as a sequence of bindings
+-->
+
+<!ELEMENT bindingSet (binding)*>
+<!ATTLIST bindingSet
+  type (inconsistent | definite | disjunctive)  #REQUIRED
+  number CDATA #IMPLIED>
+
+<!ELEMENT binding (var)*>
+
+<!ELEMENT var EMPTY>
+<!ATTLIST var
+  name CDATA #REQUIRED
+  value CDATA #REQUIRED>
+
+<!--
+A proof is a sequence of proof steps.
+Each proof step consists of 
+- a set of (zero or more) premises
+- a conclusion
+Each premise or conclusion is either a clause or a formula
+-->
+  
+<!ELEMENT proof (proofStep)*>
+
+<!ELEMENT proofStep (premises, conclusion)>
+
+<!ELEMENT premises (clause | formula)*>
+<!ELEMENT conclusion (clause | formula)>
+
+<!--
+A clause or a formula are numbered (see attribute 'number')
+The number can be used if one wants to translate a proof into
+a hypertext (since the numbers are unique).
+- A clause is a sequence of literals (atomic formulas or their negations
+  written in KIF.
+- A formula is also written in KIF.
+-->
+<!ELEMENT clause (#PCDATA)>
+<!ATTLIST clause
+  number CDATA #REQUIRED>
+
+<!ELEMENT formula (#PCDATA)>
+<!ATTLIST formula
+  number CDATA #REQUIRED>

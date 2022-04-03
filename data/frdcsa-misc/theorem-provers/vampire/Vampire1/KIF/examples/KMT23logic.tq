@@ -1,0 +1,14 @@
+(note "Kalish & Montague, Theorem 23")
+
+(=> 
+   (=> 
+       (=> 
+           (instance ?X Dog) 
+           (instance ?X Fish)) 
+       (instance ?X Dog)) 
+   (instance ?X Dog))
+
+
+)
+
+(answer Yes)

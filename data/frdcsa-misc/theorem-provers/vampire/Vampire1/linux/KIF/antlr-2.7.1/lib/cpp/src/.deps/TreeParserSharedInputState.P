@@ -1,0 +1,7 @@
+TreeParserSharedInputState.lo TreeParserSharedInputState.o : TreeParserSharedInputState.cpp \
+ ../antlr/TreeParserSharedInputState.hpp ../antlr/config.hpp \
+ ../antlr/RefCount.hpp
+TreeParserSharedInputState.cpp :
+../antlr/TreeParserSharedInputState.hpp :
+../antlr/config.hpp :
+../antlr/RefCount.hpp :

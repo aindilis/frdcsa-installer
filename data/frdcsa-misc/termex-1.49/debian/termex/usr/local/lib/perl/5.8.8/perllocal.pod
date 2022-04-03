@@ -1,0 +1,22 @@
+=head2 Sun Jul  6 16:47:50 2008: C<Module> L<TermExtract|TermExtract>
+
+=over 4
+
+=item *
+
+C<installed into: /usr/local/share/perl/5.8.8>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 4,08>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+

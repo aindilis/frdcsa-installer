@@ -1,0 +1,4 @@
+symbol_weight(intersection,-10,[30,10]).
+symbol_weight(member,1,[100,1]).
+symbol_weight(subset,10,[10,3]).
+symbol_weight(union,-10,[50,1]).

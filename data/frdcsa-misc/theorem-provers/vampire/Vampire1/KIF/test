@@ -1,0 +1,34 @@
+<query timeLimit='2' bindingsLimit='1'>
+  (> 5 3)
+</query>
+
+<assertion>
+  (p a)
+</assertion>
+
+<assertion>
+  (p b)
+</assertion>
+
+<assertion>
+  (or (q c) (q d))
+</assertion>
+
+<query timeLimit='3' bindingsLimit='2'>
+  (and (p ?x) (q ?y))
+</query>
+
+<query timeLimit='3' bindingsLimit='2'>
+  (q ?y)
+</query>
+
+<query timeLimit='3' bindingsLimit='1'>
+  (p ?y)
+</query>
+
+<query timeLimit='2' bindingsLimit='2'>
+  (or (p b) (p c))
+</query>
+
+<bye/>
+

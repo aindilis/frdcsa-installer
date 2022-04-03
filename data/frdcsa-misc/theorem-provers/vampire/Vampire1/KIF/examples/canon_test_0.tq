@@ -1,0 +1,7 @@
+(note "Can Test 0") 
+
+(forall (?X) (=> (instance ?X nucleolus) 
+               (exists (?Y) (and (instance ?Y centriole) (has ?X ?Y)))
+         )
+)
+

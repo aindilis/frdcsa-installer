@@ -1,0 +1,1157 @@
+<queryResponce>
+  <answer result='no'>
+  </answer>
+  <summary proofs='0'>
+</queryResponce>
+<assertionResponce>
+  Formula has been added to the session database
+</assertionResponce>
+<assertionResponce>
+  Formula has been added to the session database
+</assertionResponce>
+<assertionResponce>
+  Formula has been added to the session database
+</assertionResponce>
+<queryResponce>
+  <answer result='yes' number='1'>
+    <bindingSet type='disjunctive'>
+      <binding>
+        <var name='?y' value='c'/>
+        <var name='?x' value='b'/>
+      </binding>
+      <binding>
+        <var name='?y' value='d'/>
+        <var name='?x' value='b'/>
+      </binding>
+    </bindingSet>
+    <proof>
+      <proofStep>
+        <premises>
+        </premises>
+        <conclusion>
+          <formula number='19452'>
+             (p b)
+          </formula>
+        </conclusion>
+      </proofStep>
+      <proofStep>
+        <premises>
+          <formula number='19452'>
+             (p b)
+          </formula>
+        </premises>
+        <conclusion>
+          <formula number='19456'>
+             (p b)
+          </formula>
+        </conclusion>
+      </proofStep>
+      <proofStep>
+        <premises>
+          <formula number='19456'>
+             (p b)
+          </formula>
+        </premises>
+        <conclusion>
+          <formula number='19460'>
+             (p b)
+          </formula>
+        </conclusion>
+      </proofStep>
+      <proofStep>
+        <premises>
+          <formula number='19460'>
+             (p b)
+          </formula>
+        </premises>
+        <conclusion>
+          <formula number='19465'>
+             (p b)
+          </formula>
+        </conclusion>
+      </proofStep>
+      <proofStep>
+        <premises>
+          <formula number='19465'>
+             (p b)
+          </formula>
+        </premises>
+        <conclusion>
+          <clause number='19469'>
+            (p b)
+          </clause>
+        </conclusion>
+      </proofStep>
+      <proofStep>
+        <premises>
+          <clause number='19469'>
+            (p b)
+          </clause>
+        </premises>
+        <conclusion>
+          <clause number='19474'>
+            (p b)
+          </clause>
+        </conclusion>
+      </proofStep>
+      <proofStep>
+        <premises>
+          <clause number='19474'>
+            (p b)
+          </clause>
+        </premises>
+        <conclusion>
+          <clause number='23612'>
+            (p b)
+          </clause>
+        </conclusion>
+      </proofStep>
+      <proofStep>
+        <premises>
+        </premises>
+        <conclusion>
+          <formula number='19454'>
+             (not
+               (and
+                 (p ?X411)
+                 (q ?X412)))
+          </formula>
+        </conclusion>
+      </proofStep>
+      <proofStep>
+        <premises>
+          <formula number='19454'>
+             (not
+               (and
+                 (p ?X411)
+                 (q ?X412)))
+          </formula>
+        </premises>
+        <conclusion>
+          <formula number='19458'>
+             (forall (?X1 ?X0)
+               (not
+                 (and
+                   (p ?X0)
+                   (q ?X1))))
+          </formula>
+        </conclusion>
+      </proofStep>
+      <proofStep>
+        <premises>
+          <formula number='19458'>
+             (forall (?X1 ?X0)
+               (not
+                 (and
+                   (p ?X0)
+                   (q ?X1))))
+          </formula>
+        </premises>
+        <conclusion>
+          <formula number='19462'>
+             (forall (?X1 ?X0)
+               (not
+                 (and
+                   (p ?X0)
+                   (q ?X1))))
+          </formula>
+        </conclusion>
+      </proofStep>
+      <proofStep>
+        <premises>
+          <formula number='19462'>
+             (forall (?X1 ?X0)
+               (not
+                 (and
+                   (p ?X0)
+                   (q ?X1))))
+          </formula>
+        </premises>
+        <conclusion>
+          <formula number='19463'>
+             (forall (?X1 ?X0)
+               (or
+                 (not (p ?X0))
+                 (not (q ?X1))))
+          </formula>
+        </conclusion>
+      </proofStep>
+      <proofStep>
+        <premises>
+          <formula number='19463'>
+             (forall (?X1 ?X0)
+               (or
+                 (not (p ?X0))
+                 (not (q ?X1))))
+          </formula>
+        </premises>
+        <conclusion>
+          <formula number='19467'>
+             (or
+               (not (p ?X0))
+               (not (q ?X1)))
+          </formula>
+        </conclusion>
+      </proofStep>
+      <proofStep>
+        <premises>
+          <formula number='19467'>
+             (or
+               (not (p ?X0))
+               (not (q ?X1)))
+          </formula>
+        </premises>
+        <conclusion>
+          <clause number='19471'>
+            (not (q ?X1))
+            (not (p ?X0))
+            ($answer ?X1 ?X0)
+          </clause>
+        </conclusion>
+      </proofStep>
+      <proofStep>
+        <premises>
+          <clause number='19471'>
+            (not (p ?X1))
+            (not (q ?X0))
+            ($answer ?X0 ?X1)
+          </clause>
+        </premises>
+        <conclusion>
+          <clause number='19472'>
+            (not (q ?X0))
+            ($answer ?X0 ?X1)
+            (not (p ?X1))
+          </clause>
+        </conclusion>
+      </proofStep>
+      <proofStep>
+        <premises>
+          <clause number='19472'>
+            (not (q ?X0))
+            ($answer ?X0 ?X1)
+            (not (p ?X1))
+          </clause>
+        </premises>
+        <conclusion>
+          <clause number='23610'>
+            (not (q ?X0))
+            ($answer ?X0 ?X1)
+            (not (p ?X1))
+          </clause>
+        </conclusion>
+      </proofStep>
+      <proofStep>
+        <premises>
+        </premises>
+        <conclusion>
+          <formula number='19453'>
+             (or
+               (q c)
+               (q d))
+          </formula>
+        </conclusion>
+      </proofStep>
+      <proofStep>
+        <premises>
+          <formula number='19453'>
+             (or
+               (q c)
+               (q d))
+          </formula>
+        </premises>
+        <conclusion>
+          <formula number='19457'>
+             (or
+               (q c)
+               (q d))
+          </formula>
+        </conclusion>
+      </proofStep>
+      <proofStep>
+        <premises>
+          <formula number='19457'>
+             (or
+               (q c)
+               (q d))
+          </formula>
+        </premises>
+        <conclusion>
+          <formula number='19461'>
+             (or
+               (q c)
+               (q d))
+          </formula>
+        </conclusion>
+      </proofStep>
+      <proofStep>
+        <premises>
+          <formula number='19461'>
+             (or
+               (q c)
+               (q d))
+          </formula>
+        </premises>
+        <conclusion>
+          <formula number='19466'>
+             (or
+               (q c)
+               (q d))
+          </formula>
+        </conclusion>
+      </proofStep>
+      <proofStep>
+        <premises>
+          <formula number='19466'>
+             (or
+               (q c)
+               (q d))
+          </formula>
+        </premises>
+        <conclusion>
+          <clause number='19470'>
+            (q d)
+            (q c)
+          </clause>
+        </conclusion>
+      </proofStep>
+      <proofStep>
+        <premises>
+          <clause number='19470'>
+            (q d)
+            (q c)
+          </clause>
+        </premises>
+        <conclusion>
+          <clause number='19473'>
+            (q c)
+            (q d)
+          </clause>
+        </conclusion>
+      </proofStep>
+      <proofStep>
+        <premises>
+          <clause number='19473'>
+            (q c)
+            (q d)
+          </clause>
+        </premises>
+        <conclusion>
+          <clause number='23611'>
+            (q c)
+            (q d)
+          </clause>
+        </conclusion>
+      </proofStep>
+      <proofStep>
+        <premises>
+          <clause number='23610'>
+            (not (q ?X0))
+            ($answer ?X0 ?X1)
+            (not (p ?X1))
+          </clause>
+          <clause number='23611'>
+            (q c)
+            (q d)
+          </clause>
+        </premises>
+        <conclusion>
+          <clause number='27738'>
+            (not (p ?X0))
+            ($answer c ?X0)
+            (q d)
+          </clause>
+        </conclusion>
+      </proofStep>
+      <proofStep>
+        <premises>
+          <clause number='23612'>
+            (p b)
+          </clause>
+          <clause number='27738'>
+            (not (p ?X0))
+            ($answer c ?X0)
+            (q d)
+          </clause>
+        </premises>
+        <conclusion>
+          <clause number='27739'>
+            (q d)
+            ($answer c b)
+          </clause>
+        </conclusion>
+      </proofStep>
+      <proofStep>
+        <premises>
+          <clause number='23610'>
+            (not (q ?X0))
+            ($answer ?X0 ?X1)
+            (not (p ?X1))
+          </clause>
+          <clause number='27739'>
+            (q d)
+            ($answer c b)
+          </clause>
+        </premises>
+        <conclusion>
+          <clause number='27741'>
+            (not (p ?X0))
+            ($answer c b)
+            ($answer d ?X0)
+          </clause>
+        </conclusion>
+      </proofStep>
+      <proofStep>
+        <premises>
+          <clause number='23612'>
+            (p b)
+          </clause>
+          <clause number='27741'>
+            (not (p ?X0))
+            ($answer c b)
+            ($answer d ?X0)
+          </clause>
+        </premises>
+        <conclusion>
+          <clause number='27743'>
+            ($answer c b)
+            ($answer d b)
+          </clause>
+        </conclusion>
+      </proofStep>
+    </proof>
+    </answer>
+  <answer result='yes' number='2'>
+    <bindingSet type='disjunctive'>
+      <binding>
+        <var name='?y' value='c'/>
+        <var name='?x' value='b'/>
+      </binding>
+      <binding>
+        <var name='?y' value='d'/>
+        <var name='?x' value='a'/>
+      </binding>
+    </bindingSet>
+    <proof>
+      <proofStep>
+        <premises>
+        </premises>
+        <conclusion>
+          <formula number='19451'>
+             (p a)
+          </formula>
+        </conclusion>
+      </proofStep>
+      <proofStep>
+        <premises>
+          <formula number='19451'>
+             (p a)
+          </formula>
+        </premises>
+        <conclusion>
+          <formula number='19455'>
+             (p a)
+          </formula>
+        </conclusion>
+      </proofStep>
+      <proofStep>
+        <premises>
+          <formula number='19455'>
+             (p a)
+          </formula>
+        </premises>
+        <conclusion>
+          <formula number='19459'>
+             (p a)
+          </formula>
+        </conclusion>
+      </proofStep>
+      <proofStep>
+        <premises>
+          <formula number='19459'>
+             (p a)
+          </formula>
+        </premises>
+        <conclusion>
+          <formula number='19464'>
+             (p a)
+          </formula>
+        </conclusion>
+      </proofStep>
+      <proofStep>
+        <premises>
+          <formula number='19464'>
+             (p a)
+          </formula>
+        </premises>
+        <conclusion>
+          <clause number='19468'>
+            (p a)
+          </clause>
+        </conclusion>
+      </proofStep>
+      <proofStep>
+        <premises>
+          <clause number='19468'>
+            (p a)
+          </clause>
+        </premises>
+        <conclusion>
+          <clause number='19475'>
+            (p a)
+          </clause>
+        </conclusion>
+      </proofStep>
+      <proofStep>
+        <premises>
+          <clause number='19475'>
+            (p a)
+          </clause>
+        </premises>
+        <conclusion>
+          <clause number='23613'>
+            (p a)
+          </clause>
+        </conclusion>
+      </proofStep>
+      <proofStep>
+        <premises>
+        </premises>
+        <conclusion>
+          <formula number='19454'>
+             (not
+               (and
+                 (p ?X411)
+                 (q ?X412)))
+          </formula>
+        </conclusion>
+      </proofStep>
+      <proofStep>
+        <premises>
+          <formula number='19454'>
+             (not
+               (and
+                 (p ?X411)
+                 (q ?X412)))
+          </formula>
+        </premises>
+        <conclusion>
+          <formula number='19458'>
+             (forall (?X1 ?X0)
+               (not
+                 (and
+                   (p ?X0)
+                   (q ?X1))))
+          </formula>
+        </conclusion>
+      </proofStep>
+      <proofStep>
+        <premises>
+          <formula number='19458'>
+             (forall (?X1 ?X0)
+               (not
+                 (and
+                   (p ?X0)
+                   (q ?X1))))
+          </formula>
+        </premises>
+        <conclusion>
+          <formula number='19462'>
+             (forall (?X1 ?X0)
+               (not
+                 (and
+                   (p ?X0)
+                   (q ?X1))))
+          </formula>
+        </conclusion>
+      </proofStep>
+      <proofStep>
+        <premises>
+          <formula number='19462'>
+             (forall (?X1 ?X0)
+               (not
+                 (and
+                   (p ?X0)
+                   (q ?X1))))
+          </formula>
+        </premises>
+        <conclusion>
+          <formula number='19463'>
+             (forall (?X1 ?X0)
+               (or
+                 (not (p ?X0))
+                 (not (q ?X1))))
+          </formula>
+        </conclusion>
+      </proofStep>
+      <proofStep>
+        <premises>
+          <formula number='19463'>
+             (forall (?X1 ?X0)
+               (or
+                 (not (p ?X0))
+                 (not (q ?X1))))
+          </formula>
+        </premises>
+        <conclusion>
+          <formula number='19467'>
+             (or
+               (not (p ?X0))
+               (not (q ?X1)))
+          </formula>
+        </conclusion>
+      </proofStep>
+      <proofStep>
+        <premises>
+          <formula number='19467'>
+             (or
+               (not (p ?X0))
+               (not (q ?X1)))
+          </formula>
+        </premises>
+        <conclusion>
+          <clause number='19471'>
+            (not (q ?X1))
+            (not (p ?X0))
+            ($answer ?X1 ?X0)
+          </clause>
+        </conclusion>
+      </proofStep>
+      <proofStep>
+        <premises>
+          <clause number='19471'>
+            (not (p ?X1))
+            (not (q ?X0))
+            ($answer ?X0 ?X1)
+          </clause>
+        </premises>
+        <conclusion>
+          <clause number='19472'>
+            (not (q ?X0))
+            ($answer ?X0 ?X1)
+            (not (p ?X1))
+          </clause>
+        </conclusion>
+      </proofStep>
+      <proofStep>
+        <premises>
+          <clause number='19472'>
+            (not (q ?X0))
+            ($answer ?X0 ?X1)
+            (not (p ?X1))
+          </clause>
+        </premises>
+        <conclusion>
+          <clause number='23610'>
+            (not (q ?X0))
+            ($answer ?X0 ?X1)
+            (not (p ?X1))
+          </clause>
+        </conclusion>
+      </proofStep>
+      <proofStep>
+        <premises>
+        </premises>
+        <conclusion>
+          <formula number='19452'>
+             (p b)
+          </formula>
+        </conclusion>
+      </proofStep>
+      <proofStep>
+        <premises>
+          <formula number='19452'>
+             (p b)
+          </formula>
+        </premises>
+        <conclusion>
+          <formula number='19456'>
+             (p b)
+          </formula>
+        </conclusion>
+      </proofStep>
+      <proofStep>
+        <premises>
+          <formula number='19456'>
+             (p b)
+          </formula>
+        </premises>
+        <conclusion>
+          <formula number='19460'>
+             (p b)
+          </formula>
+        </conclusion>
+      </proofStep>
+      <proofStep>
+        <premises>
+          <formula number='19460'>
+             (p b)
+          </formula>
+        </premises>
+        <conclusion>
+          <formula number='19465'>
+             (p b)
+          </formula>
+        </conclusion>
+      </proofStep>
+      <proofStep>
+        <premises>
+          <formula number='19465'>
+             (p b)
+          </formula>
+        </premises>
+        <conclusion>
+          <clause number='19469'>
+            (p b)
+          </clause>
+        </conclusion>
+      </proofStep>
+      <proofStep>
+        <premises>
+          <clause number='19469'>
+            (p b)
+          </clause>
+        </premises>
+        <conclusion>
+          <clause number='19474'>
+            (p b)
+          </clause>
+        </conclusion>
+      </proofStep>
+      <proofStep>
+        <premises>
+          <clause number='19474'>
+            (p b)
+          </clause>
+        </premises>
+        <conclusion>
+          <clause number='23612'>
+            (p b)
+          </clause>
+        </conclusion>
+      </proofStep>
+      <proofStep>
+        <premises>
+        </premises>
+        <conclusion>
+          <formula number='19453'>
+             (or
+               (q c)
+               (q d))
+          </formula>
+        </conclusion>
+      </proofStep>
+      <proofStep>
+        <premises>
+          <formula number='19453'>
+             (or
+               (q c)
+               (q d))
+          </formula>
+        </premises>
+        <conclusion>
+          <formula number='19457'>
+             (or
+               (q c)
+               (q d))
+          </formula>
+        </conclusion>
+      </proofStep>
+      <proofStep>
+        <premises>
+          <formula number='19457'>
+             (or
+               (q c)
+               (q d))
+          </formula>
+        </premises>
+        <conclusion>
+          <formula number='19461'>
+             (or
+               (q c)
+               (q d))
+          </formula>
+        </conclusion>
+      </proofStep>
+      <proofStep>
+        <premises>
+          <formula number='19461'>
+             (or
+               (q c)
+               (q d))
+          </formula>
+        </premises>
+        <conclusion>
+          <formula number='19466'>
+             (or
+               (q c)
+               (q d))
+          </formula>
+        </conclusion>
+      </proofStep>
+      <proofStep>
+        <premises>
+          <formula number='19466'>
+             (or
+               (q c)
+               (q d))
+          </formula>
+        </premises>
+        <conclusion>
+          <clause number='19470'>
+            (q d)
+            (q c)
+          </clause>
+        </conclusion>
+      </proofStep>
+      <proofStep>
+        <premises>
+          <clause number='19470'>
+            (q d)
+            (q c)
+          </clause>
+        </premises>
+        <conclusion>
+          <clause number='19473'>
+            (q c)
+            (q d)
+          </clause>
+        </conclusion>
+      </proofStep>
+      <proofStep>
+        <premises>
+          <clause number='19473'>
+            (q c)
+            (q d)
+          </clause>
+        </premises>
+        <conclusion>
+          <clause number='23611'>
+            (q c)
+            (q d)
+          </clause>
+        </conclusion>
+      </proofStep>
+      <proofStep>
+        <premises>
+          <clause number='23610'>
+            (not (q ?X0))
+            ($answer ?X0 ?X1)
+            (not (p ?X1))
+          </clause>
+          <clause number='23611'>
+            (q c)
+            (q d)
+          </clause>
+        </premises>
+        <conclusion>
+          <clause number='27738'>
+            (not (p ?X0))
+            ($answer c ?X0)
+            (q d)
+          </clause>
+        </conclusion>
+      </proofStep>
+      <proofStep>
+        <premises>
+          <clause number='23612'>
+            (p b)
+          </clause>
+          <clause number='27738'>
+            (not (p ?X0))
+            ($answer c ?X0)
+            (q d)
+          </clause>
+        </premises>
+        <conclusion>
+          <clause number='27739'>
+            (q d)
+            ($answer c b)
+          </clause>
+        </conclusion>
+      </proofStep>
+      <proofStep>
+        <premises>
+          <clause number='23610'>
+            (not (q ?X0))
+            ($answer ?X0 ?X1)
+            (not (p ?X1))
+          </clause>
+          <clause number='27739'>
+            (q d)
+            ($answer c b)
+          </clause>
+        </premises>
+        <conclusion>
+          <clause number='27741'>
+            (not (p ?X0))
+            ($answer c b)
+            ($answer d ?X0)
+          </clause>
+        </conclusion>
+      </proofStep>
+      <proofStep>
+        <premises>
+          <clause number='23613'>
+            (p a)
+          </clause>
+          <clause number='27741'>
+            (not (p ?X0))
+            ($answer c b)
+            ($answer d ?X0)
+          </clause>
+        </premises>
+        <conclusion>
+          <clause number='27744'>
+            ($answer c b)
+            ($answer d a)
+          </clause>
+        </conclusion>
+      </proofStep>
+    </proof>
+    </answer>
+  <summary proofs='2'>
+</queryResponce>
+<queryResponce>
+  <answer result='yes' number='1'>
+    <bindingSet type='disjunctive'>
+      <binding>
+        <var name='?y' value='c'/>
+      </binding>
+      <binding>
+        <var name='?y' value='d'/>
+      </binding>
+    </bindingSet>
+    <proof>
+      <proofStep>
+        <premises>
+        </premises>
+        <conclusion>
+          <formula number='19472'>
+             (not (q ?X412))
+          </formula>
+        </conclusion>
+      </proofStep>
+      <proofStep>
+        <premises>
+          <formula number='19472'>
+             (not (q ?X412))
+          </formula>
+        </premises>
+        <conclusion>
+          <formula number='19473'>
+             (forall (?X0)
+               (not (q ?X0)))
+          </formula>
+        </conclusion>
+      </proofStep>
+      <proofStep>
+        <premises>
+          <formula number='19473'>
+             (forall (?X0)
+               (not (q ?X0)))
+          </formula>
+        </premises>
+        <conclusion>
+          <formula number='19474'>
+             (forall (?X0)
+               (not (q ?X0)))
+          </formula>
+        </conclusion>
+      </proofStep>
+      <proofStep>
+        <premises>
+          <formula number='19474'>
+             (forall (?X0)
+               (not (q ?X0)))
+          </formula>
+        </premises>
+        <conclusion>
+          <formula number='19475'>
+             (not (q ?X0))
+          </formula>
+        </conclusion>
+      </proofStep>
+      <proofStep>
+        <premises>
+          <formula number='19475'>
+             (not (q ?X0))
+          </formula>
+        </premises>
+        <conclusion>
+          <clause number='19476'>
+            (not (q ?X0))
+            ($answer ?X0)
+          </clause>
+        </conclusion>
+      </proofStep>
+      <proofStep>
+        <premises>
+          <clause number='19476'>
+            (not (q ?X0))
+            ($answer ?X0)
+          </clause>
+        </premises>
+        <conclusion>
+          <clause number='19477'>
+            (not (q ?X0))
+            ($answer ?X0)
+          </clause>
+        </conclusion>
+      </proofStep>
+      <proofStep>
+        <premises>
+          <clause number='19477'>
+            (not (q ?X0))
+            ($answer ?X0)
+          </clause>
+        </premises>
+        <conclusion>
+          <clause number='23615'>
+            (not (q ?X0))
+            ($answer ?X0)
+          </clause>
+        </conclusion>
+      </proofStep>
+      <proofStep>
+        <premises>
+        </premises>
+        <conclusion>
+          <formula number='19453'>
+             (or
+               (q c)
+               (q d))
+          </formula>
+        </conclusion>
+      </proofStep>
+      <proofStep>
+        <premises>
+          <formula number='19453'>
+             (or
+               (q c)
+               (q d))
+          </formula>
+        </premises>
+        <conclusion>
+          <formula number='19457'>
+             (or
+               (q c)
+               (q d))
+          </formula>
+        </conclusion>
+      </proofStep>
+      <proofStep>
+        <premises>
+          <formula number='19457'>
+             (or
+               (q c)
+               (q d))
+          </formula>
+        </premises>
+        <conclusion>
+          <formula number='19461'>
+             (or
+               (q c)
+               (q d))
+          </formula>
+        </conclusion>
+      </proofStep>
+      <proofStep>
+        <premises>
+          <formula number='19461'>
+             (or
+               (q c)
+               (q d))
+          </formula>
+        </premises>
+        <conclusion>
+          <formula number='19466'>
+             (or
+               (q c)
+               (q d))
+          </formula>
+        </conclusion>
+      </proofStep>
+      <proofStep>
+        <premises>
+          <formula number='19466'>
+             (or
+               (q c)
+               (q d))
+          </formula>
+        </premises>
+        <conclusion>
+          <clause number='19470'>
+            (q d)
+            (q c)
+          </clause>
+        </conclusion>
+      </proofStep>
+      <proofStep>
+        <premises>
+          <clause number='19470'>
+            (q d)
+            (q c)
+          </clause>
+        </premises>
+        <conclusion>
+          <clause number='19478'>
+            (q c)
+            (q d)
+          </clause>
+        </conclusion>
+      </proofStep>
+      <proofStep>
+        <premises>
+          <clause number='19478'>
+            (q c)
+            (q d)
+          </clause>
+        </premises>
+        <conclusion>
+          <clause number='23616'>
+            (q c)
+            (q d)
+          </clause>
+        </conclusion>
+      </proofStep>
+      <proofStep>
+        <premises>
+          <clause number='23615'>
+            (not (q ?X0))
+            ($answer ?X0)
+          </clause>
+          <clause number='23616'>
+            (q c)
+            (q d)
+          </clause>
+        </premises>
+        <conclusion>
+          <clause number='27743'>
+            (q d)
+            ($answer c)
+          </clause>
+        </conclusion>
+      </proofStep>
+      <proofStep>
+        <premises>
+          <clause number='23615'>
+            (not (q ?X0))
+            ($answer ?X0)
+          </clause>
+          <clause number='27743'>
+            (q d)
+            ($answer c)
+          </clause>
+        </premises>
+        <conclusion>
+          <clause number='27744'>
+            ($answer c)
+            ($answer d)
+          </clause>
+        </conclusion>
+      </proofStep>
+    </proof>
+    </answer>
+  <summary proofs='1'>
+</queryResponce>

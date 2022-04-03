@@ -1,0 +1,16 @@
+Unix
+--------------------
+
+　次のコマンドを順次実行することでインストールします。
+
+  perl Makefile.PL
+  make
+  make install
+
+
+Windows (ActivePerl)
+--------------------
+
+  windowsサブフォルダ内にある"win_install.pl" を実行します。
+自動的にActivePerlの"site\lib"ディレクトリに必要なファイルが
+コピーされます。

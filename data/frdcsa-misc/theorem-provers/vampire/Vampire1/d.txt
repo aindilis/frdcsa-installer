@@ -1,0 +1,224 @@
+                   Exhibit D: Test Question Table of Contents
+
+   HPKB Test Questions
+
+   TQA10-b.kif.tq, TQA100-b.kif.tq, TQB16.kif.tq, TQA106.kif.tq,
+
+   TQA107-a.kif.tq, TQB77-b.kif.tq, TQA109.kif.tq, TQA11-12.kif.tq,
+
+   TQB24.kif.tq, TQA111.kif.tq, TQB25.kif.tq, TQA113.kif.tq, TQB28.kif.tq,
+
+   TQA121.kif.tq, TQB30.kif.tq, TQA124.kif.tq, TQB35.kif.tq, TQA14.kif.tq,
+
+   TQA15-a.kif.tq, TQB37.kif.tq, TQA16.kif.tq, TQB42.kif.tq, TQA2.kif.tq,
+
+   TQB43.kif.tq, TQA21.kif.tq, TQB47.kif.tq, TQA22.kif.tq, TQB49.kif.tq,
+
+   TQA24.kif.tq, TQB51.kif.tq, TQA35.kif.tq, TQB52.kif.tq, TQA39.kif.tq,
+
+   TQB53.kif.tq, TQA49.kif.tq, TQB58.kif.tq, TQA51.kif.tq, TQB6.kif.tq,
+
+   TQA59.kif.tq, TQB60.kif.tq, TQA6.kif.tq, TQB62.kif.tq, TQA60.kif.tq,
+
+   TQB63.kif.tq, TQA62.kif.tq, TQB66a.kif.tq, TQA63.kif.tq, TQB66b.kif.tq,
+
+   TQB67a.kif.tq, TQA65-unSkolemed.kif.tq, TQB67b.kif.tq, TQA66a.kif.tq,
+
+   TQC101a.kif.tq, TQA66b.kif.tq, TQB83a.kif.tq, TQA67a.kif.tq,
+
+   TQB83b.kif.tq, TQA70.kif.tq, TQA77-b.kif.tq, TQA81-b.kif.tq, TQB83b.tq,
+
+   TQA83a.kif.tq, TQB85.kif.tq, TQA83b.kif.tq, TQB87.kif.tq, TQA84.kif.tq,
+
+   TQB9.kif.tq, TQA87.kif.tq, TQB94.kif.tq, TQA9.kif.tq, TQB98.kif.tq,
+
+   TQA94.kif.tq, TQB99.kif.tq, TQA98.kif.tq, TQC1.kif.tq, TQA99.kif.tq,
+
+   TQB10-b.kif.tq, TQB100-b.kif.tq, TQC10.kif.tq, TQB102.kif.tq,
+
+   TQC100.kif.tq, TQB103.kif.tq, TQC101b.kif.tq, TQB104.kif.tq,
+
+   TQC11-12.kif.tq, TQB106.kif.tq, TQC102.kif.tq, TQB107.kif.tq,
+
+   TQB11-12.kif.tq, TQC103.kif.tq, TQB113.kif.tq, TQB117-b.kif.tq,
+
+   TQC104.kif.tq, TQB118.kif.tq, TQC106.kif.tq, TQB124.kif.tq, TQC108.kif.tq,
+
+   TQB129.kif.tq, TQC94.kif.tq, TQC110.kif.tq, TQC97-b.kif.tq, TQC112.kif.tq,
+
+   TQC98-b.kif.tq, TQC113.kif.tq, TQD101a.kif.tq, TQC115.kif.tq,
+
+   TQC99.kif.tq, TQC117.kif.tq, TQD1.kif.tq, TQC121.kif.tq, TQD10.kif.tq,
+
+   TQC124.kif.tq, TQD100.kif.tq, TQC126.kif.tq, TQD101b.kif.tq,
+
+   TQC127.kif.tq, TQD11-12.kif.tq, TQC128.kif.tq, TQC129-a.kif.tq,
+
+   TQD102.kif.tq, TQC14.kif.tq, TQD106.kif.tq, TQC16.kif.tq, TQD107.kif.tq,
+
+   TQC17.kif.tq, TQD108.kif.tq, TQC20.kif.tq, TQD110x.kif.tq, TQC21.kif.tq,
+
+   TQD115-b.kif.tq, TQC22.kif.tq, TQC24-b.kif.tq, TQD111.kif.tq,
+
+   TQC25.kif.tq, TQD112.kif.tq, TQC28.kif.tq, TQC29-a.kif.tq, TQD113.kif.tq,
+
+   TQC30.kif.tq, TQD114.kif.tq, TQC32.kif.tq, TQC35-b.kif.tq, TQD15-a.kif.tq,
+
+   TQC35a.kif.tq, TQD117.kif.tq, TQC39.kif.tq, TQD121.kif.tq, TQC42.kif.tq,
+
+   TQD122.kif.tq, TQC43.kif.tq, TQD124.kif.tq, TQC44.kif.tq, TQC47-b.kif.tq,
+
+   TQD125.kif.tq, TQC49.kif.tq, TQD126.kif.tq, TQC5.kif.tq, TQD127.kif.tq,
+
+   TQC51.kif.tq, TQD13.kif.tq, TQC52.kif.tq, TQD14.kif.tq, TQC53.kif.tq,
+
+   TQD18-19.kif.tq, TQC58.kif.tq, TQD16.kif.tq, TQC59.kif.tq, TQD17.kif.tq,
+
+   TQC6.kif.tq, TQD24-a.kif.tq, TQC62.kif.tq, TQD20.kif.tq, TQC63.kif.tq,
+
+   TQD21.kif.tq, TQC65.kif.tq, TQD22.kif.tq, TQC66b.kif.tq, TQD29-b.kif.tq,
+
+   TQC70.kif.tq, TQD25.kif.tq, TQC71.kif.tq, TQD26.kif.tq, TQC79.kif.tq,
+
+   TQD28.kif.tq, TQC80.kif.tq, TQD35-a.kif.tq, TQC83b.kif.tq, TQD30.kif.tq,
+
+   TQC84.kif.tq, TQD32.kif.tq, TQC85.kif.tq, TQD35-b.kif.tq, TQC87.kif.tq,
+
+   TQE210a.kif.tq, TQC89.kif.tq, TQD37.kif.tq, TQC9.kif.tq, TQD39.kif.tq,
+
+   TQC92.kif.tq, TQD41.kif.tq, TQD42.kif.tq, TQD43.kif.tq, TQE210b.kif.tq,
+
+   TQD44.kif.tq, TQF124a.kif.tq, TQD46.kif.tq, TQD47-a.kif.tq, TQE211.kif.tq,
+
+   TQD49.kif.tq, TQE212.kif.tq, TQD5-a.kif.tq, TQE213.kif.tq, TQD51.kif.tq,
+
+   TQE214.kif.tq, TQD52.kif.tq, TQE216.kif.tq, TQD53.kif.tq, TQE217.kif.tq,
+
+   TQD58.kif.tq, TQF124b.kif.tq, TQD59.kif.tq, TQF124c.kif.tq, TQD6.kif.tq,
+
+   TQF124d.kif.tq, TQD60.kif.tq, TQF125a.kif.tq, TQD62.kif.tq,
+
+   TQF125b.kif.tq, TQD63.kif.tq, TQF125c.kif.tq, TQD65.kif.tq,
+
+   TQF125d.kif.tq, TQD66a.kif.tq, TQF125e.kif.tq, TQD66b.kif.tq,
+
+   TQF126d.kif.tq, TQD67a.kif.tq, TQF127a.kif.tq, TQD67b.kif.tq,
+
+   TQF127b.kif.tq, TQD68.kif.tq, TQF128a.kif.tq, TQD70.kif.tq,
+
+   TQF128b.kif.tq, TQD71.kif.tq, TQF128c.kif.tq, TQD76.kif.tq,
+
+   TQF128d.kif.tq, TQD77.kif.tq, TQF128e.kif.tq, TQD79.kif.tq,
+
+   TQF201a.kif.tq, TQD80.kif.tq, TQF201c.kif.tq, TQD81.kif.tq,
+
+   TQF202a.kif.tq, TQD82.kif.tq, TQF202b.kif.tq, TQD83a.kif.tq,
+
+   TQF202c.kif.tq, TQD83b.kif.tq, TQF203a.kif.tq, TQD84.kif.tq,
+
+   TQF203b.kif.tq, TQD87.kif.tq, TQD88-a.kif.tq, TQF204a.kif.tq,
+
+   TQD89.kif.tq, TQF204b.kif.tq, TQD9.kif.tq, TQF205a.kif.tq, TQD92.kif.tq,
+
+   TQF206a.kif.tq, TQD95.kif.tq, TQF206b.kif.tq, TQD97.kif.tq,
+
+   TQF207a.kif.tq, TQD98.kif.tq, TQD99-a2.kif.tq, TQD99-b.kif.tq,
+
+   TQE124a.kif.tq, TQE124b.kif.tq, TQE125a.kif.tq, TQE125b.kif.tq,
+
+   TQF209a.kif.tq, TQE126.kif.tq, TQF209d.kif.tq, TQE200.kif.tq,
+
+   TQE201b.kif.tq, TQE202a.kif.tq, TQE202b.kif.tq, TQF210a.kif.tq,
+
+   TQE204.kif.tq, TQF210d.kif.tq, TQE205.kif.tq, TQF211a.kif.tq,
+
+   TQE206.kif.tq, TQF211c.kif.tq, TQE207.kif.tq, TQE209a.kif.tq,
+
+   TQE209b.kif.tq, TQF212b.kif.tq, TQF216a.kif.tq, TQF216b.kif.tq,
+
+   TQF216c.kif.tq, TQF216d.kif.tq, TQF217a.kif.tq, TQF217b.kif.tq,
+
+   TQF217c.kif.tq, TQF217d.kif.tq, TQF219a.kif.tq, TQF219b.kif.tq,
+
+   TQF219c.kif.tq, TQF220a.kif.tq, TQF220c.kif.tq, TQF223b.kif.tq,
+
+   TQF223c.kif.tq, TQF223d.kif.tq, TQF223e.kif.tq, TQF224b.kif.tq,
+
+   TQF224c.kif.tq, TQF226c.kif.tq, TQF226d.kif.tq, TQF228b.kif.tq,
+
+   TQF228c.kif.tq, TQF230c.kif.tq, TQF230d.kif.tq, TQF231a.kif.tq,
+
+   TQF231c.kif.tq, TQF232a.kif.tq, TQF232b.kif.tq, TQF232c.kif.tq,
+
+   TQF232d.kif.tq, TQF232e.kif.tq, TQF233c.kif.tq, TQF234a.kif.tq,
+
+   TQF234b.kif.tq, TQF234c.kif.tq, TQF234d.kif.tq, TQF236a.kif.tq,
+
+   TQF236b.kif.tq, TQF236e.kif.tq, TQF238a.kif.tq, TQF238b-1.kif.tq,
+
+   TQF238b-2.kif.tq, TQF238c.kif.tq, TQF239a.kif.tq, TQF239b.kif.tq,
+
+   TQF239c.kif.tq, TQF239d.kif.tq, TQF239e.kif.tq, TQF240a.kif.tq,
+
+   TQF240b.kif.tq, TQF240c.kif.tq, TQF240d.kif.tq, TQF251a.kif.tq,
+
+   TQF251d.kif.tq, TQF251e.kif.tq, TQF253a.kif.tq, TQF253b.kif.tq,
+
+   TQF253c.kif.tq, TQF253d.kif.tq, TQF253e.kif.tq, TQF255a.kif.tq,
+
+   TQF255c.kif.tq, TQF255d.kif.tq, TQF255e.kif.tq
+
+   Logical Soundness Test Questions
+
+   DeMorgans.logic.tq, EG_logic.tq, EG_logic1.tq, EQ_logic.tq,
+
+   UI_soundness.tq, UI_soundness1.tq, UI_soundness2.tq, UI_soundness3.tq,
+
+   UI_soundness4.tq, UI_soundness5.tq, UI_soundness6.tq,
+
+   conjuntive_soundness.tq, conjuntive_soundness2.tq,
+
+   conjuntive_soundness4.tq, disjunctive_soundness.tq,
+
+   disjunctive_soundness1.tq, disjunctive_syllogism.logic.tq,
+
+   disjunctive_syllogism1.logic.tq, ei_soundness.tq, ei_soundness1.tq,
+
+   ei_soundness2.tq, ei_soundness3.tq, ei_soundness4.tq, ei_soundness5.tq,
+
+   ei_soundness6.tq, ei_soundness7.tq, ei_soundness8.tq,
+
+   evaluation_test_0.tq, evaluation_test_1.tq, eximpl_soundness.tq,
+
+   eximpl_soundness1.tq, exists_0.tq, exists_1.tq, exists_2.tq,
+
+   forAll_implies_test.txt.tq, modus_ponens.logic.tq, modus_tollens.logic.tq,
+
+   syll_soundness.tq, syll_soundness1.tq, syll_soundness2.tq,
+
+   syll_soundness3.tq, unification_0.tq, unification_1.tq, unification_2.tq,
+
+   unification_3.tq, unification_4.tq
+
+   Logical Theorem Test Questions
+
+   KMT17.logic.tq, KMT17Hyp.logic.tq, KMT18.logic.tq, KMT18Hyp.logic.tq,
+
+   KMT19.logic.tq, KMT19Hyp.logic.tq, KMT2.logic.tq, KMT20.logic.tq,
+
+   KMT20Hyp.logic.tq, KMT21.logic.tq, KMT21Hyp.logic.tq, KMT22.logic.tq,
+
+   KMT22Hyp.logic.tq, KMT239.logic.tq, KMT23logic.tq, KMT240.logic.tq,
+
+   KMT241.logic.tq, KMT242.logic.tq, KMT243.logic.tq, KMT244.logic.tq,
+
+   KMT244s.logic.tq, KMT245a.logic.tq, KMT245b.logic.tq, KMT246.logic.tq,
+
+   KMT247a.logic.tq, KMT247b.logic.tq, KMT248a.logic.tq, KMT248b.logic.tq,
+
+   KMT263a.logic.tq, KMT263b.logic.tq, KMT267.logic.tq, KMT2Hyp.logic.tq
+
+   User Theorem Test Questions
+
+   axioms1.tq, axioms2.tq, axioms3.tq, moo_onto.kif.tq, olga_test0.txt.tq,
+   olga_test1.txt.tq

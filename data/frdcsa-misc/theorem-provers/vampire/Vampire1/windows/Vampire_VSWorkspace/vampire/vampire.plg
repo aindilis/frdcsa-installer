@@ -1,0 +1,515 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: VKLibrary_VSProject - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1.TUR\LOCALS~1\Temp\RSP55.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /Ob2 /I "..\..\BlodKorv" /I "..\..\Gematogen" /D "WIN32" /D "NDEBUG" /D "_MBCS" /D "_LIB" /D "NO_DEBUG" /Fp"Release/VKLibrary_VSProject.pch" /YX /Fo"Release/" /Fd"Release/" /FD /Zm300 /c 
+"C:\Vampire\VampireKernel\AutoFunctorPrecedence.cpp"
+"C:\Vampire\VampireKernel\BackDemodulation.cpp"
+"C:\Vampire\VampireKernel\BackParaCandidates.cpp"
+"C:\Vampire\VampireKernel\backward_superposition.cpp"
+"C:\Vampire\VampireKernel\BackwardSubsumption.cpp"
+"C:\Vampire\VampireKernel\binary_resolution.cpp"
+"C:\Vampire\BlodKorv\BitWord.cpp"
+"C:\Vampire\VampireKernel\BSIndex.cpp"
+"C:\Vampire\VampireKernel\BSMachine.cpp"
+"C:\Vampire\VampireKernel\BuiltInFloatingPointArithmetic.cpp"
+"C:\Vampire\VampireKernel\BuiltInTheory.cpp"
+"C:\Vampire\VampireKernel\BuiltInTheoryDispatcher.cpp"
+"C:\Vampire\BlodKorv\ClassDesc.cpp"
+"C:\Vampire\VampireKernel\Clause.cpp"
+"C:\Vampire\VampireKernel\ClauseAssembler.cpp"
+"C:\Vampire\VampireKernel\ClauseBackground.cpp"
+"C:\Vampire\VampireKernel\ClauseNumIndex.cpp"
+"C:\Vampire\VampireKernel\ClauseQueue.cpp"
+"C:\Vampire\VampireKernel\ComponentName.cpp"
+"C:\Vampire\BlodKorv\Debug.cpp"
+"C:\Vampire\BlodKorv\DestructionMode.cpp"
+"C:\Vampire\BlodKorv\Exit.cpp"
+"C:\Vampire\VampireKernel\Flatterm.cpp"
+"C:\Vampire\VampireKernel\forward_subsumption.cpp"
+"C:\Vampire\VampireKernel\forward_superposition.cpp"
+"C:\Vampire\VampireKernel\ForwardDemodulation.cpp"
+"C:\Vampire\VampireKernel\fs_code.cpp"
+"C:\Vampire\VampireKernel\fs_command.cpp"
+"C:\Vampire\BlodKorv\GlobalClock.cpp"
+"C:\Vampire\BlodKorv\GlobAlloc.cpp"
+"C:\Vampire\BlodKorv\GlobAlloc2.cpp"
+"C:\Vampire\BlodKorv\GlobalStopFlag.cpp"
+"C:\Vampire\VampireKernel\InferenceDispatcher.cpp"
+"C:\Vampire\VampireKernel\InferenceTree.cpp"
+"C:\Vampire\VampireKernel\InstanceRetrievalForDemodulation.cpp"
+"C:\Vampire\VampireKernel\iu_command.cpp"
+"C:\Vampire\VampireKernel\iu_machine.cpp"
+"C:\Vampire\VampireKernel\kept.cpp"
+"C:\Vampire\VampireKernel\LiteralList.cpp"
+"C:\Vampire\VampireKernel\LiteralOrdering.cpp"
+"C:\Vampire\VampireKernel\LiteralSelection.cpp"
+"C:\Vampire\VampireKernel\LiteralSharing.cpp"
+"C:\Vampire\VampireKernel\LocalUnification.cpp"
+"C:\Vampire\VampireKernel\Logging.cpp"
+"C:\Vampire\BlodKorv\Malloc.cpp"
+"C:\Vampire\VampireKernel\Master.cpp"
+"C:\Vampire\VampireKernel\Master3.cpp"
+"C:\Vampire\VampireKernel\NewClause.cpp"
+"C:\Vampire\VampireKernel\NonrecursiveKBOrdering.cpp"
+"C:\Vampire\VampireKernel\NonuniformConstantTermWeighting.cpp"
+"C:\Vampire\VampireKernel\old_fs_code.cpp"
+"C:\Vampire\VampireKernel\or_index.cpp"
+"C:\Vampire\VampireKernel\or_premise.cpp"
+"C:\Vampire\VampireKernel\PagedPassiveClauseStorage.cpp"
+"C:\Vampire\VampireKernel\prefix.cpp"
+"C:\Vampire\VampireKernel\premise_factoring.cpp"
+"C:\Vampire\VampireKernel\ProblemProfile.cpp"
+"C:\Vampire\BlodKorv\RuntimeError.cpp"
+"C:\Vampire\VampireKernel\sharing.cpp"
+"C:\Vampire\VampireKernel\Signature.cpp"
+"C:\Vampire\VampireKernel\SimplificationOrdering.cpp"
+"C:\Vampire\VampireKernel\Splitting.cpp"
+"C:\Vampire\VampireKernel\Splitting3.cpp"
+"C:\Vampire\VampireKernel\StandardKBOrdering.cpp"
+"C:\Vampire\VampireKernel\Tabulation.cpp"
+"C:\Vampire\VampireKernel\Term.cpp"
+"C:\Vampire\VampireKernel\TermWeighting.cpp"
+"C:\Vampire\VampireKernel\tmp_literal.cpp"
+"C:\Vampire\VampireKernel\TmpLitList.cpp"
+"C:\Vampire\VampireKernel\UniformTermWeighting.cpp"
+"C:\Vampire\VampireKernel\VampireKernel.cpp"
+"C:\Vampire\VampireKernel\VampireKernelInterceptMacros.cpp"
+"C:\Vampire\VampireKernel\variables.cpp"
+"C:\Vampire\VampireKernel\weight_formula.cpp"
+"C:\Vampire\VampireKernel\WeightPolynomial.cpp"
+"C:\Vampire\VampireKernel\WeightPolynomialSpecialisedComparisonCommand.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1.TUR\LOCALS~1\Temp\RSP55.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1.TUR\LOCALS~1\Temp\RSP56.tmp" with contents
+[
+/nologo /out:"Release\vkernel.lib" 
+.\Release\AutoFunctorPrecedence.obj
+.\Release\BackDemodulation.obj
+.\Release\BackParaCandidates.obj
+.\Release\backward_superposition.obj
+.\Release\BackwardSubsumption.obj
+.\Release\binary_resolution.obj
+.\Release\BitWord.obj
+.\Release\BSIndex.obj
+.\Release\BSMachine.obj
+.\Release\BuiltInFloatingPointArithmetic.obj
+.\Release\BuiltInTheory.obj
+.\Release\BuiltInTheoryDispatcher.obj
+.\Release\ClassDesc.obj
+.\Release\Clause.obj
+.\Release\ClauseAssembler.obj
+.\Release\ClauseBackground.obj
+.\Release\ClauseNumIndex.obj
+.\Release\ClauseQueue.obj
+.\Release\ComponentName.obj
+.\Release\Debug.obj
+.\Release\DestructionMode.obj
+.\Release\Exit.obj
+.\Release\Flatterm.obj
+.\Release\forward_subsumption.obj
+.\Release\forward_superposition.obj
+.\Release\ForwardDemodulation.obj
+.\Release\fs_code.obj
+.\Release\fs_command.obj
+.\Release\GlobalClock.obj
+.\Release\GlobAlloc.obj
+.\Release\GlobAlloc2.obj
+.\Release\GlobalStopFlag.obj
+.\Release\InferenceDispatcher.obj
+.\Release\InferenceTree.obj
+.\Release\InstanceRetrievalForDemodulation.obj
+.\Release\iu_command.obj
+.\Release\iu_machine.obj
+.\Release\kept.obj
+.\Release\LiteralList.obj
+.\Release\LiteralOrdering.obj
+.\Release\LiteralSelection.obj
+.\Release\LiteralSharing.obj
+.\Release\LocalUnification.obj
+.\Release\Logging.obj
+.\Release\Malloc.obj
+.\Release\Master.obj
+.\Release\Master3.obj
+.\Release\NewClause.obj
+.\Release\NonrecursiveKBOrdering.obj
+.\Release\NonuniformConstantTermWeighting.obj
+.\Release\old_fs_code.obj
+.\Release\or_index.obj
+.\Release\or_premise.obj
+.\Release\PagedPassiveClauseStorage.obj
+.\Release\prefix.obj
+.\Release\premise_factoring.obj
+.\Release\ProblemProfile.obj
+.\Release\RuntimeError.obj
+.\Release\sharing.obj
+.\Release\Signature.obj
+.\Release\SimplificationOrdering.obj
+.\Release\Splitting.obj
+.\Release\Splitting3.obj
+.\Release\StandardKBOrdering.obj
+.\Release\Tabulation.obj
+.\Release\Term.obj
+.\Release\TermWeighting.obj
+.\Release\tmp_literal.obj
+.\Release\TmpLitList.obj
+.\Release\UniformTermWeighting.obj
+.\Release\VampireKernel.obj
+.\Release\VampireKernelInterceptMacros.obj
+.\Release\variables.obj
+.\Release\weight_formula.obj
+.\Release\WeightPolynomial.obj
+.\Release\WeightPolynomialSpecialisedComparisonCommand.obj
+]
+Creating command line "link.exe -lib @C:\DOCUME~1\ADMINI~1.TUR\LOCALS~1\Temp\RSP56.tmp"
+<h3>Output Window</h3>
+Compiling...
+AutoFunctorPrecedence.cpp
+BackDemodulation.cpp
+BackParaCandidates.cpp
+backward_superposition.cpp
+BackwardSubsumption.cpp
+binary_resolution.cpp
+BitWord.cpp
+BSIndex.cpp
+BSMachine.cpp
+BuiltInFloatingPointArithmetic.cpp
+C:\Vampire\VampireKernel\BSMachine.hpp(1232) : warning C4715: 'VK::BSMachine::Stream::equalize' : not all control paths return a value
+C:\Vampire\VampireKernel\BSMachine.hpp(1255) : warning C4715: 'VK::BSMachine::Stream::equalize' : not all control paths return a value
+BuiltInTheory.cpp
+BuiltInTheoryDispatcher.cpp
+ClassDesc.cpp
+Clause.cpp
+ClauseAssembler.cpp
+ClauseBackground.cpp
+ClauseNumIndex.cpp
+ClauseQueue.cpp
+ComponentName.cpp
+Debug.cpp
+C:\Vampire\VampireKernel\ComponentName.cpp(406) : warning C4715: 'VK::ComponentName::findVariant' : not all control paths return a value
+DestructionMode.cpp
+Exit.cpp
+Flatterm.cpp
+forward_subsumption.cpp
+forward_superposition.cpp
+C:\Vampire\VampireKernel\forward_subsumption.cpp(454) : warning C4715: 'VK::ForwardSubsumption::SubsumeInSetMode' : not all control paths return a value
+C:\Vampire\VampireKernel\forward_subsumption.cpp(835) : warning C4715: 'VK::ForwardSubsumption::SubsumeInMultisetMode' : not all control paths return a value
+C:\Vampire\VampireKernel\forward_subsumption.cpp(1234) : warning C4715: 'VK::ForwardSubsumption::SubsumeInOptimisedMultisetMode' : not all control paths return a value
+ForwardDemodulation.cpp
+fs_code.cpp
+..\..\Gematogen\ForwardMatchingIndexTree.hpp(1762) : warning C4715: 'Gem::FMCodeTree<128,64,BK::GlobAlloc,VK::TERM,VK::Flatterm,VK::ForwardDemodulation::Index::LeafInfo,VK::ForwardDemodulation::Index>::Removal::SkipFunc' : not all control paths return a value
+..\..\Gematogen\ForwardMatchingIndexTree.hpp(1232) : warning C4715: 'Gem::FMCodeTree<128,64,BK::GlobAlloc,VK::TERM,VK::Flatterm,VK::ForwardDemodulation::Index::LeafInfo,VK::ForwardDemodulation::Index>::Integrator::ReadFunc' : not all control paths return a value
+fs_command.cpp
+C:\Vampire\VampireKernel\fs_code.cpp(548) : warning C4715: 'VK::FS_CODE_INTEGRATOR::ReadHeader' : not all control paths return a value
+C:\Vampire\VampireKernel\fs_code.cpp(617) : warning C4715: 'VK::FS_CODE_INTEGRATOR::ReadPropLit' : not all control paths return a value
+C:\Vampire\VampireKernel\fs_code.cpp(686) : warning C4715: 'VK::FS_CODE_INTEGRATOR::ReadUnordEq' : not all control paths return a value
+C:\Vampire\VampireKernel\fs_code.cpp(756) : warning C4715: 'VK::FS_CODE_INTEGRATOR::ReadOrdEq' : not all control paths return a value
+C:\Vampire\VampireKernel\fs_code.cpp(888) : warning C4715: 'VK::FS_CODE_INTEGRATOR::ReadFunc' : not all control paths return a value
+C:\Vampire\VampireKernel\fs_code.cpp(956) : warning C4715: 'VK::FS_CODE_INTEGRATOR::ReadVar' : not all control paths return a value
+GlobalClock.cpp
+GlobAlloc.cpp
+GlobAlloc2.cpp
+GlobalStopFlag.cpp
+InferenceDispatcher.cpp
+InferenceTree.cpp
+InstanceRetrievalForDemodulation.cpp
+iu_command.cpp
+..\..\Gematogen\PathIndexingWithJoinsAndEarlyCleanUpForInstanceRetrieval.hpp(502) : warning C4715: 'Gem::PathIndexingJECFIR<BK::GlobAlloc,VK::InstRet::Term,24,128,64>::AbstractMachine::nextMatch' : not all control paths return a value
+iu_machine.cpp
+kept.cpp
+LiteralList.cpp
+LiteralOrdering.cpp
+LiteralSelection.cpp
+..\..\BlodKorv\Comparison.hpp(53) : warning C4715: 'BK::inverse' : not all control paths return a value
+C:\Vampire\VampireKernel\LiteralOrdering.cpp(260) : warning C4715: 'VK::LiteralOrdering::compareEqAtomsOU' : not all control paths return a value
+C:\Vampire\VampireKernel\LiteralOrdering.cpp(459) : warning C4715: 'VK::LiteralOrdering::compareEqAtomsUU' : not all control paths return a value
+LiteralSharing.cpp
+C:\Vampire\VampireKernel\tmp_literal.hpp(1043) : warning C4715: 'VK::TmpLiteral::compareEqOU' : not all control paths return a value
+C:\Vampire\VampireKernel\tmp_literal.hpp(1249) : warning C4715: 'VK::TmpLiteral::compareEqUU' : not all control paths return a value
+C:\Vampire\VampireKernel\tmp_literal.hpp(1312) : warning C4715: 'VK::TmpLiteral::preferredNegativeNoneq' : not all control paths return a value
+LocalUnification.cpp
+Logging.cpp
+Malloc.cpp
+Master.cpp
+Master3.cpp
+NewClause.cpp
+NonrecursiveKBOrdering.cpp
+NonuniformConstantTermWeighting.cpp
+C:\Vampire\VampireKernel\NonrecursiveKBOrdering.cpp(144) : warning C4715: 'VK::NonrecursiveKBOrdering::compare' : not all control paths return a value
+C:\Vampire\VampireKernel\NonrecursiveKBOrdering.cpp(189) : warning C4715: 'VK::NonrecursiveKBOrdering::compareAtoms' : not all control paths return a value
+C:\Vampire\VampireKernel\NonrecursiveKBOrdering.cpp(237) : warning C4715: 'VK::NonrecursiveKBOrdering::compareOnCurrentUnifier' : not all control paths return a value
+C:\Vampire\VampireKernel\NonrecursiveKBOrdering.cpp(286) : warning C4715: 'VK::NonrecursiveKBOrdering::compareOnCurrentUnifier' : not all control paths return a value
+C:\Vampire\VampireKernel\NonrecursiveKBOrdering.cpp(337) : warning C4715: 'VK::NonrecursiveKBOrdering::compare' : not all control paths return a value
+C:\Vampire\VampireKernel\NonrecursiveKBOrdering.cpp(390) : warning C4715: 'VK::NonrecursiveKBOrdering::compare' : not all control paths return a value
+..\..\BlodKorv\Comparison.hpp(117) : warning C4715: 'BK::strict' : not all control paths return a value
+C:\Vampire\VampireKernel\NonrecursiveKBOrdering.cpp(1617) : warning C4715: 'VK::NonrecursiveKBOrdering::ConstraintCheckOnUnifier::holdsLessOrEqual' : not all control paths return a value
+C:\Vampire\VampireKernel\NonrecursiveKBOrdering.cpp(1928) : warning C4715: 'VK::NonrecursiveKBOrdering::ConstraintCheckOnUnifier::checkGreaterOrEqual' : not all control paths return a value
+C:\Vampire\VampireKernel\NonrecursiveKBOrdering.cpp(2247) : warning C4715: 'VK::NonrecursiveKBOrdering::ConstraintCheckOnUnifier::checkLessOrEqual' : not all control paths return a value
+C:\Vampire\VampireKernel\NonrecursiveKBOrdering.cpp(2388) : warning C4715: 'VK::NonrecursiveKBOrdering::ConstraintCheckOnForwardMatchingSubst::holds' : not all control paths return a value
+C:\Vampire\VampireKernel\NonrecursiveKBOrdering.cpp(2626) : warning C4715: 'VK::NonrecursiveKBOrdering::ConstraintCheckOnForwardMatchingSubst::holdsLessOrEqual' : not all control paths return a value
+C:\Vampire\VampireKernel\NonrecursiveKBOrdering.cpp(2916) : warning C4715: 'VK::NonrecursiveKBOrdering::ConstraintCheckOnForwardMatchingSubst::checkGreaterOrEqual' : not all control paths return a value
+C:\Vampire\VampireKernel\NonrecursiveKBOrdering.cpp(3215) : warning C4715: 'VK::NonrecursiveKBOrdering::ConstraintCheckOnForwardMatchingSubst::checkLessOrEqual' : not all control paths return a value
+C:\Vampire\VampireKernel\WeightPolynomial.hpp(550) : warning C4715: 'VK::WeightPolynomial::compareForGreaterOrEqual' : not all control paths return a value
+old_fs_code.cpp
+or_index.cpp
+or_premise.cpp
+PagedPassiveClauseStorage.cpp
+prefix.cpp
+premise_factoring.cpp
+ProblemProfile.cpp
+RuntimeError.cpp
+sharing.cpp
+Signature.cpp
+SimplificationOrdering.cpp
+Splitting.cpp
+Splitting3.cpp
+StandardKBOrdering.cpp
+Tabulation.cpp
+C:\Vampire\VampireKernel\StandardKBOrdering.cpp(140) : warning C4715: 'VK::StandardKBOrdering::compare' : not all control paths return a value
+C:\Vampire\VampireKernel\StandardKBOrdering.cpp(185) : warning C4715: 'VK::StandardKBOrdering::compareAtoms' : not all control paths return a value
+C:\Vampire\VampireKernel\StandardKBOrdering.cpp(240) : warning C4715: 'VK::StandardKBOrdering::compareOnCurrentUnifier' : not all control paths return a value
+C:\Vampire\VampireKernel\StandardKBOrdering.cpp(295) : warning C4715: 'VK::StandardKBOrdering::compareOnCurrentUnifier' : not all control paths return a value
+C:\Vampire\VampireKernel\StandardKBOrdering.cpp(346) : warning C4715: 'VK::StandardKBOrdering::compare' : not all control paths return a value
+C:\Vampire\VampireKernel\StandardKBOrdering.cpp(399) : warning C4715: 'VK::StandardKBOrdering::compare' : not all control paths return a value
+C:\Vampire\VampireKernel\StandardKBOrdering.cpp(1007) : warning C4715: 'VK::StandardKBOrdering::compareOnCurrentUnifier' : not all control paths return a value
+C:\Vampire\VampireKernel\StandardKBOrdering.cpp(1401) : warning C4715: 'VK::StandardKBOrdering::compare' : not all control paths return a value
+C:\Vampire\VampireKernel\StandardKBOrdering.cpp(1353) : warning C4715: 'VK::StandardKBOrdering::compare' : not all control paths return a value
+C:\Vampire\VampireKernel\WeightPolynomial.hpp(503) : warning C4715: 'VK::WeightPolynomial::compare' : not all control paths return a value
+C:\Vampire\VampireKernel\StandardKBOrdering.cpp(2524) : warning C4715: 'VK::StandardKBOrdering::ConstraintCheckOnUnifier::checkGreaterOrEqual' : not all control paths return a value
+C:\Vampire\VampireKernel\StandardKBOrdering.cpp(2843) : warning C4715: 'VK::StandardKBOrdering::ConstraintCheckOnUnifier::checkLessOrEqual' : not all control paths return a value
+..\..\BlodKorv\Comparison.hpp(53) : warning C4715: 'BK::inverse' : not all control paths return a value
+C:\Vampire\VampireKernel\StandardKBOrdering.cpp(2965) : warning C4715: 'VK::StandardKBOrdering::ConstraintCheckOnForwardMatchingSubst::holds' : not all control paths return a value
+C:\Vampire\VampireKernel\StandardKBOrdering.cpp(3445) : warning C4715: 'VK::StandardKBOrdering::ConstraintCheckOnForwardMatchingSubst::checkGreaterOrEqual' : not all control paths return a value
+C:\Vampire\VampireKernel\StandardKBOrdering.cpp(3744) : warning C4715: 'VK::StandardKBOrdering::ConstraintCheckOnForwardMatchingSubst::checkLessOrEqual' : not all control paths return a value
+C:\Vampire\VampireKernel\WeightPolynomial.hpp(550) : warning C4715: 'VK::WeightPolynomial::compareForGreaterOrEqual' : not all control paths return a value
+Term.cpp
+TermWeighting.cpp
+tmp_literal.cpp
+TmpLitList.cpp
+UniformTermWeighting.cpp
+VampireKernel.cpp
+VampireKernelInterceptMacros.cpp
+variables.cpp
+weight_formula.cpp
+WeightPolynomial.cpp
+WeightPolynomialSpecialisedComparisonCommand.cpp
+C:\Vampire\VampireKernel\WeightPolynomial.cpp(1643) : warning C4715: 'VK::WeightPolynomial::SpecialisedComparison::compileGreaterOrEqual' : not all control paths return a value
+Creating library...
+<h3>
+--------------------Configuration: vampire - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1.TUR\LOCALS~1\Temp\RSP57.tmp" with contents
+[
+/nologo /ML /W3 /GX /O2 /Ob2 /I "..\..\BlodKorv" /I "..\..\Gematogen" /I "..\..\VampireKernel" /I "..\..\VampireKernel/PR_PARSER" /I "..\..\antlr" /I "..\antlr" /I ".." /D "WIN32" /D "NDEBUG" /D "_CONSOLE" /D "_MBCS" /D "NO_DEBUG" /D DEBUG_PREPRO=0 /D DEBUG_TRACE_ALL=0 /FR"Release/" /Fp"Release/vampire.pch" /YX /Fo"Release/" /Fd"Release/" /FD /Zm300 /c 
+"C:\Vampire\assert.cpp"
+"C:\Vampire\Atom.cpp"
+"C:\Vampire\Clause.cpp"
+"C:\Vampire\Formula.cpp"
+"C:\Vampire\Inference.cpp"
+"C:\Vampire\IntNameTable.cpp"
+"C:\Vampire\Literal.cpp"
+"C:\Vampire\Map.cpp"
+"C:\Vampire\Memory.cpp"
+"C:\Vampire\Miniscope.cpp"
+"C:\Vampire\Options.cpp"
+"C:\Vampire\Output.cpp"
+"C:\Vampire\Problem.cpp"
+"C:\Vampire\Query.cpp"
+"C:\Vampire\Random.cpp"
+"C:\Vampire\Refutation.cpp"
+"C:\Vampire\Signature.cpp"
+"C:\Vampire\Statistics.cpp"
+"C:\Vampire\Substitution.cpp"
+"C:\Vampire\SymCounter.cpp"
+"C:\Vampire\Tabulate.cpp"
+"C:\Vampire\Term.cpp"
+"C:\Vampire\Tracer.cpp"
+"C:\Vampire\Unit.cpp"
+"C:\Vampire\vampire.cpp"
+"C:\Vampire\Var.cpp"
+"C:\Vampire\ANTLRException.cpp"
+"C:\Vampire\ASTFactory.cpp"
+"C:\Vampire\ASTRefCount.cpp"
+"C:\Vampire\CharScanner.cpp"
+"C:\Vampire\BitSet.cpp"
+"C:\Vampire\CharBuffer.cpp"
+"C:\Vampire\BaseAST.cpp"
+"C:\Vampire\CommonToken.cpp"
+"C:\Vampire\CommonAST.cpp"
+"C:\Vampire\XMLParser.cpp"
+"C:\Vampire\Int.cpp"
+"C:\Vampire\KIFLexer.cpp"
+"C:\Vampire\KIFParser.cpp"
+"C:\Vampire\LexerSharedInputState.cpp"
+"C:\Vampire\LLkParser.cpp"
+"C:\Vampire\MismatchedCharException.cpp"
+"C:\Vampire\MismatchedTokenException.cpp"
+"C:\Vampire\NoViableAltException.cpp"
+"C:\Vampire\NoViableAltForCharException.cpp"
+"C:\Vampire\Parser.cpp"
+"C:\Vampire\ParserSharedInputState.cpp"
+"C:\Vampire\RecognitionException.cpp"
+"C:\Vampire\Renaming.cpp"
+"C:\Vampire\String.cpp"
+"C:\Vampire\Token.cpp"
+"C:\Vampire\TokenBuffer.cpp"
+"C:\Vampire\TokenStreamSelector.cpp"
+"C:\Vampire\TPTPLexer.cpp"
+"C:\Vampire\TPTPParser.cpp"
+"C:\Vampire\XMLLexer.cpp"
+"C:\Vampire\InputBuffer.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1.TUR\LOCALS~1\Temp\RSP57.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1.TUR\LOCALS~1\Temp\RSP58.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib ws2_32.lib ..\..\VampireKernel\VKLibrary_VSProject\Release\vkernel.lib /nologo /subsystem:console /incremental:no /pdb:"Release/vampire.pdb" /machine:I386 /out:"Release/vampire.exe" 
+.\Release\assert.obj
+.\Release\Atom.obj
+.\Release\Clause.obj
+.\Release\Formula.obj
+.\Release\Inference.obj
+.\Release\IntNameTable.obj
+.\Release\Literal.obj
+.\Release\Map.obj
+.\Release\Memory.obj
+.\Release\Miniscope.obj
+.\Release\Options.obj
+.\Release\Output.obj
+.\Release\Problem.obj
+.\Release\Query.obj
+.\Release\Random.obj
+.\Release\Refutation.obj
+.\Release\Signature.obj
+.\Release\Statistics.obj
+.\Release\Substitution.obj
+.\Release\SymCounter.obj
+.\Release\Tabulate.obj
+.\Release\Term.obj
+.\Release\Tracer.obj
+.\Release\Unit.obj
+.\Release\vampire.obj
+.\Release\Var.obj
+.\Release\ANTLRException.obj
+.\Release\ASTFactory.obj
+.\Release\ASTRefCount.obj
+.\Release\CharScanner.obj
+.\Release\BitSet.obj
+.\Release\CharBuffer.obj
+.\Release\BaseAST.obj
+.\Release\CommonToken.obj
+.\Release\CommonAST.obj
+.\Release\XMLParser.obj
+.\Release\Int.obj
+.\Release\KIFLexer.obj
+.\Release\KIFParser.obj
+.\Release\LexerSharedInputState.obj
+.\Release\LLkParser.obj
+.\Release\MismatchedCharException.obj
+.\Release\MismatchedTokenException.obj
+.\Release\NoViableAltException.obj
+.\Release\NoViableAltForCharException.obj
+.\Release\Parser.obj
+.\Release\ParserSharedInputState.obj
+.\Release\RecognitionException.obj
+.\Release\Renaming.obj
+.\Release\String.obj
+.\Release\Token.obj
+.\Release\TokenBuffer.obj
+.\Release\TokenStreamSelector.obj
+.\Release\TPTPLexer.obj
+.\Release\TPTPParser.obj
+.\Release\XMLLexer.obj
+.\Release\InputBuffer.obj
+\Vampire\VampireKernel\VKLibrary_VSProject\Release\vkernel.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1.TUR\LOCALS~1\Temp\RSP58.tmp"
+<h3>Output Window</h3>
+Compiling...
+assert.cpp
+Atom.cpp
+Clause.cpp
+C:\Vampire\Atom.cpp(158) : warning C4715: 'Atom::compare' : not all control paths return a value
+Formula.cpp
+Inference.cpp
+IntNameTable.cpp
+Literal.cpp
+C:\Vampire\IntNameTable.cpp(103) : warning C4715: 'IntNameTable::operator[]' : not all control paths return a value
+Map.cpp
+C:\Vampire\Literal.cpp(90) : warning C4715: 'Literal::isless' : not all control paths return a value
+Memory.cpp
+Miniscope.cpp
+Options.cpp
+Output.cpp
+Problem.cpp
+C:\Vampire\Output.cpp(102) : warning C4715: 'Output::create' : not all control paths return a value
+Query.cpp
+Random.cpp
+Refutation.cpp
+Signature.cpp
+Statistics.cpp
+C:\Vampire\Signature.cpp(351) : warning C4715: 'Signature::Fun::compare' : not all control paths return a value
+Substitution.cpp
+SymCounter.cpp
+Tabulate.cpp
+Term.cpp
+Tracer.cpp
+C:\Vampire\Term.cpp(254) : warning C4715: 'Term::occurs' : not all control paths return a value
+C:\Vampire\Term.cpp(419) : warning C4715: 'Term::equal' : not all control paths return a value
+C:\Vampire\Term.cpp(509) : warning C4715: 'Term::compare' : not all control paths return a value
+C:\Vampire\Term.cpp(716) : warning C4715: 'Term::equalUpTo' : not all control paths return a value
+C:\Vampire\Term.cpp(783) : warning C4715: 'Term::hasVarsNotIn' : not all control paths return a value
+C:\Vampire\Term.cpp(829) : warning C4715: 'allIn' : not all control paths return a value
+C:\Vampire\Term.cpp(1054) : warning C4715: 'Term::isRenamingOf' : not all control paths return a value
+Unit.cpp
+vampire.cpp
+Var.cpp
+ANTLRException.cpp
+ASTFactory.cpp
+ASTRefCount.cpp
+CharScanner.cpp
+C:\Vampire\CharScanner.cpp(97) : warning C4355: 'this' : used in base member initializer list
+C:\Vampire\CharScanner.cpp(107) : warning C4355: 'this' : used in base member initializer list
+C:\Vampire\CharScanner.cpp(117) : warning C4355: 'this' : used in base member initializer list
+BitSet.cpp
+CharBuffer.cpp
+BaseAST.cpp
+CommonToken.cpp
+CommonAST.cpp
+XMLParser.cpp
+Int.cpp
+KIFLexer.cpp
+KIFParser.cpp
+LexerSharedInputState.cpp
+LLkParser.cpp
+MismatchedCharException.cpp
+MismatchedTokenException.cpp
+NoViableAltException.cpp
+NoViableAltForCharException.cpp
+Parser.cpp
+ParserSharedInputState.cpp
+RecognitionException.cpp
+Renaming.cpp
+String.cpp
+Token.cpp
+TokenBuffer.cpp
+TokenStreamSelector.cpp
+TPTPLexer.cpp
+TPTPParser.cpp
+XMLLexer.cpp
+InputBuffer.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+vampire.exe - 0 error(s), 69 warning(s)
+</pre>
+</body>
+</html>

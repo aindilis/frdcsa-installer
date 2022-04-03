@@ -1,0 +1,76 @@
+From riazanoa@cs.man.ac.uk Fri Aug 02 20:55:39 2002
+Status: RO
+X-VM-v5-Data: ([nil nil nil nil nil nil nil nil nil]
+	["1500" "Friday" "2" "August" "2002" "20:55:38" "+0100" "Alexandre Riazanov" "riazanoa@cs.man.ac.uk" nil nil "floating arithmetic and multiple answers" "^From:" nil nil "8" nil nil nil nil nil]
+	nil)
+Return-path: <riazanoa@cs.man.ac.uk>
+Envelope-to: avoronkov@mailhost.cs.man.ac.uk
+Delivery-date: Fri, 02 Aug 2002 20:55:39 +0100
+Received: from m1 ([130.88.192.2] helo=m1.cs.man.ac.uk)
+	by mailhost with esmtp (Exim 3.16 #3)
+	id 17aiWR-0004D5-00
+	for avoronkov@mailhost.cs.man.ac.uk; Fri, 02 Aug 2002 20:55:39 +0100
+Received: from riazanov.cs.man.ac.uk by m1.cs.man.ac.uk (8.8.8/AL/MJK-2.0)
+	id UAA12426; Fri, 2 Aug 2002 20:55:38 +0100 (BST)
+Received: from localhost (riazanoa@localhost)
+	by riazanov.cs.man.ac.uk (8.11.6/8.9.3) with ESMTP id g72JtcB23857
+	for <av@cs.man.ac.uk>; Fri, 2 Aug 2002 20:55:38 +0100
+X-Authentication-Warning: riazanov.cs.man.ac.uk: riazanoa owned process doing -bs
+Message-ID: <Pine.LNX.4.33.0208022045560.23837-100000@riazanov.cs.man.ac.uk>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+From: Alexandre Riazanov <riazanoa@cs.man.ac.uk>
+To: <av@cs.man.ac.uk>
+Subject: floating arithmetic and multiple answers
+Date: Fri, 2 Aug 2002 20:55:38 +0100 (BST)
+
+
+
+
+~riazanoa/TMP/abacus_5.07_Jul_19_2002.kernel.tgz
+
+1) See 
+
+ void VampireKernel::interpret(const char* inputSymbol,
+		               const char* theory,
+		               const char* nativeSymbol);
+
+This will relate the input symbol with the interpretation of 
+nativeSymbol in the built-in theory. 
+
+
+Example: 
+
+kernel.interprete("plus","floating_point_arithmetic","binary_plus");
+
+means that "plus" in the input must be interpreted as addition over
+reals. Here is the list of all symbols, native to 
+"floating_point_arithmetic": 
+
+"binary_plus", "unary_plus",
+"binary_minus", "unary_minus", "multiply", "divide", "min2" (binary 
+minimum), "max2", "greater", "greater_or_equal", "less", "less_or_equal".
+
+
+2) After VampireKernel::saturate(..) terminates with a proof, 
+you can use VampireKernel::lookForAnotherAnswer() to find more proofs.
+This function can be called again and again as long as it terminates
+with a proof. 
+DO NOT CALL IT UNLESS THE PREVIOUS CALL RESULTED IN A PROOF.
+The calls should be wrapped in a try block 
+in the same way it is done for saturate(..). 
+For example, see Standalone.cpp
+
+
+============================================================================
+Alexandre Riazanov (Alexander Ryazanov)
+PhD student, Computer Science Dept., University of Manchester,
+tel : +44 161-2756132 
+fax : +44 161 2756204 
+email : riazanov@cs.man.ac.uk
+home page URL: http://www.cs.man.ac.uk/~riazanoa
+============================================================================ 
+
+
+
+

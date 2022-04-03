@@ -1,0 +1,12 @@
+Source: termex
+Section: unknown
+Priority: extra
+Maintainer: Andrew J. Dougherty <andrewdo@frdcsa.org>
+Build-Depends: debhelper (>= 5)
+Standards-Version: 3.7.2
+
+Package: termex
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Terminology extraction tool
+ Terminology extraction tool written in Perl.

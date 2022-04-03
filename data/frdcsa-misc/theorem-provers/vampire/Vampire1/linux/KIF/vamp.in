@@ -1,0 +1,309 @@
+%
+% The original problem comes from the file /myprograms/c++/clausifier/NLP258+1.p
+%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+input_clause(co1_10,conjecture,
+    [-- eventuality(sk1,sk6)] ).
+
+input_clause(co1_18,conjecture,
+    [-- eventuality(sk1,sk3)] ).
+
+input_clause(ax2_0,axiom,
+    [-- eventuality(sk5,sk3)] ).
+
+input_clause(ax1_0,axiom,
+    [-- eventuality(sk5,sk6)] ).
+
+input_clause(ax23_0,axiom,
+    [-- eventuality(sk1,sk5)] ).
+
+input_clause(ax23_0,axiom,
+    [-- eventuality(sk5,sk5)] ).
+
+input_clause(co1_10,conjecture,
+    [-- entity(sk1,sk6)] ).
+
+input_clause(co1_18,conjecture,
+    [-- entity(sk1,sk3)] ).
+
+input_clause(ax2_0,axiom,
+    [-- entity(sk5,sk3)] ).
+
+input_clause(ax1_0,axiom,
+    [-- entity(sk5,sk6)] ).
+
+input_clause(ax23_0,axiom,
+    [-- entity(sk1,sk5)] ).
+
+input_clause(ax23_0,axiom,
+    [-- entity(sk5,sk5)] ).
+
+input_clause(co1_10,conjecture,
+    [++ thing(sk1,sk6)] ).
+
+input_clause(co1_18,conjecture,
+    [++ thing(sk1,sk3)] ).
+
+input_clause(ax2_0,axiom,
+    [++ thing(sk5,sk3)] ).
+
+input_clause(ax1_0,axiom,
+    [++ thing(sk5,sk6)] ).
+
+input_clause(ax23_0,axiom,
+    [++ thing(sk1,sk5)] ).
+
+input_clause(ax23_0,axiom,
+    [++ thing(sk5,sk5)] ).
+
+input_clause(co1_10,conjecture,
+    [++ unisex(sk1,sk6)] ).
+
+input_clause(co1_18,conjecture,
+    [++ unisex(sk1,sk3)] ).
+
+input_clause(ax2_0,axiom,
+    [++ unisex(sk5,sk3)] ).
+
+input_clause(ax1_0,axiom,
+    [++ unisex(sk5,sk6)] ).
+
+input_clause(ax23_0,axiom,
+    [++ unisex(sk1,sk5)] ).
+
+input_clause(ax23_0,axiom,
+    [++ unisex(sk5,sk5)] ).
+
+input_clause(co1_12,conjecture,
+    [++ man(sk1,sk7)] ).
+
+input_clause(co1_20,conjecture,
+    [++ man(sk1,sk2)] ).
+
+input_clause(co1_15,conjecture,
+    [++ present(sk1,sk4)] ).
+
+input_clause(co1_16,conjecture,
+    [++ event(sk1,sk4)] ).
+
+input_clause(co1_8,conjecture,
+    [++ of(sk1,sk3,sk2)] ).
+
+input_clause(co1_7,conjecture,
+    [++ of(sk1,sk6,sk7)] ).
+
+input_clause(co1_5,conjecture,
+    [++ agent(sk1,sk4,sk2)] ).
+
+%
+%       can be dealt with later
+%
+
+input_clause(co1_1,conjecture,
+    [++ present(sk5,sk9(X24)),
+     -- man(sk5,X24)] ).
+
+input_clause(co1_3,conjecture,
+    [++ event(sk5,sk9(X24)),
+     -- man(sk5,X24)] ).
+
+input_clause(co1_2,conjecture,
+    [++ smoke(sk5,sk9(X24)),
+     -- man(sk5,X24)] ).
+
+input_clause(co1_0,conjecture,
+    [++ agent(sk5,sk9(X24),X24),
+     -- man(sk5,X24)] ).
+
+input_clause(ax5_0,axiom,
+    [++ male(X1,X2),
+     -- man(X1,X2)] ).
+
+input_clause(ax6_0,axiom,
+    [++ animate(X1,X2),
+     -- human_person(X1,X2)] ).
+
+input_clause(ax9_0,axiom,
+    [++ impartial(X1,X2),
+     -- organism(X1,X2)] ).
+
+input_clause(ax10_0,axiom,
+    [++ existent(X1,X2),
+     -- entity(X1,X2)] ).
+
+input_clause(ax12_0,axiom,
+    [++ thing(X1,X2),
+     -- entity(X1,X2)] ).
+
+input_clause(ax13_0,axiom,
+    [++ entity(X1,X2),
+     -- organism(X1,X2)] ).
+
+input_clause(ax14_0,axiom,
+    [++ organism(X1,X2),
+     -- human_person(X1,X2)] ).
+
+input_clause(ax15_0,axiom,
+    [++ human_person(X1,X2),
+     -- man(X1,X2)] ).
+
+input_clause(ax16_0,axiom,
+    [++ event(sk1,sk8),
+     -- state(sk1,sk8)] ).
+
+input_clause(ax17_0,axiom,
+    [++ eventuality(sk1,sk8),
+     -- state(sk1,sk8)] ).
+
+input_clause(ax24_0,axiom,
+    [++ unisex(X1,X2),
+     -- eventuality(X1,X2)] ).
+
+input_clause(ax25_0,axiom,
+    [++ nonexistent(X1,X2),
+     -- eventuality(X1,X2)] ).
+
+input_clause(ax27_0,axiom,
+    [++ singleton(X1,X2),
+     -- thing(X1,X2)] ).
+
+input_clause(ax28_0,axiom,
+    [++ thing(X1,X2),
+     -- eventuality(X1,X2)] ).
+
+input_clause(ax29_0,axiom,
+    [++ eventuality(X1,X2),
+     -- event(X1,X2)] ).
+
+input_clause(ax30_0,axiom,
+    [++ event(X1,X2),
+     -- smoke(X1,X2)] ).
+
+input_clause(ax34_0,axiom,
+    [-- male(X1,X2),
+     -- unisex(X1,X2)] ).
+
+input_clause(ax31_0,axiom,
+    [-- nonexistent(X1,X2),
+     -- existent(X1,X2)] ).
+
+input_clause(ax40_0,axiom,
+    [++ male(sk5,X1),
+     -- male(sk1,X1)] ).
+
+input_clause(ax41_0,axiom,
+    [++ animate(sk5,X1),
+     -- animate(sk1,X1)] ).
+
+input_clause(ax44_0,axiom,
+    [++ impartial(sk5,X1),
+     -- impartial(sk1,X1)] ).
+
+input_clause(ax45_0,axiom,
+    [++ existent(sk5,X1),
+     -- existent(sk1,X1)] ).
+
+input_clause(ax46_0,axiom,
+    [++ entity(sk5,X1),
+     -- entity(sk1,X1)] ).
+
+input_clause(ax47_0,axiom,
+    [++ organism(sk5,X1),
+     -- organism(sk1,X1)] ).
+
+input_clause(ax48_0,axiom,
+    [++ human_person(sk5,X1),
+     -- human_person(sk1,X1)] ).
+
+input_clause(ax49_0,axiom,
+    [++ man(sk5,X1),
+     -- man(sk1,X1)] ).
+
+input_clause(ax50_0,axiom,
+    [++ state(sk5,X1),
+     -- state(sk1,X1)] ).
+
+input_clause(ax60_0,axiom,
+    [++ present(sk5,X1),
+     -- present(sk1,X1)] ).
+
+input_clause(ax61_0,axiom,
+    [++ unisex(sk5,X1),
+     -- unisex(sk1,X1)] ).
+
+input_clause(ax62_0,axiom,
+    [++ nonexistent(sk5,X1),
+     -- nonexistent(sk1,X1)] ).
+
+input_clause(ax64_0,axiom,
+    [++ singleton(sk5,X1),
+     -- singleton(sk1,X1)] ).
+
+input_clause(ax65_0,axiom,
+    [++ thing(sk5,X1),
+     -- thing(sk1,X1)] ).
+
+input_clause(ax66_0,axiom,
+    [++ eventuality(sk5,X1),
+     -- eventuality(sk1,X1)] ).
+
+input_clause(ax67_0,axiom,
+    [++ event(sk5,X1),
+     -- event(sk1,X1)] ).
+
+input_clause(ax68_0,axiom,
+    [++ smoke(sk5,X1),
+     -- smoke(sk1,X1)] ).
+
+input_clause(ax59_0,axiom,
+    [++ agent(sk5,X1,X2),
+     -- agent(sk1,X1,X2)] ).
+
+input_clause(ax36_0,axiom,
+    [++ of(sk5,X1,X2),
+     -- of(sk1,X1,X2)] ).
+
+input_clause(ax69_0,axiom,
+    [-- entity(sk1,X2),
+     -- of(sk1,sk6,X2),
+     -- of(sk1,sk3,X2)] ).
+
+input_clause(ax69_0,axiom,
+    [-- entity(sk5,X2),
+     -- of(sk5,sk6,X2),
+     -- of(sk5,sk3,X2)] ).
+
+input_clause(co1_23,conjecture,
+    [++ man(sk5,sk0(sk6,sk3,X4,sk3,sk4,sk5,sk6,sk7,sk8,sk4,sk5,sk1)),
+     -- present(sk5,X15),
+     -- smoke(sk5,X15),
+     -- event(sk5,X15),
+     -- man(sk1,X4),
+     -- of(sk1,sk3,X4),
+     -- agent(sk5,X15,sk7),
+     -- agent(sk1,sk4,X4),
+     -- agent(sk1,sk4,X4),
+     -- of(sk1,sk3,X4)] ).
+
+input_clause(co1_24,conjecture,
+    [-- man(sk1,X4),
+     -- event(sk5,X14),
+     -- smoke(sk5,X14),
+     -- present(sk5,X14),
+     -- event(sk5,X15),
+     -- smoke(sk5,X15),
+     -- present(sk5,X15),
+     -- agent(sk5,X14,sk0(sk6,sk3,X4,sk3,sk4,sk5,sk6,sk7,sk8,sk4,sk5,sk1)),
+     -- of(sk1,sk3,X4),
+     -- agent(sk5,X15,sk7),
+     -- agent(sk1,sk4,X4),
+     -- agent(sk1,sk4,X4),
+     -- of(sk1,sk3,X4)] ).
+
+%
+%       formula: 977/62
+%       term: 1705/678
+%       atom: 771/291
+%
