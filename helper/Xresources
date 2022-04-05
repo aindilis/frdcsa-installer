@@ -1,2 +1,3 @@
+! FRDCSA Xresources
 xterm*metaSendsEscape: true
 Xft.hinting: 1
