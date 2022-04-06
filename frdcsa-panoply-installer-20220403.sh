@@ -1,14 +1,13 @@
 #!/usr/bin/env bash
 
+set -v
+
 echo "You are about to do something potentially harmful."
 echo "To continue type in the phrase 'Yes, do as I say!'"
 read -p "" CONFIRMATION
 if [[ ! $CONFIRMATION == "Yes, do as I say!" ]]; then
     exit 0
 fi
-
-echo "Script first needs to be updated with techniques from frdcsa-installer-panoply-git-20180217.sh"
-exit 0
 
 # THIS IS OFFICIAL PANOPLY (TO METAL OR DOCKER) INSTALLER (NOT YET
 # FINISHED)
@@ -24,13 +23,32 @@ if [[ $EUID -ne 0 ]]; then
     exit 1
 fi
 
+dpkg -s task-gnome-desktop &> /dev/null
+if [[ ! $? -eq 0 ]]; then
+    echo "Need to ensure task-desktop-gnome is installed"
+    exit 1
+fi
+
 # make sure you approvelist the IP of the target server with fail2ban
 # https://www.howtoforge.com/how-to-whitelist-an-ip-in-fail2ban-on-debian-wheezy
 
-set -v
-
 echo "Installer for Debian Bullseye (11)"
-# FIXME: use lsb_release to ensure we're on bullseye
+
+export SUPPORTED_FLAVOR="Debian"
+export SUPPORTED_RELEASE="11"
+
+export FLAVOR=`lsb_release -si`
+export RELEASE=`lsb_release -sr`
+if [[ $FLAVOR -ne $SUPPORTED_FLAVOR ]]; then
+    echo "Wrong OS Flavor"
+    echo "Must use $SUPPORTED_FLAVOR ($SUPPORTED_RELEASE)"
+    exit 1
+fi
+if [[ $RELEASE -ne $SUPPORTED_RELEASE ]]; then
+    echo "Wrong OS Release"
+    echo "Must use ($SUPPORTED_FLAVOR) $SUPPORTED_RELEASE"
+    exit 1
+fi
 
 # FIXME: Among the very first things this system should do is make
 # sure there is a user by the name of andrewdo, with adduser andrewdo,
