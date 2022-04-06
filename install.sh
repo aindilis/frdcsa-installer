@@ -12,6 +12,8 @@ export GROUP="andrewdo"
 adduser $USER
 adduser $USER sudo
 
+apt-get install -y git
+
 cd /home/$USER
 git clone https://github.com/aindilis/frdcsa-installer
 ./frdcsa-installer/frdcsa-panoply-installer-20220403.sh
