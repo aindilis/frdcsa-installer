@@ -2,12 +2,14 @@
 
 set -v
 
-echo "You are about to do something potentially harmful."
-echo "To continue type in the phrase 'Yes, do as I say!'"
-read -p "" CONFIRMATION
-if [[ ! $CONFIRMATION == "Yes, do as I say!" ]]; then
-    exit 0
-fi
+## FIXME: cannot run this as we are not interactive
+
+# echo "You are about to do something potentially harmful."
+# echo "To continue type in the phrase 'Yes, do as I say!'"
+# read -p "" CONFIRMATION
+# if [[ ! $CONFIRMATION == "Yes, do as I say!" ]]; then
+#     exit 0
+# fi
 
 # THIS IS OFFICIAL PANOPLY (TO METAL OR DOCKER) INSTALLER (NOT YET
 # FINISHED)

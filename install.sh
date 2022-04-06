@@ -16,4 +16,6 @@ apt-get install -y git
 
 cd /home/$USER
 git clone https://github.com/aindilis/frdcsa-installer
-./frdcsa-installer/frdcsa-panoply-installer-20220403.sh
+
+echo "Now run as root on Debian 11:"
+echo "./frdcsa-installer/frdcsa-panoply-installer-20220403.sh"
