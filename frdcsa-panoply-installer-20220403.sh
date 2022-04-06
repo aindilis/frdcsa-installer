@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-set -v
-
 echo "You are about to do something potentially harmful."
 echo "To continue type in the phrase 'Yes, do as I say!'"
 read -p "" CONFIRMATION
@@ -23,16 +21,21 @@ if [[ $EUID -ne 0 ]]; then
     exit 1
 fi
 
+# make sure we're in a dumb terminal (as opposed to in Emacs
+# shell-mode, for instance)
+if [[ $TERM -ne "xterm" ]]; then
+    echo "This script should be run in an xterm"
+    exit 1
+fi
+
 dpkg -s task-gnome-desktop &> /dev/null
 if [[ ! $? -eq 0 ]]; then
     echo "Need to ensure task-desktop-gnome is installed"
-    exit 1
+    tasksel install desktop gnome-desktop
 fi
 
 # make sure you approvelist the IP of the target server with fail2ban
 # https://www.howtoforge.com/how-to-whitelist-an-ip-in-fail2ban-on-debian-wheezy
-
-echo "Installer for Debian Bullseye (11)"
 
 export SUPPORTED_FLAVOR="Debian"
 export SUPPORTED_RELEASE="11"
@@ -50,12 +53,15 @@ if [[ $RELEASE -ne $SUPPORTED_RELEASE ]]; then
     exit 1
 fi
 
+set -v
+
+echo "Installer for Debian Bullseye (11)"
+
 # FIXME: Among the very first things this system should do is make
 # sure there is a user by the name of andrewdo, with adduser andrewdo,
 # and adduser andrewdo sudo.
 
 # FIXME: ensure that Gnome has been installed
-# sudo tasksel install desktop gnome-desktop
 
 export UPDATE_REPOS=false
 # export USE_FORCE_YES="--force-yes"
@@ -144,11 +150,12 @@ if ! grep -q 'FRDCSA screenrc' /home/$USER/.screenrc; then
 fi
 
 ## FIXME: start a screen session perhaps?
-# screen -S frdcsa-installer
+screen -S frdcsa-installer
 
 ## FIXME: should we set the hostname to Panoply?
 ## Is this the right command?
-# hostname -s panoply
+
+hostname -s panoply
 
 if $INSTALL_TO_VAGRANT == true; then
     # FIXME: add something here to make it idempotent
