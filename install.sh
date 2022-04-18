@@ -11,16 +11,3 @@ export GROUP="andrewdo"
 
 adduser $USER
 adduser $USER sudo
-
-apt-get install -y git
-
-cd /home/$USER
-
-if [[ ! -d "frdcsa-installer" ]]; then
-    git clone https://github.com/aindilis/frdcsa-installer
-else
-    cd frdcsa-installer && git pull
-fi
-
-echo "Now run as root on Debian 11:"
-echo "./frdcsa-installer/frdcsa-panoply-installer-20220403.sh"
